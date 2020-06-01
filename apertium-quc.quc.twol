@@ -1,0 +1,90 @@
+Alphabet
+
+  a b c d e f g h i j k l m n o p q r s t u v w x y z ʼ
+
+  %{n%}:n %{n%}:0
+  %{w%}:w %{w%}:0
+  %{r%}:r %{r%}:u
+  %{a%}:a %{a%}:0
+  %{i%}:i %{i%}:0
+  %{m%}:m %{m%}:n
+  %{o%}:o %{o%}:u
+  %{ʼ%}:ʼ %{ʼ%}:0
+
+  %>:%>
+  
+;
+
+Sets
+
+Vow = a e i o u ;
+
+ArchiVow = %{o%} ; 
+
+Rules
+
+"Remove beginning and end of token boundaries"
+%>:0 <=> _ .#. ;
+         .#. _ ; 
+
+"third person possessive"
+%{r%}:r <=> _ %>: Vow ;
+
+"w rule"
+%{w%}:w <=> _ %>: Vow ;
+
+"a rule"
+Vx:0 <=>          _ [ %>: ]+ [ ArchiVow: | :Vow ] ;
+          Vow [ %>: ]+ _ ;
+     except
+          Vow ʼ [ %>: ]+ _ ; ! TODO: Doesn't apply to -i- ?
+     where Vx in ( %{a%} %{i%} ) ;
+
+!  k{a}>>{r}>bʼij
+!  k0>>u>bʼij
+
+
+"i rule"
+%{i%}:0 <=> i ʼ [ %>: ]+ _ ;
+
+!  x>>kʼojiʼ>{i}k
+!  x>>kʼojiʼ>0k
+
+"Fusion"
+i:0 <=> k %{a%}: %>: e %>: _ n ; 
+        .#. k %>: %>: _ %{w%}: ;       ! kk'am
+
+! k>e>in>chʼabʼej
+! k>e>0n>chʼabʼej
+
+"n rule"
+%{n%}:0 <=> _ u: %>: Vow ;
+
+! {n}u>imul
+! 0w0imul
+
+! {n}u>chak
+! nu0chak
+
+"uw rule"
+u:w <=> %{n%}:0 _ %>: Vow ;
+
+!"rule for n/m"
+!%{m%}:m <=> _ %>: [b | p];
+
+! k{a}>i{m}bʼe>k
+! k00imbʼe0k
+
+"kki rule"
+%{a%}:0 <=> k _ [ %>: ]+ k %{i%}: ;
+
+! k{a}>>k{i}>kʼayij
+! k0>>ki>kʼayij
+
+! k{a}>>k{i}>il
+! k0>>k0>il
+
+
+
+"Glottal insertion in plural"
+%{ʼ%}:ʼ <=> _ %>: :Vow ;
