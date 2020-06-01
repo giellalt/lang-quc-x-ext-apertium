@@ -21,21 +21,10 @@ HFST_LEXC_LOCAL_FLAGS=
 ####### Morphology source file defs: ########
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
-GT_LEXC_ROOT=$(srcdir)/root.lexc
+GT_LEXC_ROOT=$(srcdir)/ext-Apertium-$(GLANG)/apertium-$(GLANG).$(GLANG).dix
 
 # Set this to the names of all regular lexc source files:
-GT_LEXC_SRCS_L1_L2=\
-			 affixes/adjectives.lexc  \
-			 affixes/nouns.lexc       \
-			 affixes/propernouns.lexc \
-			 affixes/symbols.lexc     \
-			 affixes/verbs.lexc       \
-			 stems/adjectives.lexc    \
-			 stems/nouns.lexc         \
-			 stems/numerals.lexc      \
-			 stems/prefixes.lexc      \
-			 stems/pronouns.lexc      \
-			 stems/verbs.lexc
+GT_LEXC_SRCS_L1_L2=affixes/symbols.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -77,6 +66,48 @@ GT_DISTRO_SRCS=
 ### gle/ for an example of how this is used.
 
 GIELLA_LOCAL_TARGETS=
+
+HFST_REGEXP2FST_FLAGS=--xerox-composition=true
+
+TAG_EXTRACTION_FST=$(builddir)/lexicon.tmp
+TAG_FILE=tags.txt
+LEX_TAG_FILE=lexicon-$(TAG_FILE)
+
+$(srcdir)/ext-Apertium-$(GLANG)/configure: \
+        $(srcdir)/ext-Apertium-$(GLANG)/configure.ac
+	$(AM_V_GEN)cd $(dir $@ ) && ./autogen.sh
+
+$(srcdir)/ext-Apertium-$(GLANG)/$(GLANG).automorf.att.gz: $(GT_LEXC_ROOT) \
+        $(srcdir)/ext-Apertium-$(GLANG)/configure
+	$(AM_V_GEN)cd $(dir $@ ) && $(MAKE) $(notdir $@ )
+
+lexicon.tmp.hfst: ext-Apertium-$(GLANG)/$(GLANG).automorf.att.gz
+	$(AM_V_TXT2FST)gunzip --stdout $< \
+		| sed -e "s/ /\'@_SPACE_@\'/g" \
+		| $(HFST_TXT2FST) $(MORE_VERBOSITY) $(HFST_FORMAT) --epsilon=ε \
+		| $(HFST_INVERT) $(MORE_VERBOSITY) \
+		-o $@
+
+lexicon-tags.txt: lexicon-sigma.txt
+	$(AM_V_GEN)grep '<.*>' $< > $@
+
+# To produce init uppercase tags, use this (the \u is the crucial part):
+# 		| perl -pe 's/^(.)/+\u$$1/'
+# But by leaving that out, the tags are actually directly compatible with the
+# CG disamb file, which is a huge boon, so we stick with that for now:
+lexicon-tags.relabel: lexicon-tags.txt
+	$(AM_V_GEN)sed -e 's/<//' -e 's/>//' $< \
+		| perl -pe 's/^(.)/+$$1/' \
+		| paste $< - > $@
+
+# It seems that Apertium (or Hfst?) is producing a small, random fst + the real fst
+# We need to get rid of that small fst to continue with the real stuff.
+# NB! This might not be a correct observation, and it must be checked with f.ex. Kevin
+lexicon.hfst: lexicon.tmp.hfst lexicon-tags.relabel
+	$(AM_V_HSPLIT)$(HFST_SPLIT) -p LEX_PARTS $<
+	$(AM_V_HSUBST)$(HFST_SUBSTITUTE) $(MORE_VERBOSITY) $(HFSTFLAGS) \
+		-i LEX_PARTS2.hfst --from-file=lexicon-tags.relabel -o $@
+	$(AM_V_at)rm -f LEX_PARTS*
 
 ### END: Local processing: ###
 
