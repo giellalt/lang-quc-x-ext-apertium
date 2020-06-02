@@ -92,6 +92,7 @@ lexicon-tags.relabel: lexicon-tags.txt
 clean-local:
 	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
 	-rm -f url.lexc *.tmp.*
+	-rm -f phonology.twolc
 
 include $(srcdir)/Makefile.modifications-phon.am
 include $(top_srcdir)/../giella-core/am-shared/src-morphology-dir-include.am
