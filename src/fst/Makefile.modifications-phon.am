@@ -20,7 +20,10 @@
 #! @param GT_TWOLC_MAIN required, the source of phonology
 #! @param GT_TWOLC_SUPPLEMENTS optional, other sources to distribute and
 #! 		  compile for other things
-GT_PHONOLOGY_MAIN=$(srcdir)/ext-Apertium-$(GLANG)/apertium-$(GLANG).$(GLANG).twol
+GT_PHONOLOGY_MAIN=phonology.twolc
 GT_PHONOLOGY_SUPPLEMENTS=
+
+phonology.twolc: $(srcdir)/ext-Apertium-$(GLANG)/apertium-$(GLANG).$(GLANG).twol
+	$(AM_V_CP)cp -f $< $@
 
 # vim: set ft=automake:
