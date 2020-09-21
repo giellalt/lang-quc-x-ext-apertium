@@ -1,0 +1,9 @@
+name = "K'iche' (Apertium)"
+version = "0.0.1"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.quc-x-ext-apertium"
+
+[windows]
+system_product_code = "{792C5113-6607-4108-8768-F4AC6E134199}_is1"
+# extra_locales = { quc = "quc-x-ext-apertium" }
