@@ -66,18 +66,18 @@ Downloading
 
 Using Git:
 ```
-git clone https://github.com/giellalt/lang-quc
+git clone https://github.com/giellalt/lang-quc-x-ext-apertium
 ```
 
 Using Subversion:
 ```
-svn checkout https://github.com/giellalt/lang-quc.git/trunk lang-quc
+svn checkout https://github.com/giellalt/lang-quc-x-ext-apertium.git/trunk lang-quc-x-ext-apertium
 ```
 
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-quc/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh
