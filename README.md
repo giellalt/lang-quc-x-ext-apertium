@@ -3,7 +3,7 @@ The K'iche' morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-quc)](https://github.com/giellalt/lang-quc/issues)
 [![Build Status](https://github.com/giellalt/lang-quc/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-quc/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-quc)](https://raw.githubusercontent.com/giellalt/lang-quc/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-quc)](https://github.com/giellalt/lang-quc/develop/LICENSE)
 
 This repository contains finite state source files for the K'iche' language,
 for building morphological analysers, proofing tools
