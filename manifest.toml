@@ -1,5 +1,5 @@
 name = "K'iche' (Apertium)"
-version = "0.0.1"
+version = "0.1.1"
 
 [macos]
 system_pkg_id = "no.divvun.MacDivvun.quc-x-ext-apertium"
