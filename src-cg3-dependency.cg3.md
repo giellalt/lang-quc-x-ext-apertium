@@ -7,9 +7,7 @@ DELIMITERS
 
 Sentence delimiters are the following: <.> <!> <?> <...> <¶>
 
-
 TAGS AND SETS
-
 
 N
 V
@@ -71,91 +69,9 @@ IM For fao
 
 POS sub-categories
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Syntactic tags and sets
 
 !Syntactic tags in input to this file
-
 
 !Syntactic tags added in this file
 
@@ -197,7 +113,6 @@ Syntactic tags and sets
 * <mv> : main verb. A temporarily tag omitted in the end of the file.
 * <aux> : auxilary verb. A temporarily tag omitted in the end of the file.
 
-
 !fao syntags
 
 * @>V
@@ -214,229 +129,29 @@ Syntactic tags and sets
 
 !Syntactic set definitions
 
-
-
-
-
-
-
-
-
-
-
-
 Dep grammar
-
-
 
 Correction rules
 
-
-
 * __muitalit__
 
-
 * __XX__
 
 * __XX__
 
 * __XX__
-
-
 
 * __faoSumId=Rel__
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 The finite verb
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Mapping rules
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 __lgRemove__ removes the language tags <sma>, <sme>,  etc, before proceeding to the dep file.
 
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/dependency.cg3](http://github.com/giellalt/lang-quc/blob/main/../src/cg3/dependency.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/dependency.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/cg3/dependency.cg3)</small>
+
+---
+
