@@ -13,7 +13,7 @@ LEFT RIGHT because of apertium
 
 * Sets for Morphosyntactic properties
 
-Syntactic tags
+!!Syntactic tags
 
 * @+FAUXV : finite auxiliary verb 
 ** ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
@@ -116,7 +116,7 @@ Syntactic tags
 * @CMPND
 * @X : The function is unknown, e.g. because of that the word is unknown
 
-Tag sets
+!!Tag sets
 
 * Sets for verbs
 
@@ -149,9 +149,9 @@ ADLVCASE
 
 These were the set types.
 
-Numeral outside the sentence
+!!Numeral outside the sentence
 
-HABITIVE MAPPING
+!!HABITIVE MAPPING
 
 * __hab1__ hab aux leat
 
@@ -445,17 +445,17 @@ HABITIVE MAPPING
 
 * __onlyV<opred2__ (@<OPRED) for (N Ess) if;
 
-SUBJ MAPPING - leftovers
+!!SUBJ MAPPING - leftovers
 
 * __subj>ifV__ (@SUBJ>) for NP-HEAD-NOM, DUPRON or (Num Nom) if; a finite mainverb is found to the right. This is a cleanup rule for subjects
 
 * __hnoun>ifV__ (@SUBJ>) for NP-HEAD-NOM, DUPRON if. The counterpart of subj>ifV. You are HNOUN if there is a finite verb to your right, but NOT if there is a finite verb after a relative clause
 
-OBJ MAPPING - leftovers
+!!OBJ MAPPING - leftovers
 
-<logo> MAPPING for MT - experimental
+!!<logo> MAPPING for MT - experimental
 
-HNOUN MAPPING
+!!HNOUN MAPPING
 
 * __@<ADVLcoor__ (@<ADVL) for ADVLCASEAdv if @CNP to the left and ADVL to the left of it
 
@@ -463,12 +463,8 @@ HNOUN MAPPING
 
 ! __therestX__ adds @X to all what is left, often errouneus disambiguated forms
 
-For Apertium:
+!!For Apertium:
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
 * * *
-
 <small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/cg3/functions.cg3)</small>
-
----
-

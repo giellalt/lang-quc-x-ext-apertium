@@ -1,13 +1,13 @@
 
-C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
+!!!C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
 
 This dep file is for sma, sme, smj, sje.
 
-DELIMITERS
+!!!DELIMITERS
 
 Sentence delimiters are the following: <.> <!> <?> <...> <¶>
 
-TAGS AND SETS
+!!!TAGS AND SETS
 
 N
 V
@@ -67,9 +67,9 @@ Ess
 
 IM For fao
 
-POS sub-categories
+!!POS sub-categories
 
-Syntactic tags and sets
+!!Syntactic tags and sets
 
 !Syntactic tags in input to this file
 
@@ -94,7 +94,6 @@ Syntactic tags and sets
 * @FS-<SUBJ : finite verb in subclause functioning as subject
 * @FS-ADVL> : finite verb in subclause functioning as adverbial to the left of the main clause
 * @FS-<ADVL : finite verb in subclause functioning as adverbial to the right of the main clause
-* @FS-ACC>> : finite verb in subclause, object of speechact verb
 * @S< : a clause modifying a sentence to the right of it
 * @FS-ADVL : finite verb in subclause ...
 * @-FS-<ADVL : infinite subclause - eus
@@ -129,7 +128,7 @@ Syntactic tags and sets
 
 !Syntactic set definitions
 
-Dep grammar
+!!!Dep grammar
 
 Correction rules
 
@@ -143,15 +142,11 @@ Correction rules
 
 * __faoSumId=Rel__
 
-The finite verb
+!!The finite verb
 
-Mapping rules
+!!!Mapping rules
 
-__lgRemove__ removes the language tags <sma>, <sme>,  etc, before proceeding to the dep file.
+!! __lgRemove__ removes the language tags <sma>, <sme>,  etc, before proceeding to the dep file.
 
 * * *
-
 <small>This (part of) documentation was generated from [src/cg3/dependency.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/cg3/dependency.cg3)</small>
-
----
-
