@@ -2,7 +2,7 @@ The K'iche' morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-quc)](https://github.com/giellalt/lang-quc/issues)
-[![Build Status](https://github.com/giellalt/lang-quc/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-quc/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-quc-x-ext-apertium/main/badge.svg)](https://github.com/giellalt/lang-quc-x-ext-apertium/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-quc)](https://github.com/giellalt/lang-quc/develop/LICENSE)
 
 This repository contains finite state source files for the K'iche' language,
