@@ -672,6 +672,14 @@ The analysis give double analysis because of optional semtags. We go for the one
 
 
 
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/ext-Apertium-quc/apertium-quc.quc.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/fst/ext-Apertium-quc/apertium-quc.quc.lexc)</small>
+
+---
+
+
+
 retroflex plosive, voiceless			t`  ʈ	    0288, 648 (` = ASCII 096)
 retroflex plosive, voiced			d`	ɖ		0256, 598
 labiodental nasal					F 	ɱ		0271, 625
