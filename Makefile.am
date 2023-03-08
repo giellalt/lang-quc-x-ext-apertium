@@ -20,6 +20,9 @@ banner:
 # 'nothing to be done for test'. By forwarding test to check we work around it.
 test: check
 
+update:
+	git subtree pull --prefix src/fst/ext-Apertium-quc https://github.com/apertium/apertium-quc.git master --squash
+
 # Remove html tables created by some of the developer tools:
 clean-local:
 	rm -f *.html
