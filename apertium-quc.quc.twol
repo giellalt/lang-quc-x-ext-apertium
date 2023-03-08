@@ -1,15 +1,18 @@
 Alphabet
 
   a b c d e f g h i j k l m n o p q r s t u v w x y z ʼ
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
 
   %{n%}:n %{n%}:0
   %{w%}:w %{w%}:0
   %{r%}:r %{r%}:u
   %{a%}:a %{a%}:0
   %{i%}:i %{i%}:0
-  %{m%}:m %{m%}:n
   %{o%}:o %{o%}:u
   %{ʼ%}:ʼ %{ʼ%}:0
+  %{V%}:e %{V%}:a %{V%}:i %{V%}:o
+  %{U%}:o %{U%}:u %{U%}:a
+  %{O%}:o %{O%}:u 
 
   %>:%>
   
@@ -24,7 +27,7 @@ ArchiVow = %{o%} ;
 Rules
 
 "Remove beginning and end of token boundaries"
-%>:0 <=> _ .#. ;
+%>:0 <=>     _ .#. ;
          .#. _ ; 
 
 "third person possessive"
@@ -50,13 +53,6 @@ Vx:0 <=>          _ [ %>: ]+ [ ArchiVow: | :Vow ] ;
 !  x>>kʼojiʼ>{i}k
 !  x>>kʼojiʼ>0k
 
-"Fusion"
-i:0 <=> k %{a%}: %>: e %>: _ n ; 
-        .#. k %>: %>: _ %{w%}: ;       ! kk'am
-
-! k>e>in>chʼabʼej
-! k>e>0n>chʼabʼej
-
 "n rule"
 %{n%}:0 <=> _ u: %>: Vow ;
 
@@ -75,8 +71,8 @@ u:w <=> %{n%}:0 _ %>: Vow ;
 ! k{a}>i{m}bʼe>k
 ! k00imbʼe0k
 
-"kki rule"
-%{a%}:0 <=> k _ [ %>: ]+ k %{i%}: ;
+!"kki rule"
+!%{a%}:0 <=> k _ [ %>: ]+ k %{i%}: ;
 
 ! k{a}>>k{i}>kʼayij
 ! k0>>ki>kʼayij
@@ -84,7 +80,37 @@ u:w <=> %{n%}:0 _ %>: Vow ;
 ! k{a}>>k{i}>il
 ! k0>>k0>il
 
+!"Fusion"
+!i:0 <=> k %{a%}: %>: e %>: _ n ; 
+!        .#. k %>: %>: _ %{w%}: ;       ! kk'am
+
+! k>e>in>chʼabʼej
+! k>e>0n>chʼabʼej
 
 
 "Glottal insertion in plural"
 %{ʼ%}:ʼ <=> _ %>: :Vow ;
+
+! this suffix is -u on root transitives when the root
+!vowel is u and -o when the root vowel is not u
+"Status marking {O}"
+%{O%}:u <=> u [ ? - Vow ]* %> _  ;
+
+!        except 
+!              ʼ %>: _ w ; 
+!
+!"Status marking {O} after glottal"
+!%{O%}:0 <=> \b ʼ %>: _ w ;
+
+! ^xetoʼw/<perf><s_pl3>toʼ<v><tv><anti><agfoc>$
+
+
+! On root transitives, this suffix has the form -V’ at the end of the 
+! intonational phrase (-u’ and -o’ in harmony with a preceding u or o 
+! and -a’ in the other cases) and -V in other positions.
+"Status marking {U}"
+%{U%}:Vx <=> Vy [ ? - Vow ]* %>: _ ;
+         where Vx in ( u  o )
+               Vy in ( u  o ) 
+         matched ;
+
