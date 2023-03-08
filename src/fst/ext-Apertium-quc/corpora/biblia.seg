@@ -1,16 +1,338 @@
-# sent_id = 1 
+# sent_id = biblia:1
 # text = Ri nim taq chuchqajawibʼ, xoqujeʼ kkaj kkikamisaj ri Lasaro.
 # text[spa] = Pero los principales sacerdotes acordaron dar muerte también a Lázaro.
-# labels = Juán:12:10
-^Ri/ri$
+# labels = Juan:12:10
+^Ri/Ri$
 ^nim/nim$
 ^taq/taq$
 ^chuchqajawibʼ/chuchqajaw>ibʼ$
 ^,/,$
-^xoqujʼe/xoqujeʼ$
+^xoqujʼe/xoqujʼe$
 ^kkaj/k>>k>aj$
 ^kkikamisaj/k>>ki>kamisaj$
 ^ri/ri$
 ^Lasaro/Lasaro$
+^./.$
+
+# sent_id = biblia:2
+# text = Kʼatekʼut, xinbʼe pa ri Siriʼa e pa ri Silisiʼa;
+# text[spa] = Más tarde fui a las regiones de Siria y Cilicia.
+# labels = Gal:9:1
+^Kʼatekʼut/Kʼatekʼut$
+^,/,$
+^xinbʼe/x>in>bʼe$
+^pa/pa$
+^ri/ri$
+^Siriʼa/Siriʼa$
+^e/e$
+^pa/pa$
+^ri/ri$
+^Silisiʼa/Silisiʼa$
+^;/;$
+
+# sent_id = biblia:3
+# text = Kbʼe pa ri Siriʼa e pa ri Silisiʼa, jawijeʼ kuya wi ri kichuqʼabʼ ri Komon Tyox.
+# text[spa] = Y viajó por Siria y Cilicia, consolidando a las iglesias.
+# labels = Hechos:5:1
+^Kbʼe/K>>bʼe$
+^pa/pa$
+^ri/ri$
+^Siriʼa/Siriʼa$
+^e/e$
+^pa/pa$
+^ri/ri$
+^Silisiʼa/Silisiʼa$
+^,/,$
+^jawijeʼ/jawijeʼ$
+^kuya/k>>u>ya$
+^wi/wi$
+^ri/ri$
+^kichuqʼabʼ/ki>chuqʼabʼ$
+^ri/ri$
+^Komon/Komon$
+^Tyox/Tyox$
+^./.$
+
+# sent_id = biblia:4
+# text = Rukʼ taq we tzij riʼ, xkikʼam ri kiqasnaʼ pa ri ubʼi ri Ajawxel Jesus;
+# text[spa] = Al oír esto, fueron bautizados en el nombre del Señor Jesús.
+# labels = Hechos:5:19
+^Rukʼ/R>ukʼ$
+^taq/taq$
+^we/we$
+^tzij/tzij$
+^riʼ/riʼ$
+^,/,$
+^xkikʼam/x>>ki>kʼam$
+^ri/ri$
+^kiqasnaʼ/ki>qasnaʼ$
+^pa/pa$
+^ri/ri$
+^ubʼi/u>bʼi$
+^ri/ri$
+^Ajawxel/Ajawxel$
+^Jesus/Jesus$
+^;/;$
+
+# sent_id = biblia:5
+# text = ¡Kkʼojiʼ bʼaʼ ri usipanik ri ajawxel Jesus Kristo rukʼ ri awuxlabʼal!
+# text[spa] = Que la gracia del Señor Jesucristo sea con su espíritu.
+# labels = 18_PHM_1
+^Kkʼojiʼ/K>>kʼojiʼ$
+^bʼaʼ/bʼaʼ$
+^ri/ri$
+^usipanik/u>sipanik$
+^ri/ri$
+^ajawxel/ajawxel$
+^Jesus/Jesus$
+^Kristo/Kristo$
+^rukʼ/r>ukʼ$
+^ri/ri$
+^awuxlabʼal/aw>uxlabʼal$
+^!/!$
+
+# sent_id = biblia:6
+# text = Ri ajtikonel kutik ri Tzij.
+# text[spa] = El sembrador siembra la palabra.
+# labels = 2_MRK_4
+^Ri/Ri$
+^ajtikonel/ajtikonel$
+^kutik/k>>u>tik$
+^ri/ri$
+^Tzij/Tzij$
+^./.$
+
+# sent_id = biblia:7
+# text = We kʼo jun ktuqaʼrik, ¿la man xoqujeʼ taj kintuqaʼr ri in?
+# text[spa] = ¿Cuando alguien se siente débil, no comparto yo su debilidad?
+# labels = 8_2CO_11
+^We/We$
+^kʼo/kʼo$
+^jun/jun$
+^ktuqaʼrik/k>>tuqaʼr>ik$
+^,/,$
+^¿/¿$
+^la/la$
+^man/man$
+^xoqujeʼ/xoqujeʼ$
+^taj/taj$
+^kintuqaʼr/k>in>tuqaʼr$
+^ri/ri$
+^in/in$
+^?/?$
+
+# sent_id = biblia:8
+# text = We kʼo jun ktzaqik ¿la man kinporoj ta wibʼ ri in?
+# text[spa] = ¿Y cuando a alguien se le hace tropezar, no ardo yo de indignación?
+# labels = 8_2CO_11
+^We/We$
+^kʼo/kʼo$
+^jun/jun$
+^ktzaqik/k>>tzaq>ik$
+^¿/¿$
+^la/la$
+^man/man$
+^kinporoj/k>in>poroj$
+^ta/ta$
+^wibʼ/w>ibʼ$
+^ri/ri$
+^in/in$
+^?/?$
+
+# sent_id = biblia:10
+# text = Chinatisaj ri rixoqil ri Lot.
+# text[spa] = ­Acuérdense de la esposa de Lot!
+# labels = incomplete
+^Chinatisaj/Chi>natisa>j$
+^ri/ri$
+^rixoqil/r>ixoqil$
+^ri/ri$
+^Lot/Lot$
+^./.$
+
+# sent_id = biblia:14
+# text = Ri in, xintaq bʼi ri Tikiko pa ri Efeso.
+# text[spa] = A Tíquico lo mandé a Éfeso.
+# labels = complete
+^Ri/Ri$
+^in/in$
+^,/,$
+^xintaq/x>in>taq$
+^bʼi/bʼi$
+^ri/ri$
+^Tikiko/Tikiko$
+^pa/pa$
+^ri/ri$
+^Efeso/Efeso$
+^./.$
+
+# sent_id = biblia:20
+# text = Kʼisbʼal kanoq, xoqujeʼ kkam ri ixoq.
+# text[spa] = Por último, murió también la mujer.
+# labels = complete
+^Kʼisbʼal/Kʼisbʼal$
+^kanoq/kan>oq$
+^,/,$
+^xoqujeʼ/xoqujeʼ$
+^kkam/k>kam$
+^ri/ri$
+^ixoq/ixoq$
+^./.$
+
+# sent_id = biblia:35
+# text = Jeriʼ kkibʼan chkech ri winaq.
+# text[spa] = Así lo hicieron los discípulos, y se sentaron todos.
+# labels = incomplete
+^Jeriʼ/Jeriʼ$
+^kkibʼan/k>ki>bʼan$
+^chkech/ch>k>ech$
+^ri/ri$
+^winaq/winaq$
+^./.$
+
+# sent_id = biblia:47
+# text = Ronojel winaq kril na ri ukolonem ri Dyos».
+# text[spa] = Y todo mortal verá la salvación de Dios.” »
+# labels = incomplete
+^Ronojel/R>onojel$
+^winaq/winaq$
+^kril/k>r>il$
+^na/na$
+^ri/ri$
+^ukolonem/u>kolon>em$
+^ri/ri$
+^Dyos/Dyos$
+^»/»$
+^./.$
+
+# sent_id = biblia:68
+# text = Ri Simon e ri erachiʼl kkiterneʼbʼej ubʼi ri areʼ.
+# text[spa] = Simón y sus compañeros salieron a buscarlo.
+# labels = complete
+^Ri/Ri$
+^Simon/Simon$
+^e/e$
+^ri/ri$
+^erachiʼl/e>r>achiʼl$
+^kkiterneʼbʼej/k>ki>terneʼbʼej$
+^ubʼi/u>bʼi$
+^ri/ri$
+^areʼ/areʼ$
+^./.$
+
+# sent_id = biblia:74
+# text = «Makʼam ubʼi weriʼ, matij weriʼ, machap weriʼ».
+# text[spa] = «No tomes en tus manos, no pruebes, no toques»?
+# labels = incomplete
+^«/«$
+^Makʼam/M>a>kʼam$
+^ubʼi/u>bʼi$
+^weriʼ/weriʼ$
+^,/,$
+^matij/m>a>tij$
+^weriʼ/weriʼ$
+^,/,$
+^machap/m>a>chap$
+^weriʼ/weriʼ$
+^»/»$
+^./.$
+
+# sent_id = biblia:2458
+# text = Kʼatekʼuriʼ, pa taq we qʼij riʼ, ri Jesus kpe uloq chi pa ri Nasaret rech ri Galileʼa, kʼatekʼuriʼ ri Xwan kubʼan uqasnaʼ pa ri Jordan.
+# text[spa] = En esos días llegó Jesús desde Nazaret de Galilea y fue bautizado por Juan en el Jordán.
+# labels = incomplete
+^Kʼatekʼuriʼ/Kʼatekʼuriʼ$
+^,/,$
+^pa/pa$
+^taq/taq$
+^we/we$
+^qʼij/qʼij$
+^riʼ/riʼ$
+^,/,$
+^ri/ri$
+^Jesus/Jesus$
+^kpe/k>pe$
+^uloq/uloq$
+^chi/chi$
+^pa/pa$
+^ri/ri$
+^Nasaret/Nasaret$
+^rech/r>ech$
+^ri/ri$
+^Galileʼa/Galileʼa$
+^,/,$
+^kʼatekʼuriʼ/kʼatekʼuriʼ$
+^ri/ri$
+^Xwan/Xwan$
+^kubʼan/k>u>bʼan$
+^uqasnaʼ/u>qasnaʼ$
+^pa/pa$
+^ri/ri$
+^Jordan/Jordan$
+^./.$
+
+# sent_id = biblia:2712
+# text = Ri unan e ri erachalal kepe uloq rukʼ ri areʼ, kʼatekʼuriʼ, man kekowin taj keqibʼ ukoq rukʼ, rumal rech che ekʼo sibʼalaj winaq.
+# text[spa] = La madre y los hermanos de Jesús fueron a verlo, pero como había mucha gente, no lograban acercársele.
+# labels = incomplete
+^Ri/Ri$
+^unan/u>nan$
+^e/e$
+^ri/ri$
+^erachalal/e>r>achalal$
+^kepe/k>e>pe$
+^uloq/uloq$
+^rukʼ/r>ukʼ$
+^ri/ri$
+^areʼ/areʼ$
+^,/,$
+^kʼatekʼuriʼ/kʼatekʼuriʼ$
+^,/,$
+^man/man$
+^kekowin/k>e>kowin$
+^taj/taj$
+^keqibʼ/k>e>qibʼ$
+^ukoq/uk>oq$
+^rukʼ/r>ukʼ$
+^,/,$
+^rumal/r>umal$
+^rech/r>ech$
+^che/ch>e$
+^ekʼo/e>kʼo$
+^sibʼalaj/sibʼalaj$
+^winaq/winaq$
+^./.$
+
+# sent_id = biblia:2752
+# text = Kbʼe kukʼ ri eʼareʼ e ktzalij pa ri Nasaret e keʼunimaj.
+# text[spa] = Así que Jesús bajó con sus padres a Nazaret y vivió sujeto a ellos.
+# labels = incomplete
+^Kbʼe/K>bʼe$
+^kukʼ/k>ukʼ$
+^ri/ri$
+^eʼareʼ/eʼareʼ$
+^e/e$
+^ktzalij/k>tzalij$
+^pa/pa$
+^ri/ri$
+^Nasaret/Nasaret$
+^e/e$
+^keʼunimaj/k>eʼ>u>nimaj$
+^./.$
+
+# sent_id = biblia:2753
+# text = Ri unan kukʼol ronojel we jastaq riʼ pa ri ranimaʼ.
+# text[spa] = Pero su madre conservaba todas estas cosas en el corazón.
+# labels = incomplete
+^Ri/Ri$
+^unan/u>nan$
+^kukʼol/k>u>kʼol$
+^ronojel/r>onojel$
+^we/we$
+^jastaq/jastaq$
+^riʼ/riʼ$
+^pa/pa$
+^ri/ri$
+^ranimaʼ/r>animaʼ$
 ^./.$
 

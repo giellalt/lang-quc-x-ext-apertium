@@ -1,5 +1,5 @@
-# sent_id = 1
-# text = Kinya jun rutzil iwach nutijoxelab’!
+# sent_id = example:1
+# text = Kinya jun rutzil iwach nutijoxelabʼ!
 # text[spa] =  Les doy un cordial saludo, mis estudiantes!
 # labels = tijonik-7
 ^Kinya/K>>in>ya$
@@ -9,16 +9,53 @@
 ^nutijoxelabʼ/nu>tijoxel>abʼ$
 ^!/!$
 
-# sent_id = 2
-# text = Rajawaxik kak’aman chawe le utijik le lej.
+# sent_id = example:2
+# text = Rajawaxik kakʼaman chawe le utijik le lej.
 # text[spa] =  Es necesario que te acostumbres a comer tortillas.
 # labels = tijonik-41
-^Rajawaxik/rajawaxik$
+^Rajawaxik/Rajawaxik$
 ^kakʼaman/ka>kʼaman$
-^chawe/ch>awe$
+^chawe/ch>aw>e$
 ^le/le$
 ^utijik/u>tijik$
 ^le/le$
 ^lej/lej$
+^./.$
+
+# sent_id = example:3
+# text = Xuloqʼ ri wuj ri ali.
+# text[spa] = La chica compró el libro.
+# labels = canpixabaj-59a
+^Xuloqʼ/X>ul>oqʼ$
+^ri/ri$
+^wuj/wuj$
+^ri/ri$
+^ali/ali$
+^./.$
+
+# sent_id = example:4
+# text = Xuloqʼ ri wuj rumal ri ali.
+# text[spa] = El libro fue comprado por la chica.
+# labels = canpixabaj-59b
+^Xuloqʼ/X>ul>oqʼ$
+^ri/ri$
+^wuj/wuj$
+^rumal/r>umal$
+^ri/ri$
+^ali/ali$
+^./.$
+
+# sent_id = example:5
+# text = Areʼ uxeʼ ojer tzij waral Kʼicheʼ ubʼiʼ.
+# text[spa] = Este es el principio de las Antiguas historias aquí en el Quiché. 
+# text[eng] = This is the beginning of the ancient word, here in the place called Quiché.
+# labels = complete popol-wuj:1 check-attachment
+^Areʼ/Areʼ$
+^uxeʼ/u>xeʼ$
+^ojer/ojer$
+^tzij/tzij$
+^waral/waral$
+^Kʼicheʼ/Kʼicheʼ$
+^ubʼiʼ/u>bʼiʼ$
 ^./.$
 

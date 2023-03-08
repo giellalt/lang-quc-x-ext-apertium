@@ -1,0 +1,171 @@
+# sent_id = ley2009-9:4
+# text = Are taq waʼ ri uqʼijol we taqanik.
+# text[spa] = Son principios rectores de la presente Ley:
+# labels = complete check-everything
+^Are/Are$
+^taq/taq$
+^waʼ/waʼ$
+^ri/ri$
+^uqʼijol/u>qʼijol$
+^we/we$
+^taqanik/taqanik$
+^./.$
+
+# sent_id = ley2009-9:14
+# text = We taqanik riʼ kubʼij chi rajawaxik kyaʼ uqʼij ri winaq xuqujeʼ ktoʼ aninaqil.
+# text[spa] = Los procedimientos que establece esta Ley, deben realizarse con especial atención y prioridad.
+# labels = incomplete
+^We/we$
+^taqanik/taqanik$
+^riʼ/riʼ$
+^kubʼij/k>u>bʼij$
+^chi/chi$
+^rajawaxik/rajawaxik$
+^kyaʼ/k>yaʼ$
+^uqʼij/u>qʼij$
+^ri/ri$
+^winaq/winaq$
+^xuqujeʼ/xuqujeʼ$
+^ktoʼ/k>toʼ$
+^aninaqil/aninaqil$
+^./.$
+
+# sent_id = ley2009-9:18
+# text = Ri ajtzʼibʼ rech chakunem rech Woktzʼibʼabʼal, kjach reqeleʼn rumal ri Ukʼabʼ kʼamal Ubʼe Amaqʼ.
+# text[spa] = El Secretario Ejecutivo de la Secretaría, será nombrado por el Vicepresidente de la República.
+# labels = complete check-dislocated
+^Ri/Ri$
+^ajtzʼibʼ/ajtzʼibʼ$
+^rech/r>ech$
+^chakunem/chakunem$
+^rech/r>ech$
+^Woktzʼibʼabʼal/Woktzʼibʼabʼal$
+^,/,$
+^kjach/k>jach$
+^reqeleʼn/r>eqeleʼn$
+^rumal/r>umal$
+^ri/ri$
+^Ukʼabʼ/U>kʼabʼ$
+^kʼamal/kʼamal$
+^Ubʼe/U>bʼe$
+^Amaqʼ/Amaqʼ$
+^./.$
+
+# sent_id = ley2009-9:38
+# text = We Woktzʼibʼabʼal kʼo pa uqʼabʼ kuchajij xuqujeʼ kupatanij we taqanik riʼ, rachiʼl ri chomanem xuqujeʼ ri ucholchak.
+# text[spa] = La Secretaría es la responsable de velar y dar cumplimiento a esta Ley y a políticas y planes relacionados con la misma.
+# text[spa'] = La Secretaría tiene en dominio cuidar también servir el orden este, compañero de pensar también en el mismo
+# labels = incomplete
+^We/we$
+^Woktzʼibʼabʼal/woktzʼibʼabʼal$
+^kʼo/kʼo$
+^pa/pa$
+^uqʼabʼ/u>qʼabʼ$
+^kuchajij/k>u>chajij$
+^xuqujeʼ/xuqujeʼ$
+^kupatanij/k>u>patanij$
+^we/we$
+^taqanik/taqanik$
+^riʼ/riʼ$
+^,/,$
+^rachiʼl/r>achiʼl$
+^ri/ri$
+^chomanem/choman>em$
+^xuqujeʼ/xuqujeʼ$
+^ri/ri$
+^ucholchak/u>cholchak$
+^./.$
+
+# sent_id = ley2009-9:52
+# text = Ronojel ri yaʼtalil pa we qʼataj, tzʼaqat kiwach, man ktzaq ta kanoq xuqujeʼ man ktas taj.
+# text[spa] = Los derechos enunciados en este artículo son integrales, irrenunciables e indivisibles.
+# labels = complete
+^Ronojel/R>onojel$
+^ri/ri$
+^yaʼtalil/yaʼtalil$
+^pa/pa$
+^we/we$
+^qʼataj/qʼataj$
+^,/,$
+^tzʼaqat/tzʼaqat$
+^kiwach/ki>wach$
+^,/,$
+^man/man$
+^ktzaq/k>tzaq$
+^ta/ta$
+^kanoq/kan>oq$
+^xuqujeʼ/xuqujeʼ$
+^man/man$
+^ktas/k>tas$
+^taj/taj$
+^./.$
+
+# sent_id = ley2009-9:163
+# text = Ri winaq kubʼan we kʼaxkʼolil riʼ, kqʼat wajxaqibʼ wene wajxaqlajuj junabʼ chi rij pa cheʼ xuqujeʼ kutoj 300 mil kʼa pa 500 mil qʼuqʼ.
+# text[spa] = Quien cometa este delito será sancionado con prisión de ocho a dieciocho años y multa de trescientos mil a quinientos mil Quetzales.
+# labels = complete
+^Ri/Ri$
+^winaq/winaq$
+^kubʼan/k>u>bʼan$
+^we/we$
+^kʼaxkʼolil/kʼaxkʼolil$
+^riʼ/riʼ$
+^,/,$
+^kqʼat/k>qʼat$
+^wajxaqibʼ/wajxaqibʼ$
+^wene/wene$
+^wajxaqlajuj/wajxaqlajuj$
+^junabʼ/junabʼ$
+^chi/chi$
+^rij/r>ij$
+^pa/pa$
+^cheʼ/cheʼ$
+^xuqujeʼ/xuqujeʼ$
+^kutoj/k>u>toj$
+^300/300$
+^mil/mil$
+^kʼa/kʼa$
+^pa/pa$
+^500/500$
+^mil/mil$
+^qʼuqʼ/qʼuqʼ$
+^./.$
+
+# sent_id = ley2009-9:199
+# text = We xkam ri winaq, ri pwaq rech tojbʼal makaj kyaʼ chi kech ri ralaxik.
+# text[spa] = La indemnización corresponderá a los herederos, si la víctima hubiere fallecido.
+# labels = incomplete
+^We/we$
+^xkam/x>kam$
+^ri/ri$
+^winaq/winaq$
+^,/,$
+^ri/ri$
+^pwaq/pwaq$
+^rech/r>ech$
+^tojbʼal/tojbʼal$
+^makaj/makaj$
+^kyaʼ/k>yaʼ$
+^chi/chi$
+^kech/k>ech$
+^ri/ri$
+^ralaxik/r>alaxik$
+^./.$
+
+# sent_id = ley2009-9:227
+# text = Ri pwaq rech we qʼataj riʼ kesax chech ri tojbʼal kʼayinem.
+# text[spa] = La fuente de financiamiento del presente artículo deberá provenir de los ingresos tributarios.
+# labels = complete
+^Ri/Ri$
+^pwaq/pwaq$
+^rech/r>ech$
+^we/we$
+^qʼataj/qʼataj$
+^riʼ/riʼ$
+^kesax/k>e>sa>x$
+^chech/ch>ech$
+^ri/ri$
+^tojbʼal/tojbʼal$
+^kʼayinem/kʼayinem$
+^./.$
+

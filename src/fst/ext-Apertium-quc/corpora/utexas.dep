@@ -1,11 +1,894 @@
+# sent_id = utexas:1
+# text = Kʼo jun nukʼotoj chiʼaj.
+# text[eng] = I have a question.
+# labels = tijonik-2 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<jun>"
+	"jun" det @det #2->3
+"<nukʼotoj>"
+	"kʼotoj" n px1sg @nsubj #3->1
+"<chiʼaj>"
+	"chiʼaj" n @compound #4->3
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:2
+# text = La kʼo jun kʼotoj chiʼaj?
+# text[eng] = Is there a question?
+# labels = tijonik-2 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<jun>"
+	"jun" det @det #3->4
+"<kʼotoj>"
+	"kʼotoj" n @nsubj #4->2
+"<chiʼaj>"
+	"chiʼaj" n @compound #5->4
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:3
+# text = La kʼo jun na kakʼoxomaj taj?
+# text[eng] = Is there something you donʼt understand?
+# labels = tijonik-2 complete check-subordinate
+"<La>"
+	"la" qst @discourse #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<jun>"
+	"jun" num @nsubj #3->2
+"<na>"
+	"na" neg @advmod:neg #4->5
+"<kakʼoxomaj>"
+	"kʼoxomaj" v tv impf o_sg3 s_sg2 @acl #5->3
+"<taj>"
+	"taj" neg fin @aux #6->5
+"<?>"
+	"?" sent @punct #7->2
+
+# sent_id = utexas:4
+# text = La kʼo na kikʼoxomaj taj?
+# text[eng] = Is there something you all donʼt understand?
+# labels = tijonik-2 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<na>"
+	"na" neg @advmod:neg #3->4
+"<kikʼoxomaj>"
+	"kʼoxomaj" v tv impf o_sg3 s_pl2 @csubj #4->2
+"<taj>"
+	"taj" neg fin @aux #5->4
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:5
+# text = La kʼo tzij na kikʼoxomaj taj?
+# text[eng] = ¿Is there any word you all donʼt understand?
+# labels = tijonik-2 complete check-relative
+"<La>"
+	"la" qst @discourse #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<tzij>"
+	"tzij" n @nsubj #3->2
+"<na>"
+	"na" neg @advmod:neg #4->5
+"<kikʼoxomaj>"
+	"kʼoxomaj" v tv impf o_sg3 s_pl2 @acl #5->3
+"<taj>"
+	"taj" neg fin @aux #6->5
+"<?>"
+	"?" sent @punct #7->2
+
+# sent_id = utexas:6
+# text = Na kinkʼoxomaj taj jas karaj kubʼij ….
+# text[eng] = I donʼt understand what … means.
+# text[spa] = No entiendo que quiere decir ….
+# labels = tijonik-2 incomplete
+"<Na>"
+	"na" neg @advmod:neg @aux #1->2
+"<kinkʼoxomaj>"
+	"kʼoxomaj" v tv impf o_sg3 s_sg1 @root #2->0
+"<taj>"
+	"taj" neg fin @aux #3->2
+"<jas>"
+	"jas" prn itg @obj 
+"<karaj>"
+	"aj" v tv impf o_sg3 s_sg3 @
+"<kubʼij>"
+	"bʼij" v tv impf o_sg3 s_sg3 @xcomp
+"<…>"
+	"…" sent @nsubj
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:7
+# text = Xinsachik.
+# text[eng] = I made a mistake.
+# text[spa] = Me equivoqué
+# labels = tijonik-2 complete
+"<Xinsachik>"
+	"sach" v iv perf s_sg1 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:8
+# text = Xinsachik.
+# text[eng] = I got lost.
+# labels = tijonik-2 complete
+"<Xinsachik>"
+	"sach" v iv perf s_sg1 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:9
+# text = Xinsach che le uwokik le tzij.
+# text[eng] = I made a mistake in the construction of the words.
+# labels = tijonik-2 complete check-relational
+"<Xinsach>"
+	"sach" v iv perf s_sg1 @root #1->0
+"<che>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @nmod #3->5
+"<le>"
+	"le" det @det #4->5
+"<uwokik>"
+	"wok" n px3sg @obj #5->1
+"<le>"
+	"le" det @det #6->7
+"<tzij>"
+	"tzij" n @nmod #7->5
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:10
+# text = Xsachan le tzij chwe.
+# text[eng] = I forgot that word.
+# labels = tijonik-2 complete check-antipassive
+"<Xsachan>"
+	"sach" v tv anti perf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<tzij>"
+	"tzij" n @nsubj #3->1
+"<chwe>"
+	"chi" pr @case #4->5
+		"ech" n rel px1sg @obl #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:11
+# text = Xsachan chwe.
+# text[eng] = I forgot.
+# labels = tijonik-2 complete
+"<Xsachan>"
+	"sach" v tv anti perf s_sg3 @root #1->0
+"<chwe>"
+	"chi" pr @case #2->3
+		"ech" n rel px1sg @obl #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:12
+# text = Xsachan chwe.
+# text[eng] = I canʼt remember.
+# labels = tijonik-2 complete
+"<Xsachan>"
+	"sach" v tv anti perf s_sg3 @root #1->0
+"<chwe>"
+	"chi" pr @case #2->3
+		"ech" n rel px1sg @obl #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:13
+# text = Na wetaʼm taj.
+# text[eng] = I donʼt know.
+# text[spa] = No lo sé.
+# labels = tijonik-2 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<wetaʼm>"
+	"etaʼm" v tv perf o_sg3 s_sg1 @root #2->0
+"<taj>"
+	"taj" neg fin @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:14
+# text = Jas ubʼixik …?
+# text[eng] = How do you say…?
+# labels = tijonik-2 incomplete
+"<Jas>"
+	"jas" prn itg
+"<ubʼixik>"
+	"bʼij" v tv pass inf s_sg3
+"<…>"
+	"…" sent
+"<?>"
+	"?" sent @punct
+
+# sent_id = utexas:15
+# text = Jas ubʼixik … pa Kʼicheʼ?
+# text[eng] = How do you say… in Kʼicheʼ?
+# labels = tijonik-2 incomplete
+"<Jas>"
+	"jas" prn itg
+"<ubʼixik>"
+	"bʼij" v tv pass inf s_sg3
+"<…>"
+	"…" sent
+"<pa>"
+	"pa" pr
+"<Kʼicheʼ>"
+	"kʼicheʼ" n
+"<?>"
+	"?" sent
+
+# sent_id = utexas:16
+# text = Jas karaj kubʼij…?
+# text[eng] = What does… mean?
+# text[spa] = Qué quiere decir …?
+# labels = tijonik-2 incomplete
+"<Jas>"
+	"jas" prn itg
+"<karaj>"
+	"aj" v tv impf o_sg3 s_sg3
+"<kubʼij>"
+	"bʼij" v tv impf o_sg3 s_sg3
+"<…>"
+	"…" sent
+"<?>"
+	"?" sent
+
+# sent_id = utexas:17
+# text = Jas upatan le tzij…?
+# text[eng] = Whatʼs the function of the word…?
+# labels = tijonik-2 incomplete
+"<Jas>"
+	"jas" prn itg
+"<upatan>"
+	"patan" n px3sg
+"<le>"
+	"le" det
+"<tzij>"
+	"tzij" n
+"<…>"
+	"…" sent
+"<?>"
+	"?" sent
+
+# sent_id = utexas:18
+# text = La utz we kinbʼij…?
+# text[eng] = Is it ok to say…?
+# test[spa] = Está bien si digo…?
+# labels = tijonik-2 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<utz>"
+	"utz" adj @root #2->0
+"<we>"
+	"we¹" cnjsub @mark #3->4
+"<kinbʼij>"
+	"bʼij" v tv impf o_sg3 s_sg1 @advcl #4->2
+"<…>"
+	"…" sent @obj #5->4
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:19
+# text = Nutom le tzij…
+# text[eng] = I have heard the word…
+# labels = tijonik-2 incomplete
+"<Nutom>"
+	"toʼ" v tv pp s_sg1
+"<le>"
+	"le" det
+"<tzij>"
+	"tzij" n
+"<…>"
+	"…" sent
+
+# sent_id = utexas:20
+# text = Na nutom ta le tzij …
+# text[eng] = I have not heard the word…
+# labels = tijonik-2 incomplete
+"<Na>"
+	"na" neg
+"<nutom>"
+	"toʼ" v tv pp s_sg1
+"<ta>"
+	"taj" neg
+"<le>"
+	"le" det
+"<tzij>"
+	"tzij" n
+"<…>"
+	"…" sent
+
+# sent_id = utexas:21
+# text = Kimbʼe pa le tinamit.
+# text[eng] = I go to the town.
+# text[spa] = Voy al pueblo.
+# labels = tijonik-10 complete
+"<Kimbʼe>"
+	"bʼe" v iv impf s_sg1 @root #1->0
+"<pa>"
+	"pa" pr @case #2->4
+"<le>"
+	"le" det @det #3->4
+"<tinamit>"
+	"tinamit" n @obl #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:22
+# text = La katbʼe pa le tinamit?
+# text[eng] = Are you going to town?
+# text[spa] = Vas al pueblo?
+# labels = tijonik-10 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<katbʼe>"
+	"bʼe" v iv impf s_sg2 @root #2->0
+"<pa>"
+	"pa" pr @case #3->5
+"<le>"
+	"le" det @det #4->5
+"<tinamit>"
+	"tinamit" n @obl #5->2
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:24
+# text = Xbʼe qʼij!
+# text[spa] = ¡Buenas tardes!
+# labels = tijonik-3 complete
+"<Xbʼe>"
+	"bʼe" v iv perf s_sg3 @root #1->0
+"<qʼij>"
+	"qʼij" n @nsubj #2->1
+"<!>"
+	"!" sent @punct #3->1
+
+# sent_id = utexas:25
+# text = Xok aqʼabʼ!
+# text[spa] = ¡Buenas noches!
+# labels = tijonik-3 complete
+"<Xok>"
+	"ok" v iv perf s_sg3 @root #1->0
+"<aqʼabʼ>"
+	"aqʼäbʼ" n @nsubj #2->1
+"<!>"
+	"!" sent @punct #3->1
+
+# sent_id = utexas:26
+# text = Xbʼe qʼij nan!
+# text[spa] = ¡Buenas tardes señora!
+# labels = tijonik-3 complete
+"<Xbʼe>"
+	"bʼe" v iv perf s_sg3 @root #1->0
+"<qʼij>"
+	"qʼij" n @nsubj #2->1
+"<nan>"
+	"nan²" n @vocative #3->1
+"<!>"
+	"!" sent @punct #4->1
+
+# sent_id = utexas:27
+# text = Xok aqʼabʼ ali!
+# text[spa] = ¡Buenas noches, muchacha!
+# labels = tijonik-3 complete
+"<Xok>"
+	"ok" v iv perf s_sg3 @root #1->0
+"<aqʼabʼ>"
+	"aqʼäbʼ" n @nsubj #2->1
+"<ali>"
+	"ali" n @vocative #3->1
+"<!>"
+	"!" sent @punct #4->1
+
+# sent_id = utexas:28
+# text = Rutzil wachaj.
+# text[spa] = Saludos.
+# labels = tijonik-3 complete
+"<Rutzil>"
+	"utzil" n px3sg @root #1->0
+"<wachaj>"
+	"wäch" n @nmod #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:29
+# text = Are waʼ nuwuj.
+# text[spa] = Éste es mi libro
+# labels = tijonik-4 incomplete check-focus
+"<Are>"
+	"are" foc @discourse #1->3
+"<waʼ>"
+	"waʼ" prn dem @nsubj #2->3
+"<nuwuj>"
+	"wuj" n px1sg @root #3->0
+"<.>"
+	"." sent @punct #4->3
+
+# sent_id = utexas:30
+# text = Kʼo jun qatʼuʼy pa ja!
+# text[spa] = Tenemos una olla en casa!
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<jun>"
+	"jun" det @det #2->3
+"<qatʼuʼy>"
+	"tʼuʼy" n px1pl @nsubj #3->1
+"<pa>"
+	"pa" pr @case #4->5
+"<ja>"
+	"ja" n @obl #5->1
+"<!>"
+	"!" sent @punct #6->1
+
+# sent_id = utexas:31
+# text = Kʼo nuwuj.
+# text[spa] = Tengo un libro.
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<nuwuj>"
+	"wuj" n px1sg @nsubj #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:32
+# text = Kʼo nuwa chiʼ.
+# text[spa] = Tengo comida aquí.
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<nuwa>"
+	"wa" n px1sg @nsubj #2->1
+"<chiʼ>"
+	"chiʼ" adv @advmod #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:33
+# text = Kʼo uxajabʼ ri akʼal.
+# text[spa] = El niño tiene sandalias.
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<uxajabʼ>"
+	"xajäbʼ" n px3sg @nsubj #2->1
+"<ri>"
+	"ri" det @det #3->4
+"<akʼal>"
+	"akʼal" n @nmod #4->2
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:34
+# text = Kʼo qoʼch chilaʼ Nawaljaʼ.
+# text[spa] = Tenemos casa en Nahualá.
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<qoʼch>"
+	"oʼch" n px1pl @nsubj #2->1
+"<chilaʼ>"
+	"chilaʼ" adv @advmod #3->1
+"<Nawaljaʼ>"
+	"Nawaljaʼ" np top @obl #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:35
+# text = Kʼo iwabʼix pa juyubʼ.
+# text[spa] = Ustedes tienen una milpa en la montaña.
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<iwabʼ>"
+	"abʼ" n px2pl @nsubj #2->1
+"<ix>"
+	"ix" prn pers p2 pl @nmod #3->2
+"<pa>"
+	"pa" pr @case #4->5
+"<juyubʼ>"
+	"juyubʼ" n @obl #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:36
+# text = Kʼo ekikʼajol le achijabʼ.
+# text[spa] = Los hombres tienen hijos.
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<ekikʼajol>"
+	"e" pl @dep #2->3
+		"kʼojolaxel" n px3pl @nsubj #3->1
+"<le>"
+	"le" det @det #4->5
+"<achijabʼ>"
+	"achij" n pl @nmod #5->3
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:37
+# text = Kʼo jun ala pa tijobʼal.
+# text[spa] = Hay un muchacho en la escuela.
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<jun>"
+	"jun" det @det #2->3
+"<ala>"
+	"ala" n @nsubj #3->1
+"<pa>"
+	"pa" pr @case #4->5
+"<tijobʼal>"
+	"tijobʼal" n @obl #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:38
+# text = Kʼo jun tzʼiʼ pa bʼe.
+# text[spa] = Hay un perro en la calle.
+# labels = tijonik-5 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<jun>"
+	"jun" det @det #2->3
+"<tzʼiʼ>"
+	"tzʼiʼ" n @nsubj #3->1
+"<pa>"
+	"pa" pr @case #4->5
+"<bʼe>"
+	"bʼe" n @obl #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:39
+# text = At kʼo pa siwan!
+# text[spa] = Estás en el barranco!
+# labels = tijonik-5 complete
+"<At>"
+	"at" prn pro p2 sg @aux #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<pa>"
+	"pa" pr @case #3->4
+"<siwan>"
+	"siwan" n @obl #4->2
+"<!>"
+	"!" sent @punct #5->2
+
+# sent_id = utexas:40
+# text = Oj kʼo pa le roʼch le a Wel.
+# text[spa] = Estamos en la casa de Manuel.
+# labels = tijonik-5 complete
+"<Oj>"
+	"oj" prn pro p1 pl @aux #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<pa>"
+	"pa" pr @case #3->5
+"<le>"
+	"le" det @det #4->5
+"<roʼch>"
+	"oʼch" n px3sg @obl #5->2
+"<le>"
+	"le" det @det #6->8
+"<a>"
+	"ala" clf m @clf #7->8
+"<Wel>"
+	"Wel" np ant m @nmod #8->5
+"<.>"
+	"." sent @punct #9->2
+
+# sent_id = utexas:41
+# text = In ajtij; at tijoxel.
+# text[spa] = Yo soy maestro; Tú eres estudiante
+# labels = tijonik-6 complete
+"<In>"
+	"in" prn pers p1 sg @nsubj #1->2
+"<ajtij>"
+	"ajtij" n @root #2->0
+"<;>"
+	";" sent @punct #3->5
+"<at>"
+	"at" prn pers p2 sg @nsubj #4->5
+"<tijoxel>"
+	"tijoxel" n @parataxis #5->2
+"<.>"
+	"." sent @punct #6->2
+
+# sent_id = utexas:42
+# text = At rajkun le nunan.
+# text[spa] = Tú eres el doctor de mi madre.
+# labels = tijonik-6 complete
+"<At>"
+	"at" prn pers p2 sg @nsubj #1->2
+"<rajkun>"
+	"ajkun" n px3sg @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<nunan>"
+	"nan¹" n px1sg @nmod #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:43
+# text = Are le utat le al Skaʼ.
+# text[spa] = Él es el padre de Francisca
+# labels = tijonik-6 complete
+"<Are>"
+	"areʼ" prn pers p3 sg @nsubj #1->3
+"<le>"
+	"le" det @det #2->3
+"<utat>"
+	"tat" n px3sg @root #3->0
+"<le>"
+	"le" det @det #4->6
+"<al>"
+	"ali" clf f @clf #5->6
+"<Skaʼ>"
+	"Skaʼ" np ant f @nmod #6->3
+"<.>"
+	"." sent @punct #7->3
+
+# sent_id = utexas:44
+# text = Oj ajxojolobʼ pa Awas Qʼij.
+# text[spa] = Nosotros somos bailarines en Viernes Santo.
+# labels = tijonik-6 complete
+"<Oj>"
+	"oj" prn pers p1 pl @nsubj #1->2
+"<ajxojolobʼ>"
+	"ajxojol" n pl @root #2->0
+"<pa>"
+	"pa" pr @case #3->5
+"<Awas>"
+	"awas" adj @amod #4->5
+"<Qʼij>"
+	"qʼij" n @obl #5->2
+"<.>"
+	"." sent @punct #6->2
+
+# sent_id = utexas:45
+# text = Aʼre e ral le nan Weʼl.
+# text[spa] = Ellos son los niños(as) de doña Manuela.
+# labels = tijonik-6 complete check-plural
+"<Aʼre>"
+	"aʼre" prn pers p3 pl @nsubj #1->3
+"<e>"
+	"e" pl @dep #2->3
+"<ral>"
+	"al" n px3sg @root #3->0
+"<le>"
+	"le" det @det #4->6
+"<nan>"
+	"nan" clf f @clf #5->6
+"<Weʼl>"
+	"Weʼl" np ant f @nmod #6->3
+"<.>"
+	"." sent @punct #7->3
+
+# sent_id = utexas:46
+# text = La utz awach?- Utz maltyox , e kʼu ri at ?– Utz maltyox.
+# text[spa] = ¿Cómo estás? – Bien, ¿y tú? – Bien, gracias.
+# labels = tijonik-6 incomplete
+"<La>"
+	"la" qst
+"<utz>"
+	"utz" adj
+"<awach>"
+	"wach" n rel px2sg
+"<?>"
+	"?" sent
+"<->"
+	"-" guio
+"<Utz>"
+	"utz" adj
+"<maltyox>"
+	"maltyox" ij 
+"<,>"
+	"," cm
+"<e>"
+	"e" pl
+"<kʼu>"
+	"kʼut" part
+"<ri>"
+	"ri" det
+"<at>"
+	"at" prn pers p2 sg
+"<?>"
+	"?" sent
+"<–>"
+	"–" guio
+"<Utz>"
+	"utz" adj
+"<maltyox>"
+	"maltyox" ij
+"<.>"
+	"." sent
+
+# sent_id = utexas:47
+# text = Are utz unaʼoj.
+# text[spa] = (Él/ella) es buena gente.
+# labels = tijonik-6 complete
+"<Are>"
+	"areʼ" prn pers p3 sg @nsubj #1->3
+"<utz>"
+	"utz" adj @amod #2->3
+"<unaʼoj>"
+	"naʼoj" n px3sg @root #3->0
+"<.>"
+	"." sent @punct #4->3
+
+# sent_id = utexas:48
+# text = Lal kʼamal bʼe.
+# text[spa] = (Usted) es líder.
+# labels = tijonik-6 complete
+"<Lal>"
+	"lal" prn pers p2 frm sg @nsubj #1->2
+"<kʼamal>"
+	"kʼamal" n @root #2->0
+"<bʼe>"
+	"bʼe" n @compound #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:49
+# text = In kʼo pa le ukʼisbʼal cholaj.
+# text[spa] = (Yo) estoy en la última fila
+# labels = tijonik-6 complete
+"<In>"
+	"in" prn pro p1 sg @aux #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<pa>"
+	"pa" pr @case #3->5
+"<le>"
+	"le" det @det #4->5
+"<ukʼisbʼal>"
+	"kʼisbʼal" n px3sg @obl #5->2
+"<cholaj>"
+	"cholaj" n @nmod #6->5
+"<.>"
+	"." sent @punct #7->2
+
+# sent_id = utexas:50
+# text = E kʼo kebʼ ukʼajol le tat Xwan.
+# text[spa] = Don Juan tiene dos hijos.
+# labels = tijonik-6 complete
+"<E>"
+	"e" prn pro p3 pl @aux #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<kebʼ>"
+	"kebʼ" num @nummod #3->4
+"<ukʼajol>"
+	"kʼojolaxel" n px3sg @nsubj #4->2
+"<le>"
+	"le" det @det #5->7
+"<tat>"
+	"tat" clf m @clf #6->7
+"<Xwan>"
+	"Xwan" np ant m @nmod #7->4
+"<.>"
+	"." sent @punct #8->2
+
+# sent_id = utexas:51
+# text = In in kʼo pa tijobʼal.
+# text[spa] = Yo estoy en la clase.
+# labels = tijonik-6 complete
+"<In>"
+	"in" prn pers p1 sg @nsubj #1->3
+"<in>"
+	"in" prn pro p1 sg @aux #2->3
+"<kʼo>"
+	"kʼo" part @root #3->0
+"<pa>"
+	"pa" pr @case #4->5
+"<tijobʼal>"
+	"tijobʼal" n @obl #5->3
+"<.>"
+	"." sent @punct #6->3
+
+# sent_id = utexas:52
+# text = At at utaqoʼn le qʼatal tzij.
+# text[spa] = ¡Tú, tu eres el mensajero del juez!
+# labels = tijonik-6 complete
+"<At>"
+	"at" prn pers p2 sg @nsubj #1->3
+"<at>"
+	"at" prn pro p2 sg @aux #2->3
+"<utaqoʼn>"
+	"taqoʼn" n px3sg @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<qʼatal>"
+	"qʼatal" n @nmod #5->3
+"<tzij>"
+	"tzij" n @compound #6->5
+"<.>"
+	"." sent @punct #7->3
+
+# sent_id = utexas:53
+# text = Are le Tuʼr le loqʼomanel.
+# text[spa] = Es Venturo el comprador.
+# labels = tijonik-6 complete check-focus
+"<Are>"
+	"are" foc @discourse #1->5
+"<le>"
+	"le" det @det #2->3
+"<Tuʼr>"
+	"Tuʼr" np ant m @nsubj #3->5
+"<le>"
+	"le" det @det #4->5
+"<loqʼomanel>"
+	"loqʼomanel" n @root #5->0
+"<.>"
+	"." sent @punct #6->5
+
+# sent_id = utexas:54
+# text = Oj oj wokol ja.
+# text[spa] = Nosotros somos albañiles.
+# labels = tijonik-6 complete
+"<Oj>"
+	"oj" prn pers p1 pl @nsubj #1->3
+"<oj>"
+	"oj" prn pro p1 pl @aux #2->3
+"<wokol>"
+	"wokol" n @root #3->0
+"<ja>"
+	"ja" n @compound #4->3
+"<.>"
+	"." sent @punct #5->3
+
+# sent_id = utexas:55
+# text = Ix ix eʼlaqʼomabʼ!
+# text[spa] = ¡Ustedes son ladrones!
+# labels = tijonik-6 complete
+"<Ix>"
+	"ix" prn pers p2 pl @nsubj #1->3
+"<ix>"
+	"ix" prn pro p2 pl @aux #2->3
+"<eʼlaqʼomabʼ>"
+	"elaqʼom" n pl @root #3->0
+"<!>"
+	"!" sent @punct #4->3
+
+# sent_id = utexas:56
+# text = Ubʼantajik le nutinamit.
+# text[spa] = Así es mi pueblo.
+# labels = tijonik-7 complete
+"<Ubʼantajik>"
+	"bʼantajik" n px3sg @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<nutinamit>"
+	"tinamit" n px1sg @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
 # sent_id = utexas:57
 # text = Kinya jun rutzil iwach nutijoxelabʼ!
-# text[spa] =  Les doy un cordial saludo, mis estudiantes
-# labels = tijonik-7
+# text[spa] = Les doy un cordial saludo, mis estudiantes!
+# labels = tijonik-7 complete
 "<Kinya>"
 	"ya" v tv impf o_sg3 s_sg1 @root #1->0
 "<jun>"
-	"jun" num @nummod #2->3
+	"jun" det @det #2->3
 "<rutzil>"
 	"utzil" n px3sg @obj #3->1
 "<iwach>"
@@ -15,41 +898,1349 @@
 "<!>"
 	"!" sent @punct #6->1
 
+# sent_id = utexas:58
+# text = Kinkiʼkotik in kʼo iwukʼ.
+# text[spa] = Estoy muy contento de estar con ustedes.
+# labels = tijonik-7 incomplete
+"<Kinkiʼkotik>"
+	"kikot" v iv impf s_sg1 @root
+		"ik" aux @aux:ss
+"<in>"
+	"in" prn pro p1 sg @aux
+"<kʼo>"
+	"kʼo" part
+"<iwukʼ>"
+	"ukʼ" n rel px2pl @obl
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:59
+# text = Che we qʼij kamik kʼo jun nutzijonem chirij le nutinamit.
+# text[spa] = El día de hoy daré una plática sobre mi pueblo.
+# labels = tijonik-7 complete
+"<Che>"
+	"chi" pr @case #1->2
+		"ech" n rel px3sg @obl #2->6
+"<we>"
+	"we" det @det #3->4
+"<qʼij>"
+	"qʼij" n @nmod #4->2
+"<kamik>"
+	"kamik" adv @advmod #5->6
+"<kʼo>"
+	"kʼo" part @root #6->0
+"<jun>"
+	"jun" det ind @det #7->8
+"<nutzijonem>"
+	"tzijonem" n px1sg @nsubj #8->6
+"<chirij>"
+	"chi" pr @case #9->10
+		"ij" n rel px3sg @nmod #10->8
+"<le>"
+	"le" det @det #11->12
+"<nutinamit>"
+	"tinamit" n px1sg @nmod #12->10
+"<.>"
+	"." sent @punct #13->6
+
+# sent_id = utexas:60
+# text = Kosnaq le achi.
+# text[spa] = El hombre está cansado.
+# labels = tijonik-7 complete
+"<Kosnaq>"
+	"kosnaq" adj @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<achi>"
+	"achi" n @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:61
+# text = Jeʼl le tyox.
+# text[spa] = La iglesia es bonita.
+# labels = tijonik-7 complete
+"<Jeʼl>"
+	"jeʼl" adj @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<tyox>"
+	"tyox" n @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:62
+# text = Nim raqan le cheʼ.
+# text[spa] = El árbol es alto.
+# labels = tijonik-7 complete
+"<Nim>"
+	"nim" adj @root #1->0
+"<raqan>"
+	"aqän" n px3sg @nsubj #2->1
+"<le>"
+	"le" det @det #3->4
+"<cheʼ>"
+	"cheʼ" n @nmod #4->2
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:63
+# text = Sibʼalaj nim le tinamit.
+# text[spa] = El pueblo es muy grande.
+# labels = tijonik-7 complete
+"<Sibʼalaj>"
+	"sibʼalaj" adv @advmod #1->2
+"<nim>"
+	"nim" adj @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<tinamit>"
+	"tinamit" n @nsubj #4->2
+"<.>"
+	"." sent @punct #5->2
+
 # sent_id = utexas:64
-# text = K’ax le kib’e le winaq.
-# text[spa] =  El camino de la gente es difícil.
-# labels = tijonik-7
+# text = Kʼax le kibʼe le winaq.
+# text[spa] = El camino de la gente es difícil.
+# labels = tijonik-7 complete
 # notes = (le) PX-noun1 (le) noun2 = (el) noun1 de (el) noun2
-"<K’ax>"
+"<Kʼax>"
 	"kʼax" adj @root #1->0
 "<le>"
 	"le" det @det #2->3
-"<kib’e>"
+"<kibʼe>"
 	"bʼe" n px3pl @nsubj #3->1
 "<le>"
 	"le" det @det #4->5
 "<winaq>"
-	"winaq" n @nmod:poss #5->3
+	"winaq" n @nmod #5->3
 "<.>"
 	"." sent @punct #6->1
 
+# sent_id = utexas:65
+# text = E kʼo oxibʼ akʼ.
+# text[spa] = Hay tres gallinas.
+# labels = tijonik-7 complete check-plural
+"<E>"
+	"e" pl @aux #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<oxibʼ>"
+	"oxibʼ" num @nummod #3->4
+"<akʼ>"
+	"äkʼ" n @nsubj #4->2
+"<.>"
+	"." sent @punct #5->2
+
 # sent_id = utexas:66
-# text = K’ak’ le po’t.
-# text[spa] =  El huipil es nuevo.
-# labels = tijonik-7
-"<K’ak’>"
+# text = Kʼakʼ le poʼt.
+# text[spa] = El huipil es nuevo.
+# labels = tijonik-7 complete
+"<Kʼakʼ>"
 	"kʼakʼ" adj @root #1->0
 "<le>"
 	"le" det @det #2->3
-"<po’t>"
+"<poʼt>"
 	"poʼt" n @nsubj #3->1
 "<.>"
 	"." sent @punct #4->1
 
-# sent_id = utexas:123
-# text = Xuk’ut le K’iche’ ch’ab’al le al Nela chqawach.
-# text[spa] =  Manuela nos enseñó el idioma k’iche’
-# labels = tijonik-17
+# sent_id = utexas:67
+# text = E kʼo ixoqibʼ pa le kʼaybʼal.
+# text[spa] = Hay mujeres en la tienda.
+# labels = tijonik-7 complete check-plural
+"<E>"
+	"e" pl @aux #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<ixoqibʼ>"
+	"ixoq" n pl @nsubj #3->2
+"<pa>"
+	"pa" pr @case #4->6
+"<le>"
+	"le" det @det #5->6
+"<kʼaybʼal>"
+	"kʼaybʼal" n @obl #6->2
+"<.>"
+	"." sent @punct #7->2
+
+# sent_id = utexas:68
+# text = Kʼo cheʼ pa le kʼachelaʼj.
+# text[spa] = Hay árboles en el bosque.
+# labels = tijonik-7 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<cheʼ>"
+	"cheʼ" n @nsubj #2->1
+"<pa>"
+	"pa" pr @case #3->5
+"<le>"
+	"le" det @det #4->5
+"<kʼachelaʼj>"
+	"kʼachelaʼj" n @obl #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:69
+# text = E kʼo kajibʼ akʼalabʼ pa le bʼe.
+# text[spa] = Hay cuatro niños en la calle.
+# labels = tijonik-7 complete check-plural
+"<E>"
+	"e" pl @aux #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<kajibʼ>"
+	"kajibʼ" num @nummod #3->4
+"<akʼalabʼ>"
+	"akʼal" n pl @nsubj #4->2
+"<pa>"
+	"pa" pr @case #5->7
+"<le>"
+	"le" det @det #6->7
+"<bʼe>"
+	"bʼe" n @obl #7->2
+"<.>"
+	"." sent @punct #8->2
+
+# sent_id = utexas:70
+# text = Na nim ta raqan waʼ we cheʼ.
+# text[spa] = Este árbol no es alto.
+# labels = tijonik-8 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<nim>"
+	"nim" adj @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<raqan>"
+	"aqän" n px3sg @nsubj #4->2
+"<waʼ>"
+	"waʼ" det @det #5->7
+"<we>"
+	"we" det @det #6->7
+"<cheʼ>"
+	"cheʼ" n @nmod #7->4
+"<.>"
+	"." sent @punct #8->2
+
+# sent_id = utexas:71
+# text = Na rax ta uwach le juyubʼ.
+# text[spa] = La montaña no es verde.
+# labels = tijonik-8 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<rax>"
+	"rax" adj @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<uwach>"
+	"wach" n px3sg @nsubj #4->2
+"<le>"
+	"le" det @det #5->6
+"<juyubʼ>"
+	"juyubʼ" n @nmod #6->4
+"<.>"
+	"." sent @punct #7->2
+
+# sent_id = utexas:72
+# text = Maj urajil le qʼabʼarel.
+# text[spa] = El borracho no tiene dinero.
+# text[spa'] = No hay dinero del borracho.
+# labels = tijonik-8 complete
+"<Maj>"
+	"maj" part neg @root #1->0
+"<urajil>"
+	"rajil" n px3sg @nsubj #2->1
+"<le>"
+	"le" det @det #3->4
+"<qʼabʼarel>"
+	"qʼabʼarel" n @nmod #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:73
+# text = Na utz ta le utʼisom le al Mariy.
+# text[eng] = Mariyʼs sewing is not good.
+# labels = tijonik-8 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<utz>"
+	"utz" adj @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<le>"
+	"le" det @det #4->5
+"<utʼisom>"
+	"tʼison" n px3sg @nsubj #5->2
+"<le>"
+	"le" det @det #6->8
+"<al>"
+	"ali" clf f @clf #7->8
+"<Mariy>"
+	"Mariy" np ant f @nmod #8->5
+"<.>"
+	"." sent @punct #9->2
+
+# sent_id = utexas:74
+# text = Na qʼan ta uwach le qaprut.
+# text[spa] = Nuestro plátano no está maduro (amarillo).
+# labels = tijonik-8 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<qʼan>"
+	"qʼän" adj @root #2->0
+"<ta>" 
+	"taj" neg @aux #3->2
+"<uwach>"
+	"wach" n px3sg @nsubj #4->2
+"<le>"
+	"le" det @det #5->6
+"<qaprut>"
+	"prut" n px1pl @nmod #6->4
+"<.>"
+	"." sent @punct #7->2
+
+# sent_id = utexas:75
+# text = Maj jabʼ chanim.
+# text[spa] = No hay lluvia ahorita.
+# labels = tijonik-8 complete
+"<Maj>"
+	"maj" part neg @root #1->0
+"<jabʼ>"
+	"jäbʼ" n @nsubj #2->1
+"<chanim>"
+	"chanim" adv @advmod #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:76
+# text = Maj sutzʼ iwir.
+# text[spa] = No hubo nubes ayer.
+# labels = tijonik-8 complete
+"<Maj>"
+	"maj" part neg @root #1->0
+"<sutzʼ>"
+	"sutzʼ" n @nsubj #2->1
+"<iwir>"
+	"iwir" adv @advmod #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:76.1
+# text = Oj ajtijabʼ.
+# text[spa] = Somos maestros.
+# labels = tijonik-9 complete
+"<Oj>"
+	"oj" prn pers p1 pl @nsubj #1->2
+"<ajtijabʼ>"
+	"ajtij" n pl @root #2->0
+"<.>"
+	"." sent @punct #3->2
+
+# sent_id = utexas:76.2
+# text = Aʼre e tijoxelabʼ.
+# text[spa] = Ellos(as) son estudiantes.
+# labels = tijonik-9 complete check-plural
+"<Aʼre>"
+	"aʼre" prn pers p3 pl @nsubj #1->3
+"<e>"
+	"e" pl @aux #2->3
+"<tijoxelabʼ>"
+	"tijoxel" n pl @root #3->0
+"<.>"
+	"." sent @punct #4->3
+
+# sent_id = utexas:76.3
+# text = Ix ixoqibʼ.
+# text[spa] = Ustedes son mujeres.
+# labels = tijonik-9 complete
+"<Ix>"
+	"ix" prn pers p2 pl @nsubj #1->2
+"<ixoqibʼ>"
+	"ixoq" n pl @root #2->0
+"<.>"
+	"." sent @punct #3->2
+
+# sent_id = utexas:76.4
+# text = Rax taq le kotzʼiʼj.
+# text[spa] = Las flores son verdes.
+# labels = tijonik-9 complete check-plural
+"<Rax>"
+	"rax" adj @root #1->0
+"<taq>"
+	"taq" pl @det #2->4
+"<le>"
+	"le" det @det #3->4
+"<kotzʼiʼj>"
+	"kotzʼiʼj" n @nsubj #4->1
+"<.>" 
+	"." sent @punct #5->1
+
+# sent_id = utexas:76.5
+# text = E nimaʼq le altomabʼ.
+# text[spa] = Las muchachas son grandes.
+# labels = tijonik-9 complete check-plural
+"<E>"
+	"e" pl @aux #1->2
+"<nimaʼq>"
+	"nim" adj pl @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<altomabʼ>"
+	"altom" n pl @nsubj #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:77
+# text = Kimbʼe pa le tinamit.
+# text[spa] = Voy al pueblo.
+# labels = tijonik-10 complete
+"<Kimbʼe>"
+	"bʼe" v iv impf s_sg1 @root #1->0
+"<pa>"
+	"pa" pr @case #2->4
+"<le>"
+	"le" det @det #3->4
+"<tinamit>"
+	"tinamit" n @obl #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:78
+# text = La katbʼe pa le tinamit?
+# text[spa] = Vas al pueblo?
+# labels = tijonik-10 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<katbʼe>"
+	"bʼe" v iv impf s_sg2 @root #2->0
+"<pa>"
+	"pa" pr @case #3->5
+"<le>"
+	"le" det @det #4->5
+"<tinamit>"
+	"tinamit" n @obl #5->2
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:79
+# text = Jeʼ, kimbʼek.
+# text[spa] = Sí, voy.
+# labels = tijonik-10 complete
+"<Jeʼ>"
+	"jeʼ" ij @root #1->0
+"<,>"
+	"," cm @punct #2->3
+"<kimbʼek>"
+	"bʼe" v iv impf s_sg1 @parataxis #3->1
+		"ik" aux @aux:ss #4->3
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:80
+# text = La kixwarik?
+# text[spa] = ¿Duermen?/¿Van a dormir?
+# labels = tijonik-12 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<kixwarik>"
+	"war" v iv impf s_pl2 @root #2->0
+		"ik" aux @aux:ss #3->2
+"<?>"
+	"?" sent @punct #4->2
+
+# sent_id = utexas:81
+# text = Na kujwar taj.
+# text[spa] = No dormimos./No vamos a dormir.
+# labels = tijonik-12 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kujwar>"
+	"war" v iv impf s_pl1 @root #2->0
+"<taj>"
+	"taj" neg fin @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:82
+# text = Na kujwar ta waral.
+# text[spa] = No dormimos aquí.
+# labels = tijonik-12 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kujwar>"
+	"war" v iv impf s_pl1 @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<waral>"
+	"waral" adv @advmod #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:83
+# text = Na kawar ta la.
+# text[spa] = Usted no duerme./Usted no va a dormir
+# labels = tijonik-12 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kawar>"
+	"war" v iv impf s_sg3 @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<la>"
+	"la" part frm @aux #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:84
+# text = La katbʼin pa le uxlanbʼal?
+# text[spa] = ¿Caminás en el parque?
+# labels = tijonik-12 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<katbʼin>"
+	"bʼin" v iv impf s_sg2 @root #2->0
+"<pa>"
+	"pa" pr @case #3->2
+"<le>"
+	"le" det @det #4->5
+"<uxlanbʼal>"
+	"uxlanbʼal" n @obl #5->2
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:85
+# text = Na kimbʼin taj.
+# text[spa] = No camino.
+# labels = tijonik-12 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kimbʼin>"
+	"bʼin" v iv impf s_sg1 @root #2->0
+"<taj>"
+	"taj" neg fin @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:86
+# text = La kixpe pa tijobʼal?
+# text[spa] = ¿Vienen a la escuela?
+# labels = tijonik-12 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<kixpe>"
+	"pe" v iv impf s_pl2 @root #2->0
+"<pa>"
+	"pa" pr @case #3->4
+"<tijobʼal>"
+	"tijobʼal" n @obl #4->2
+"<?>"
+	"?" sent @punct #5->2
+
+# sent_id = utexas:87
+# text = Na kojpe taj.
+# text[spa] = No venimos.
+# labels = tijonik-12 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kojpe>"
+	"pe" v iv impf s_pl1 @root #2->0
+"<taj>"
+	"taj" neg fin @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:88
+# text = Ximbʼe rukʼ le ajkun iwir.
+# text[spa] = (Yo) fui con el doctor ayer.
+# labels = tijonik-13 complete
+"<Ximbʼe>"
+	"bʼe" v iv perf s_sg1 @root #1->0
+"<rukʼ>"
+	"ukʼ" n rel px3sg @obl #2->1
+"<le>"
+	"le" det @det #3->4
+"<ajkun>"
+	"ajkun" n @nmod #4->2
+"<iwir>"
+	"iwir" adv @advmod #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:89
+# text = La xtzalij la iwir?
+# text[spa] = ¿Regresó (ud) ayer?
+# labels = tijonik-13 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<xtzalij>"
+	"tzalij" v iv perf s_sg3 @root #2->0
+"<la>"
+	"la" part frm @aux #3->2
+"<iwir>"
+	"iwir" adv @advmod #4->2
+"<?>"
+	"?" sent @punct #5->2
+
+# sent_id = utexas:90
+# text = Jeʼ, xintzalijik.
+# text[spa] = Sí, regresé.
+# labels = tijonik-13 complete
+"<Jeʼ>"
+	"jeʼ" ij @root #1->0
+"<,>"
+	"," cm @punct #2->3
+"<xintzalijik>"
+	"tzalij" v iv perf s_sg1 @parataxis #3->1
+		"ik" aux @aux:ss #4->3
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:90.1
+# text = Jachin rukʼ katbʼe wi?
+# text[spa] = Con quién vas a ir?
+# labels = tijonik-14 complete
+"<Jachin>"
+	"jachin" prn itg @nmod #1->2
+"<rukʼ>"
+	"ukʼ" n rel px3sg @obl #2->3
+"<katbʼe>"
+	"bʼe" v iv impf s_sg2 @root #3->0
+"<wi>"
+	"wi" foc @advmod #4->3
+"<?>"
+	"?" sent @punct #5->3
+
+# sent_id = utexas:90.2
+# text = Jachin che kinya wi le wuj?
+# text[spa] = ¿A quién le doy el libro?
+# labels = tijonik-14 complete
+"<Jachin>"
+	"jachin" prn itg @nmod #1->3
+"<che>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @obl #3->4
+"<kinya>"
+	"yaʼ" v tv impf o_sg3 s_sg1 @root #4->0
+"<wi>"
+	"wi" foc @advmod #5->4
+"<le>"
+	"le" det @det #6->7
+"<wuj>"
+	"wuj" n @obj #7->4
+"<?>"
+	"?" sent @punct #8->4
+
+# sent_id = utexas:90.3
+# text = Jas ubʼiʼ le atinamit?
+# text[spa] = ¿Cuál es el nombre de tu pueblo?
+# labels = tijonik-14 complete
+"<Jas>"
+	"jas" prn itg @root #1->0
+"<ubʼiʼ>" 
+	"bʼiʼ" n px3sg @nsubj #2->1
+"<le>"
+	"le" det @det #3->4
+"<atinamit>"
+	"tinamit" n px2sg @nmod #4->2
+"<?>"
+	"?" sent @punct #5->1
+
+# sent_id = utexas:90.5
+# text = Jas uwach le rikil kakitij le aj Nawaljaʼ?
+# text[spa] = ¿Qué tipo de platillos comen los nahualatecos?
+# labels = tijonik-14 complete 
+"<Jas>"
+	"jas" prn itg @nmod #1->2
+"<uwach>"
+	"wach" n rel px3sg @obj #2->5
+"<le>"
+	"le" det @det #3->4
+"<rikil>"
+	"rikiʼl" n @nmod #4->2
+"<kakitij>"
+	"tij" v tv impf o_sg3 s_pl3 @root #5->0
+"<le>"
+	"le" det @det #6->7
+"<aj>"
+	"aj" n @nsubj #7->5
+"<Nawaljaʼ>"
+	"Nawaljaʼ" np top @compound #8->7
+"<?>"
+	"?" sent @punct #9->5
+
+# sent_id = utexas:90.6
+# text = Kakitij le kinaqʼ, le ichaj, le uwaʼl ik rukʼ lej.
+# text[spa] = Comen frijoles, hierbas, y caldo con tortillas.
+# labels = tijonik-14 complete
+"<Kakitij>"
+	"tij" v tv impf o_sg3 s_pl3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<kinaqʼ>"
+	"kinäqʼ" n @obj #3->1
+"<,>"
+	"," cm @punct #4->6
+"<le>"
+	"le" det @det #5->6
+"<ichaj>"
+	"ichaj" n @conj #6->3
+"<,>"
+	"," cm @punct #7->9
+"<le>"
+	"le" det @det #8->9
+"<uwaʼl>"
+	"waʼl" n px3sg @conj #9->3
+"<ik>"
+	"ik" n @compound #10->9
+"<rukʼ>"
+	"ukʼ" n rel px3sg @nmod #11->9
+"<lej>"
+	"lej" n @nmod #12->11
+"<.>"
+	"." sent @punct #13->1
+
+# sent_id = utexas:90.7
+# text = Jas ubʼanom le nuchʼutitat?
+# text[spa] = ¿Cómo le va a mi tío?
+# labels = tijonik-14 incomplete
+"<Jas>"
+	"jas" prn itg
+"<ubʼanom>"
+	"bʼan" v tv pp s_sg3
+"<le>"
+	"le" det
+"<nuchʼutitat>"
+	"chʼutitat" n px1sg
+"<?>"
+	"?" sent
+
+# sent_id = utexas:90.8
+# text = Jachike ikʼ le unimaqʼij le tinamit Nawaljaʼ?
+# text[spa] = ¿En qué mes es la feria del pueblo de Nahualá?
+# labels = tijonik-14 complete check-pronoun check-proper
+"<Jachike>"
+	"jachike" prn itg @det #1->2
+"<ikʼ>"
+	"ikʼ" n @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<unimaqʼij>"
+	"nimaqʼij" n px3sg @nsubj #4->2
+"<le>"
+	"le" det @det #5->6
+"<tinamit>"
+	"tinamit" n @nmod #6->4
+"<Nawaljaʼ>"
+	"Nawaljaʼ" np top @appos #7->6
+"<?>"
+	"?" sent @punct #8->2
+
+# sent_id = utexas:90.9
+# text = Jas che xechaqij le abʼix?
+# text[spa] = Por qué se secaron las milpas?
+# labels = tijonik-14 check-pronoun
+"<Jas>"
+	"jas" prn itg @nmod #1->3
+"<che>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @obl #3->4
+"<xechaqij>"
+	"chaqiʼj" v iv perf s_pl3 @root #4->0
+"<le>"
+	"le" det @det #5->6
+"<abʼix>"
+	"abʼix" n @nsubj #6->4
+"<?>"
+	"?" sent @punct #7->4
+
+# sent_id = utexas:90.10
+# text = Jas chemna kixpe chweʼq?
+# text[spa] = ¿Por qué no vienen mañana?
+# labels = tijonik-14 complete
+"<Jas>"
+	"jas" prn itg @nmod #1->3
+"<chemna>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @obl #3->5
+			"man" neg @advmod:neg #4->5
+"<kixpe>"
+	"pe" v iv impf s_pl2 @root #5->0
+"<chweʼq>"
+	"chweʼq" adv @advmod #6->5
+"<?>"
+	"?" sent @punct #7->5
+
+# sent_id = utexas:90.11
+# text = Jampa kojbʼe pa le tyox?
+# text[spa] = ¿Cuándo vamos a la iglesia?
+# labels = tijonik-14 complete
+"<Jampa>"
+	"jampaʼ" adv itg @advmod #1->2
+"<kojbʼe>"
+	"bʼe" v iv impf s_pl1 @root #2->0
+"<pa>"
+	"pa" pr @case #3->5
+"<le>"
+	"le" det @det #4->5
+"<tyox>"
+	"tyox" n @obl #5->2
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:90.12
+# text = E janipa le awalkʼwal e kʼolik?
+# text[spa] = ¿Cuántos hijos(as) tienes?
+# labels = tijonik-14 incomplete
+"<E>"
+	"e" pl
+"<janipa>"
+	"janipa" adv
+"<le>"
+	"le" det
+"<awalkʼwal>"
+	"awalkʼwal" n
+"<e>"
+	"e" pl
+"<kʼolik>"
+	"kʼo" part
+		"ik" mark
+"<?>"
+	"?" sent
+
+# sent_id = utexas:91
+# text = Kinusikʼij le nunan.
+# text[spa] = Mi mamá me llama.
+# labels = tijonik-15 complete
+"<Kinusikʼij>"
+	"sikʼij" v tv impf o_sg1 s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<nunan>"
+	"nan¹" n px1sg @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:92
+# text = Xixqachʼabʼej iwir.
+# text[spa] = Nosotros les hablamos a ustedes ayer.
+# labels = tijonik-15 complete
+"<Xixqachʼabʼej>"
+	"chʼabʼej" v tv perf o_pl2 s_pl1 @root #1->0
+"<iwir>"
+	"iwir" adv @advmod #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:93
+# text = La xaloqʼ jun alej?
+# text[spa] = ¿Compraste una (tu) tortilla?
+# labels = tijonik-15 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<xaloqʼ>"
+	"loqʼ" v tv perf o_sg3 s_sg2 @root #2->0
+"<jun>"
+	"jun" det @det #3->4
+"<alej>"
+	"lej" n px2sg @obj #4->2
+"<?>"
+	"?" sent @punct #5->2
+
+# sent_id = utexas:94
+# text = Jeʼ, xinloqʼo.
+# text[spa] = Sí, la compré.
+# labels = tijonik-15 complete
+"<Jeʼ>"
+	"jeʼ" ij @root #1->0
+"<,>"
+	"," cm @punct #2->3
+"<xinloqʼo>"
+	"loqʼ" v tv perf o_sg3 s_sg1 @parataxis #3->1
+		"u" aux @aux:ss #4->2
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:95
+# text = La xibʼan le ichak?
+# text[spa] = ¿Hicieron (uds.) su trabajo?
+# labels = tijonik-15 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<xibʼan>"
+	"bʼan" v tv perf o_sg3 s_pl2 @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<ichak>"
+	"chak" n px2pl @obj #4->2
+"<?>"
+	"?" sent @punct #5->2
+
+# sent_id = utexas:96
+# text = Jeʼ xqabʼano.
+# text[spa] = Sí, lo hicimos.
+# labels = tijonik-15 complete
+"<Jeʼ>"
+	"jeʼ" ij @root #1->0
+"<xqabʼano>"
+	"bʼan" v tv perf o_sg3 s_pl1 @parataxis #2->1
+		"u" aux @aux:ss #3->2
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:97
+# text = Na xqabʼan taj.
+# text[spa] = No, no lo hicimos
+# labels = tijonik-15 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<xqabʼan>"
+	"bʼan" v tv perf o_sg3 s_pl1 @root #2->0
+"<taj>"
+	"taj" neg fin @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:98
+# text = La xinutzukuj le tijoxel?
+# text[spa] = ¿Me buscó el estudiante?
+# labels = tijonik-15 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<xinutzukuj>"
+	"tzukuj" v tv perf o_sg1 s_sg3 @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<tijoxel>"
+	"tijoxel" n @nsubj #4->2
+"<?>"
+	"?" sent @punct #5->2
+
+# sent_id = utexas:99
+# text = Jeʼ, xatutzukuj.
+# text[spa] = Sí, te buscó.
+# labels = tijonik-15 complete
+"<Jeʼ>"
+	"jeʼ" ij @root #1->0
+"<,>"
+	"," cm @punct #2->3
+"<xatutzukuj>"
+	"tzukuj" v tv perf o_sg2 s_sg3 @parataxis #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:100
+# text = Na xatutzukuj taj.
+# text[spa] = No te buscó.
+# labels = tijonik-15 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<xatutzukuj>"
+	"tzukuj" v tv perf o_sg2 s_sg3 @root #2->0
+"<taj>"
+	"taj" neg fin @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:101
+# text = Kenchʼabʼej le akʼalabʼ.
+# text[spa] = @@@
+# labels = tijonik-15 complete
+"<Kenchʼabʼej>"
+	"chʼabʼej" v tv impf o_pl3 s_sg1 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<akʼalabʼ>"
+	"akʼal" n pl @obj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:102
+# text = Na xinwil ta le meʼs pa ja.
+# text[spa] = No vi el gato en la casa.
+# labels = tijonik-15 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<xinwil>"
+	"il" v tv perf o_sg3 s_sg1 @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<le>"
+	"le" det @det #4->5
+"<meʼs>"
+	"meʼs" n @obj #5->2
+"<pa>"
+	"pa" pr @case #6->7
+"<ja>"
+	"ja" n @obl #7->2
+"<.>"
+	"." sent @punct #8->2
+
+# sent_id = utexas:103
+# text = Xatriyeʼj le a Tun pa le bʼe.
+# text[spa] = Antonio te esperó en el camino.
+# labels = tijonik-15 complete
+"<Xatriyeʼj>"
+	"iyeʼj" v tv perf o_sg2 s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->4
+"<a>"
+	"ala" clf m @clf #3->4
+"<Tun>"
+	"Tun" np ant m @nsubj #4->1
+"<pa>"
+	"pa" pr @case #5->7
+"<le>"
+	"le" det @det #6->7
+"<bʼe>"
+	"bʼe" n @obl #7->1
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:104
+# text = Xinsikʼij la.
+# text[spa] = Usted me llamó (formal).
+# labels = tijonik-15 complete
+"<Xinsikʼij>"
+	"sikʼij" v tv perf o_sg3 s_sg1 @root #1->0
+"<la>"
+	"la" part frm @aux #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:105
+# text = Xinsikʼij alaq.
+# text[spa] = Ustedes me llamaron (formal).
+# labels = tijonik-15 complete
+"<Xinsikʼij>"
+	"sikʼij" v tv perf o_sg3 s_sg1 @root #1->0
+"<alaq>"
+	"alaq" part frm @aux #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:106
+# text = Xesikʼij la.
+# text[spa] = Usted (formal) los llamó.
+# labels = tijonik-15 complete
+"<Xesikʼij>"
+	"sikʼij" v tv perf o_pl3 s_sg3 @root #1->0
+"<la>"
+	"la" part frm @aux #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:107
+# text = Kinkowinik kimbʼek.
+# text[spa] = Puedo ir.
+# labels = tijonik-16 complete
+"<Kinkowinik>"
+	"kowin" v iv impf s_sg1 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<kimbʼek>"
+	"bʼe" v iv impf s_sg1 @xcomp #3->1
+		"ik" aux @aux:ss #4->3
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:108
+# text = Xatkowinik xabʼano.
+# text[spa] = Pudiste hacerlo.
+# labels = tijonik-16 complete check-compl
+"<Xatkowinik>"
+	"kowin" v iv perf s_sg2 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<xabʼano>"
+	"bʼan" v tv perf o_sg3 s_sg2 @xcomp #3->1
+		"u" aux @aux:ss #4->3
+"<.>" 
+	"." sent @punct #5->1
+
+# sent_id = utexas:109
+# text = Kinkowinik kinkʼam bʼi le pwaq.
+# text[spa] = Puedo traer el dinero.
+# labels = tijonik-16 complete
+"<Kinkowinik>"
+	"kowin" v iv impf s_sg1 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<kinkʼam>"
+	"kʼam" v tv impf o_sg3 s_sg1 @xcomp #3->1
+"<bʼi>"
+	"bʼi" adv dir @advmod #4->3
+"<le>"
+	"le" det @det #5->6
+"<pwaq>"
+	"pwaq" n @obj #6->3
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:110
+# text = La kakowin alaq kintoʼ alaq?
+# text[spa] = ¿Pueden ustedes (formal) ayudarme?
+# labels = tijonik-16 complete check-verb
+"<La>"
+	"la" qst @discourse #1->2
+"<kakowin>"
+	"kowin" v iv impf s_sg3 @root #2->0
+"<alaq>"
+	"alaq" part frm @aux #3->2
+"<kintoʼ>"
+	"toʼ" v tv impf o_sg1 s_sg3 @xcomp #4->2
+"<alaq>"
+	"alaq" part frm @aux #5->4
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:111
+# text = Kawaj kimbʼe pa tinamit.
+# text[spa] = (Yo) quiero ir al pueblo.
+# labels = tijonik-16 complete check-verb
+"<Kawaj>"
+	"aj" v tv impf o_sg3 s_sg1 @root #1->0
+"<kimbʼe>"
+	"bʼe" v iv impf s_sg1 @ccomp #2->1
+"<pa>"
+	"pa" pr @case #3->4
+"<tinamit>"
+	"tinamit" n @obl #4->2
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:112
+# text = Xawaj xabʼano.
+# text[spa] = Querías hacerlo.
+# labels = tijonik-16 complete check-verb
+"<Xawaj>"
+	"aj" v tv perf o_sg3 s_sg2 @root #1->0
+"<xabʼano>"
+	"bʼan" v tv perf o_sg3 s_sg2 @ccomp #2->1
+		"u" aux @aux:ss #3->2
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:113
+# text = La kaj la kujtzalij la aninaq?
+# text[spa] = ¿Quiere usted (formal) que (nosotros) regresemos rápido?
+# labels = tijonik-16 complete
+"<La>" 
+	"la" qst @discourse #1->2
+"<kaj>"
+	"aj" v tv impf o_sg3 s_sg3 @root #2->0
+"<la>"
+	"la" part frm @aux #3->2
+"<kujtzalij>"
+	"tzalij" v iv impf s_pl1 @ccomp #4->2
+"<la>"
+	"la" part frm @aux #5->4
+"<aninaq>"
+	"aninäq" adv @advmod #6->4
+"<?>"
+	"?" sent @punct #7->2
+
+# sent_id = utexas:114
+# text = La kaj la kojbʼeʼ pa le chomal chweʼq?
+# text[spa] = ¿Quiere usted (formal) que (nosotros) vayamos a la reunión mañana?
+# labels = tijonik-16 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<kaj>"
+	"aj" v tv impf o_sg3 s_sg3 @root #2->0
+"<la>"
+	"la" part frm @aux #3->2
+"<kojbʼeʼ>"
+	"bʼe" v iv impf s_pl1 @ccomp #4->2
+"<pa>"
+	"pa" pr @case #5->7
+"<le>"
+	"le" det @det #6->7
+"<chomal>"
+	"chomal" n @obl #7->4
+"<chweʼq>"
+	"chweʼq" adv @advmod #8->4
+"<?>"
+	"?" sent @punct #9->2
+
+# sent_id = utexas:115
+# text = Kʼo jun xaʼr pa ja.
+# text[spa] = Hay un vaso en la casa.
+# labels = tijonik-17 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<jun>" 
+	"jun" det ind @det #2->3
+"<xaʼr>"
+	"xaʼr" n @nsubj #3->1
+"<pa>"
+	"pa" pr @case #4->5
+"<ja>"
+	"ja" n @obl #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:116
+# text = Xekos le ixoqibʼ pa le bʼe.
+# text[spa] = Las mujeres se cansaron en el camino.
+# labels = tijonik-17 complete
+"<Xekos>"
+	"kos" v iv perf s_pl3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<ixoqibʼ>"
+	"ixoq" n pl @nsubj #3->1
+"<pa>"
+	"pa" pr @case #4->6
+"<le>"
+	"le" det @det #5->6
+"<bʼe>"
+	"bʼe" n @obl #6->1
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:117
+# text = Kape le a Wel pa Nawaljaʼ.
+# text[spa] = Manuel viene de Nahualá./Manuel viene a Nahualá.
+# labels = tijonik-17 complete
+"<Kape>"
+	"pe" v iv impf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->4
+"<a>"
+	"ala" clf m @clf #3->4
+"<Wel>"
+	"Wel" np ant m @nsubj #4->1
+"<pa>"
+	"pa" pr @case #5->6
+"<Nawaljaʼ>"
+	"Nawaljaʼ" np top @obl #6->1
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:118
+# text = Kintzalij pa le nutinamit.
+# text[spa] = Regreso a mi pueblo.
+# labels = tijonik-17 complete
+"<Kintzalij>"
+	"tzalij" v iv impf s_sg1 @root #1->0
+"<pa>"
+	"pa" pr @case #2->4
+"<le>"
+	"le" det @det #3->4
+"<nutinamit>"
+	"tinamit" n px1sg @obl #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:119
+# text = Kul le al Weʼl pa Austin chaqʼabʼ kamik.
+# text[spa] = Manuela llega (aquí) a Austin hoy en la noche.
+# labels = tijonik-17 complete
+"<Kul>"
+	"ul" v iv impf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->4
+"<al>"
+	"ali" clf f @clf #3->4
+"<Weʼl>"
+	"Weʼl" np ant f @nsubj #4->1
+"<pa>"
+	"pa" pr @case #5->6
+"<Austin>"
+	"Austin" np top @obl #6->1
+"<chaqʼabʼ>"
+	"chaqʼabʼ" adv @advmod #7->1
+"<kamik>"
+	"kamik" adv @advmod #8->1
+"<.>"
+	"." sent @punct #9->1
+
+# sent_id = utexas:120
+# text = Pa le jun wokaj ubʼiʼ Chi Masat kape wi le achi.
+# text[spa] = El hombre viene de un caserío que se llama Chi Masat
+# labels = tijonik-17 complete
+"<Pa>"
+	"pa" pr @case #1->4
+"<le>"
+	"le" det @det #2->4
+"<jun>"
+	"jun" det ind @det #3->4
+"<wokaj>"
+	"wokaj" n @obl #4->8
+"<ubʼiʼ>"
+	"bʼiʼ" n px3sg @nmod #5->4
+"<Chi>"
+	"Chi" np top @appos #6->5
+"<Masat>"
+	"Masat" np top @flat #7->6
+"<kape>"
+	"pe" v iv impf s_sg3 @root #8->0
+"<wi>"
+	"wi" foc @advmod #9->8
+"<le>"
+	"le" det @det #10->11
+"<achi>"
+	"achi" n @nsubj #11->8
+"<.>"
+	"." sent @punct #12->8
+
+# sent_id = utexas:121
+# text = E kʼi taq le cheʼ tikil chi le bʼe.
+# text[spa] = Hay muchos árboles plantados al borde del camino.
+# labels = tijonik-17 check-adj-verb check-plural
+"<E>"
+	"e" pl @aux #1->6
+"<kʼi>"
+	"kʼi" adj @amod #2->5
+"<taq>"
+	"taq" pl @det #3->5
+"<le>"
+	"le" det @det #4->5
+"<cheʼ>"
+	"cheʼ" n @nsubj #5->6
+"<tikil>"
+	"tikil" adj @root #6->0
+"<chi>"
+	"chi" pr @case #7->9
+"<le>"
+	"le" det @det #8->9
+"<bʼe>"
+	"bʼe" n @obl #9->6
+"<.>"
+	"." sent @punct #10->6
+
+# sent_id = utexas:123.1
+# text = Le roʼch le a Teʼk kʼo chwach le ukʼay le nunan.
+# text[spa] = La casa de Diego está frente a la venta de mi madre.
+# labels = tijonik-17 complete
+"<Le>"
+	"le" det @det #1->2
+"<roʼch>"
+	"oʼch" n px3sg @nsubj #2->6
+"<le>"
+	"le" det @det #3->5
+"<a>"
+	"ala" clf m @clf #4->5
+"<Teʼk>"
+	"Teʼk" np ant m @nmod #5->2
+"<kʼo>"
+	"kʼo" part @root #6->0
+"<chwach>"
+	"chi" pr @case #7->8
+		"wach" n rel px3sg @obl #8->6
+"<le>"
+	"le" det @det #9->10
+"<ukʼay>"
+	"kʼay" n px3sg @nmod #10->8
+"<le>"
+	"le" det @det #11->12
+"<nunan>"
+	"nan²" n px1sg @nmod #12->10
+"<.>"
+	"." sent @punct #13->6
+
+# sent_id = utexas:123.2
+# text = Xukʼut le Kʼicheʼ chʼabʼal le al Nela chqawach.
+# text[spa] = Manuela nos enseñó el idioma kʼicheʼ
+# labels = tijonik-17 complete
 "<Xukʼut>"
 	"kʼut" v tv perf o_sg3 s_sg3 @root #1->0
 "<le>"
@@ -61,12 +2252,3607 @@
 "<le>"
 	"le" det @det #5->7
 "<al>"
-	"ali" clf f @det #6->7
+	"ali" clf f @clf #6->7
 "<Nela>"
-	"Nela" np ant f @nsubj #7->9
+	"Nela" np ant f @nsubj #7->1
 "<chqawach>"
 	"chi" pr @case #8->9
 		"wach" n rel px1pl @obl #9->1
 "<.>"
 	"." sent @punct #10->1
+
+# sent_id = utexas:124
+# text = Kʼo chwa roʼch le pare.
+# text[spa] = (Él/ella) está en la casa del sacerdote.
+# labels = tijonik-17 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<chwa>"
+	"chi" pr @case #2->3
+		"wach" n rel px3sg @obl #3->1
+"<roʼch>"
+	"oʼch" n px3sg @nmod #4->3
+"<le>"
+	"le" det @det #5->6
+"<pare>"
+	"pare" n @nmod #6->4
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:125
+# text = Xaya jun awuj chwech.
+# text[spa] = Me diste un libro tuyo.
+# labels = tijonik-17 complete
+"<Xaya>"
+	"yaʼ" v tv perf o_sg3 s_sg2 @root #1->0
+"<jun>"
+	"jun" det ind @det #2->3
+"<awuj>"
+	"wuj" n px2sg @obj #3->1
+"<chwech>"
+	"chi" pr @case #4->5
+		"ech" n rel px1sg @obl #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:126
+# text = Chuxe le qachomal kaqatij wi jun qameqʼin.
+# text[spa] = Antes de la (nuestra) reunión nos tomamos una bebida caliente (café, atol).
+# labels = tijonik-17 complete
+"<Chuxe>"
+	"chi" pr @case #1->2
+		"xeʼ" n rel px3sg @obl #2->5
+"<le>"
+	"le" det @det #3->4
+"<qachomal>"
+	"chomal" n px1pl @nmod #4->2
+"<kaqatij>"
+	"tij" v tv impf o_sg3 s_pl1 @root #5->0
+"<wi>"
+	"wi" foc @advmod #6->5
+"<jun>"
+	"jun" det ind @det #7->8
+"<qameqʼin>"
+	"qameqʼin" n @obj #8->5
+"<.>"
+	"." sent @punct #9->5
+
+# sent_id = utexas:127
+# text = Xeqil le chikop puwi le ja.
+# text[spa] = Vimos a los animales encima de la casa.
+# labels = tijonik-17 complete
+"<Xeqil>"
+	"il" v tv perf o_pl3 s_pl1 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<chikop>"
+	"chikop" n @obl #3->1
+"<puwi>"
+	"pa" pr @case #4->5
+		"wiʼ" n rel px3sg @obl #5->1
+"<le>"
+	"le" det @det #6->7
+"<ja>"
+	"ja" n @nmod #7->5
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:128
+# text = Le tzʼibʼabʼal wech in.
+# text[spa] = El lápiz es mío.
+# labels = tijonik-20 incomplete
+"<Le>"
+	"le" det @det
+"<tzʼibʼabʼal>"
+	"tzʼibʼabʼal" n
+"<wech>"
+	"ech" n rel px1sg
+"<in>"
+	"in" prn pers p1 sg
+"<.>"
+	"." sent
+
+# sent_id = utexas:129
+# text = Ronojel le ulew ech alaq.
+# text[spa] = Toda esta tierra es de ustedes (formal)
+# labels = tijonik-20 incomplete
+"<Ronojel>"
+	"onojel" n rel px3sg
+"<le>"
+	"le" det
+"<ulew>"
+	"ulew" n
+"<ech>"
+	"ech" n rel
+"<alaq>"
+	"alaq" part frm
+"<.>"
+	"." sent
+
+# sent_id = utexas:130
+# text = Sibʼalaj utz kinwil le atzʼyaq rech Nahuala.
+# text[spa] = Me gusta mucho la ropa de Nahualá.
+# labels = tijonik-20 complete
+"<Sibʼalaj>"
+	"sibʼalaj" adv @advmod #1->2
+"<utz>"
+	"utz" adv @advmod #2->3
+"<kinwil>"
+	"il" v tv impf o_sg3 s_sg1 @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<atzʼyaq>"
+	"atzʼyaq" n @obj #5->3
+"<rech>"
+	"ech" n rel px3sg @nmod #6->5
+"<Nahuala>"
+	"Nahuala" np top @nmod #7->6
+"<.>"
+	"." sent @punct #8->3
+
+# sent_id = utexas:131
+# text = Jawi kʼo wi le wuj re le qatijonik?
+# text[spa] = ¿Dónde está la hoja de/sobre/a cerca de la lección?
+# labels = tijonik-20 complete
+"<Jawi>"
+	"jawi" adv itg @advmod #1->2
+"<kʼo>"
+	"kʼo" part @root #2->0
+"<wi>"
+	"wi" foc @advmod #3->2
+"<le>"
+	"le" det @det #4->5
+"<wuj>"
+	"wuj" n @nsubj #5->2
+"<re>"
+	"ech" n rel px3sg @nmod #6->5
+"<le>"
+	"le" det @det #7->8
+"<qatijonik>"
+	"tijonik" n px1pl @nmod #8->6
+"<?>"
+	"?" sent @punct #9->2
+
+# sent_id = utexas:132
+# text = Kubʼan le wa rech le nukʼulanem.
+# text[spa] = Él/ella hace la comida para mi boda.
+# labels = tijonik-20 complete check-attachment
+"<Kubʼan>"
+	"bʼan" v tv impf o_sg3 s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<wa>"
+	"wa" n @obj #3->1
+"<rech>"
+	"ech" n rel px3sg @obl #4->1
+"<le>"
+	"le" det @det #5->6
+"<nukʼulanem>"
+	"kʼulanem" n px1sg @nmod #6->4
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:133
+# text = Xloqʼ ulew iwech ix.
+# text[spa] = La tierra se compró para ustedes (informal).
+# labels = tijonik-20 complete
+"<Xloqʼ>"
+	"loqʼ" v tv pass perf s_sg3 @root #1->0
+"<ulew>"
+	"ulew" n @nsubj #2->1
+"<iwech>"
+	"ech" n rel px2pl @obl #3->1
+"<ix>"
+	"ix" prn pers p2 pl @nmod #4->3
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:134
+# text = Jas kubʼij chwe?
+# text[spa] = ¿Qué me está diciendo?/¿Qué me dice? (él)
+# labels = tijonik-20 complete
+"<Jas>"
+	"jas" prn itg @obj #1->2
+"<kubʼij>"
+	"bʼij" v tv impf o_sg3 s_sg3 @root #2->0
+"<chwe>"
+	"chi" pr @case #3->4
+		"ech" n rel px1sg @obl #4->2
+"<?>"
+	"?" sent @punct #5->2
+
+# sent_id = utexas:135
+# text = Xopan le wuj awukʼ rumal wech in.
+# text[spa] = El libro vino contigo por causa mía.
+# labels = tijonik-20 complete
+"<Xopan>"
+	"opan" v iv perf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<wuj>"
+	"wuj" n @nsubj #3->1
+"<awukʼ>"
+	"ukʼ" n rel px2sg @obl #4->1
+"<rumal>"
+	"umal" n rel px3sg @obl #5->1
+"<wech>"
+	"ech" n rel px1sg @nmod #6->5
+"<in>"
+	"in" prn pers p1 sg @nmod #7->6
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:136
+# text = Kinchʼaw rukʼ le nunan pa le chʼawebʼal.
+# text[spa] = Hablo con mi mamá por teléfono.
+# labels = tijonik-20 complete
+"<Kinchʼaw>"
+	"chʼaw" v iv impf s_sg1 @root #1->0
+"<rukʼ>"
+	"ukʼ" n rel px3sg @obl #2->1
+"<le>"
+	"le" det @det #3->4
+"<nunan>"
+	"nan¹" n px1sg @nmod #4->2
+"<pa>"
+	"pa" pr @case #5->7
+"<le>"
+	"le" det @det #6->7
+"<chʼawebʼal>"
+	"chʼawebʼal" n @obl #7->1
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:137
+# text = Xopan le wuj awukʼ rumal wech in.
+# text[spa] = El libro vino contigo por causa mía.
+# labels = tijonik-20 complete check-relational
+"<Xopan>"
+	"opan" v iv perf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<wuj>"
+	"wuj" n @nsubj #3->1
+"<awukʼ>"
+	"ukʼ" n rel px2sg @obl #4->1
+"<rumal>"
+	"umal" n rel px3sg @obl #5->1
+"<wech>"
+	"ech" n rel px1sg @nmod #6->5
+"<in>"
+	"in" prn pers p1 sg @nmod #7->6
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:138.1
+# text = Na kinbʼe ta pa le nimatijobʼal rumal xinkosik.
+# text[spa] = No voy a la escuela porque estoy cansado.
+# labels = tijonik-20 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kinbʼe>"
+	"bʼe" v iv impf s_sg1 @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<pa>"
+	"pa" pr @case #4->6
+"<le>"
+	"le" det @det #5->6
+"<nimatijobʼal>"
+	"nimatijobʼal" n @obl #6->2
+"<rumal>"
+	"rumal" cnjsub @mark #7->8
+"<xinkosik>"
+	"kos" v iv perf s_sg1 @advcl #8->2
+		"ik" aux @aux:ss #9->8
+"<.>"
+	"." sent @punct #10->2
+
+# sent_id = utexas:138.2
+# text = Xinkosik, rumal riʼ na kimbʼe ta pa le tijobʼal.
+# text[spa] = Estoy cansado. Por eso no voy a la escuela.
+# labels = tijonik-20 complete
+"<Xinkosik>"
+	"kos" v iv perf s_sg1 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<,>"
+	"," cm @punct #3->7
+"<rumal>"
+	"umal" n rel px3sg @obl #4->7
+"<riʼ>"
+	"riʼ" prn dem @nmod #5->
+"<na>"
+	"na" neg @advmod:neg #6->
+"<kimbʼe>"
+	"bʼe" v iv impf s_sg1 @parataxis #7->1
+"<pa>"
+	"pa" pr @case #8->10
+"<le>"
+	"le" det @det #9->10
+"<tijobʼal>"
+	"tijobʼal" n @obl #10->7
+"<.>"
+	"." sent @punct #11->1
+
+# sent_id = utexas:139
+# text = Ronojel qʼij kinchʼaj le nuware.
+# text[spa] = Me lavo los dientes todos los días.
+# labels = tijonik-20 complete
+"<Ronojel>"
+	"onojel" n rel px3sg @obl #1->3
+"<qʼij>"
+	"qʼij" n @nmod #2->1
+"<kinchʼaj>"
+	"chʼaj" v tv impf o_sg3 s_sg1 @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<nuware>"
+	"ware" n px1sg @obj #5->3
+"<.>"
+	"." sent @punct #6->3
+
+# sent_id = utexas:140
+# text = Utukel kakanaj kan pa ja.
+# text[spa] = Se queda en casa solo.
+# labels = tijonik-20 complete
+"<Utukel>"
+	"tukel" n rel px3sg @obl #1->2
+"<kakanaj>"
+	"kanaj" v iv impf s_sg3 @root #2->0
+"<kan>"
+	"kan" adv dir @advmod #3->2
+"<pa>"
+	"pa" pr @case #4->5
+"<ja>"
+	"ja" n @obl #5->2
+"<.>"
+	"." sent @punct #6->2
+
+# sent_id = utexas:141
+# text = Le woʼch kʼo chunaqaj le nimatijobʼal.
+# text[spa] = Mi casa esta cerca de la universidad.
+# labels = tijonik-22 complete
+"<Le>"
+	"le" det @det #1->2
+"<woʼch>"
+	"oʼch" n px1sg @nsubj #2->3
+"<kʼo>"
+	"kʼo" part @root #3->0
+"<chunaqaj>"
+	"chi" pr @case #4->5
+		"naqaj" n rel px3sg @obl #5->3
+"<le>"
+	"le" det @det #6->7
+"<nimatijobʼal>"
+	"nimatijobʼal" n @nmod #7->3
+"<.>"
+	"." sent @punct #8->3
+
+# sent_id = utexas:142
+# text = Naqaj kintʼuyiʼ wi chawe.
+# text[spa] = Estoy sentado cerca de ti.
+# labels = tijonik-22 incomplete check-adj
+"<Naqaj>"
+	"naqaj" adj
+"<kintʼuyiʼ>"
+	"tʼuyiʼ" v tv pass impf s_sg1 @root
+"<wi>"
+	"wi" foc @advmod
+"<chawe>"
+	"chi" pr @case
+		"ech" n rel px2sg @obl
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:143
+# text = Naj kʼo wi le woʼch chuwach le tijobʼal.
+# text[spa] = Mi casa está más lejos que la iglesia (visto desde un tercer punto).
+# labels = tijonik-22 incomplete check-adv
+"<Naj>"
+	"naj" adv @advmod
+"<kʼo>"
+	"kʼo" part @root
+"<wi>"
+	"wi" foc @advmod
+"<le>"
+	"le" det @det
+"<woʼch>"
+	"oʼch" n px1sg @nsubj
+"<chuwach>"
+	"chi" pr @case
+		"wach" n rel px3sg @obl
+"<le>"
+	"le" det @det
+"<tijobʼal>"
+	"tijobʼal" n @nmod
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:144
+# text = Naj kʼo wi le woʼch chuwach le tijobʼal.
+# text[spa] = Mi casa está más lejos que la iglesia (visto desde un tercer punto).
+# labels = tijonik-22 incomplete
+"<Naj>"
+	"naj" adv
+"<kʼo>"
+	"kʼo" part
+"<wi>"
+	"wi" foc
+"<le>"
+	"le" det
+"<woʼch>"
+	"oʼch" n px1sg
+"<chuwach>"
+	"chi" pr
+		"wach" n rel px3sg
+"<le>"
+	"le" det
+"<tijobʼal>"
+	"tijobʼal" n
+"<.>"
+	"." sent
+
+# sent_id = utexas:145
+# text = Chiʼ kewar wi le akʼalabʼ.
+# text[spa] = Los niños duermen aquí.
+# labels = tijonik-22 complete
+"<Chiʼ>"
+	"chiʼ" adv @advmod #1->2
+"<kewar>"
+	"war" v iv impf s_pl3 @root #2->0
+"<wi>"
+	"wi" foc @advmod #3->2
+"<le>"
+	"le" det @det #4->5
+"<akʼalabʼ>"
+	"akʼal" n pl @nsubj #5->2
+"<.>"
+	"." sent @punct #6->2
+
+# sent_id = utexas:146
+# text = Kaqariq qibʼ chweʼq.
+# text[spa] = Nos encontramos/juntamos mañana.
+# labels = tijonik-24 complete
+"<Kaqariq>"
+	"riq" v tv impf o_sg3 s_pl1 @root #1->0
+"<qibʼ>"
+	"ibʼ" n rel px1pl @obj #2->1
+"<chweʼq>"
+	"chweʼq" adv @advmod #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:147
+# text = Qaqil chi (na) qibʼ!
+# text[spa] = Nos vemos!
+# labels = tijonik-24 incomplete
+"<Qaqil>"
+	"aqil" n px1pl
+"<chi>"
+	"chi" pr
+"<na>"
+	"na" adv fut
+"<qibʼ>"
+	"ibʼ" n rel px1pl
+"<!>"
+	"!" sent
+
+# sent_id = utexas:148
+# text = Xinloqʼ jun ilbʼal wibʼ.
+# text[spa] = Me compré un mi espejo.
+# labels = tijonik-24 complete
+"<Xinloqʼ>"
+	"loqʼ" v tv perf o_sg3 s_sg1 @root #1->0
+"<jun>"
+	"jun" det ind @det #2->3
+"<ilbʼal>"
+	"ilbʼal" n @obj #3->1
+"<wibʼ>"
+	"ibʼ" n rel px1sg @obl #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:149
+# text = Jas le ukʼexbʼem ribʼ le jun rukʼ le jun chik?
+# text[spa] = ¿Cuál es la diferencia entre éste y el otro?
+# labels = tijonik-24 incomplete
+"<Jas>"
+	"jas" prn itg @nsubj
+"<le>"
+	"le" det @det
+"<ukʼexbʼem>"
+	"kʼexbʼem" n px3sg @root
+"<ribʼ>"
+	"ibʼ" n rel px3sg
+"<le>"
+	"le" det @det
+"<jun>"
+	"jun" num
+"<rukʼ>"
+	"ukʼ" n rel px3sg
+"<le>"
+	"le" det @det
+"<jun>"
+	"jun" num
+"<chik>"
+	"chik" part
+"<?>"
+	"?" sent
+
+# sent_id = utexas:150
+# text = Kʼo jun qariqoj qibʼ chweʼq.
+# text[spa] = Tenemos una reunión mañana.
+# labels = tijonik-24 complete
+"<Kʼo>"
+	"kʼo" part @root #1->0
+"<jun>"
+	"jun" det ind @det #2->3
+"<qariqoj>"
+	"riqoj" n px1pl @nsubj #3->1
+"<qibʼ>"
+	"ibʼ" n rel px1pl @obl #4->1
+"<chweʼq>"
+	"chweʼq" adv @advmod #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:151
+# text = Keʼtzʼan le akʼalabʼ chech owan ibʼ.
+# text[spa] = Los niños juegan escondido.
+# labels = tijonik-24 complete check-verb check-relational
+"<Keʼtzʼan>"
+	"etzʼan" v iv impf s_pl3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<akʼalabʼ>"
+	"akʼal" n pl @nsubj #3->1
+"<chech>"
+	"chi" pr @case #4->5
+		"ech" n rel px3sg @obl #5->1
+"<owan>"
+	"owan" n @nmod #6->5
+"<ibʼ>"
+	"ibʼ" n rel @nmod #7->6
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:152
+# text = Are le nuchak jun tzuqbʼal wibʼ.
+# text[spa] = Mi trabajo es lo que me mantiene.
+# labels = tijonik-24 incomplete check-pronoun
+"<Are>"
+	"are" foc
+"<le>"
+	"le" det
+"<nuchak>"
+	"chak" n px1sg
+"<jun>"
+	"jun" adj
+"<tzuqbʼal>"
+	"tzuqbʼal" n
+"<wibʼ>"
+	"ibʼ" n rel px1sg
+"<.>"
+	"." sent
+
+# sent_id = utexas:154
+# text = Le e kʼaʼna taq tzʼiʼ.
+# text[spa] = Los perros bravos.
+# labels = tijonik-28 complete
+"<Le>"
+	"le" det @det #1->5
+"<e>"
+	"e" pl @det #2->5
+"<kʼaʼna>"
+	"kʼaʼn" adj attr @amod #3->5
+"<taq>"
+	"taq" pl @det #4->5
+"<tzʼiʼ>"
+	"tzʼiʼ" n @root #5->0
+"<.>"
+	"." sent @punct #6->5
+
+# sent_id = utexas:155
+# text = Kʼakʼ le nupoʼt.
+# text[spa] = Mi huipil es nuevo.
+# labels = tijonik-28 complete
+"<Kʼakʼ>"
+	"kʼakʼ" adj @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<nupoʼt>"
+	"poʼt" n px1sg @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:156
+# text = Waʼ we qʼij, nim ubʼantajik.
+# text[spa] = Este es un día importante.
+# text[spa'] = Este día, su importancia es grande.
+# labels = tijonik-28 complete
+"<Waʼ>"
+	"waʼ" prn dem @det #1->3
+"<we>"
+	"we" det @det #2->3
+"<qʼij>"
+	"qʼij" n @dislocated #3->5
+"<,>"
+	"," cm @punct #4->5
+"<nim>"
+	"nim" adj @root #5->0
+"<ubʼantajik>"
+	"bʼantajik" n px3sg @nsubj #6->5
+"<.>"
+	"." sent @punct #7->5
+
+# sent_id = utexas:157
+# text = Le itzela winaq.
+# text[spa] = Mala persona.
+# labels = tijonik-28 complete check-adj
+"<Le>"
+	"le" det @det #1->3
+"<itzela>"
+	"itzel" adj attr @amod #2->3
+"<winaq>"
+	"winaq" n @root #3->0
+"<.>"
+	"." sent @punct #4->3
+
+# sent_id = utexas:158
+# text = Le e qʼeqa taq meʼs.
+# text[spa] = Los gatos negros.
+# labels = tijonik-28 complete check-adj
+"<Le>"
+	"le" det @det #1->5
+"<e>"
+	"e" pl @det #2->5
+"<qʼeqa>"
+	"qʼeq" adj attr @amod #3->5
+"<taq>"
+	"taq" pl @det #4->5
+"<meʼs>"
+	"meʼs" n @root #5->0
+"<.>"
+	"." sent @punct #6->5
+
+# sent_id = utexas:159.1
+# text = Kematzʼibʼ.
+# text[spa] = Computadora.
+# labels = tijonik-28 complete
+"<Kematzʼibʼ>"
+	"kematzʼibʼ" n @root #1->0
+"<.>"
+	"." sent @punct #2->1
+
+# sent_id = utexas:159.2
+# text = Xinloqʼ le nukʼakʼapoʼt.
+# text[spa] = Me compré un (mi) huipil nuevo.
+# labels = tijonik-28 complete
+"<Xinloqʼ>"
+	"loqʼ" v tv perf o_sg3 s_sg1 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<nukʼakʼapoʼt>"
+	"kʼakʼapoʼt" n px1sg @obj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:160
+# text = E nitzʼaʼq le taq imul.
+# text[spa] = Los conejos son pequeños.
+# labels = tijonik-28 complete check-plur
+"<E>"
+	"e" pl @aux #1->2
+"<nitzʼaʼq>"
+	"nitzʼ" adj pl @root #2->0
+"<le>"
+	"le" det @det #3->5
+"<taq>"
+	"taq" pl @det #4->5
+"<imul>"
+	"imul" n @nsubj #5->2
+"<.>"
+	"." sent @punct #6->2
+
+# sent_id = utexas:161
+# text = Upimal le lej.
+# text[spa] = El grosor de la tortilla.
+# labels = tijonik-29 complete
+"<Upimal>"
+	"pimal" n px3sg @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<lej>"
+	"lej" n @nmod #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:162.1
+# text = Ukiʼil le taraʼs.
+# text[spa] = La dulzura del durazno.
+# labels = tijonik-29 complete
+"<Ukiʼil>"
+	"kiʼil" n px3sg @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<taraʼs>"
+	"taraʼs" n @nmod #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:162.2
+# text = Sibʼalaj nichʼ le nuchʼichʼ.
+# text[spa] = Mi carro es muy pequeño
+# labels = tijonik-29 complete
+"<Sibʼalaj>"
+	"sibʼalaj" adv @advmod #1->2
+"<nichʼ>"
+	"nichʼ" adj @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<nuchʼichʼ>"
+	"chʼichʼ" n px1sg @nsubj #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:163
+# text = Sibʼalaj kaq le apalaj.
+# text[spa] = Tu cara está muy roja.
+# labels = tijonik-29 complete
+"<Sibʼalaj>"
+	"sibʼalaj" adv @advmod #1->2
+"<kaq>"
+	"kaq" adj @root #2->0
+"<le>" 
+	"le" det @det #3->4
+"<apalaj>"
+	"palaj" n px2sg @nsubj #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:164
+# text = Jun nimalaj tzʼiʼ.
+# text[spa] = Un perro muy grande
+# labels = tijonik-29 complete
+"<Jun>"
+	"jun" det ind @det #1->2
+"<nimalaj>"
+	"nim" adj ints @amod #2->3
+"<tzʼiʼ>"
+	"tzʼiʼ" n @root #3->0
+"<.>"
+	"." sent @punct #4->3
+
+# sent_id = utexas:165
+# text = Are nim le atzʼiʼ chuwach le nutzʼiʼ.
+# text[spa] = Tu perro es más grande que mi perro.
+# labels = tijonik-29 complete check-focus
+"<Are>"
+	"are" foc @discourse #1->2
+"<nim>"
+	"nim" adj @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<atzʼiʼ>"
+	"tzʼiʼ" n px2sg @nsubj #4->2
+"<chuwach>"
+	"chi" pr @case #5->6
+		"wach" n rel px3sg @obl #6->2
+"<le>"
+	"le" det @det #7->8
+"<nutzʼiʼ>"
+	"tzʼiʼ" n px1sg @nmod #8->6
+"<.>"
+	"." sent @punct #9->2
+
+# sent_id = utexas:166
+# text = Are sibʼalaj kaq le apoʼt chuwach le nupoʼt.
+# text[spa] = Tu huipil es más rojo que mi huipil.
+# labels = tijonik-29 complete check-focus
+"<Are>"
+	"are" foc @discourse #1->3
+"<sibʼalaj>"
+	"sibʼalaj" adv @advmod #2->3
+"<kaq>"
+	"kaq" adj @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<apoʼt>"
+	"poʼt" n px2sg @nsubj #5->3
+"<chuwach>"
+	"chi" pr @case #6->7
+		"wach" n rel px3sg @obl #7->3
+"<le>"
+	"le" det @det #8->9
+"<nupoʼt>"
+	"poʼt" n px1sg @nmod #9->7
+"<.>"
+	"." sent @punct #10->3
+
+# sent_id = utexas:168
+# text = Sibʼalaj aninaq kachʼaw le areʼ chinuwach in.
+# text[spa] = Él habla más rápido que yo.
+# labels = tijonik-29 complete
+"<Sibʼalaj>"
+	"sibʼalaj" adv @advmod #1->2
+"<aninaq>"
+	"aninäq" adv @advmod #2->3
+"<kachʼaw>"
+	"chʼaw" v iv impf s_sg3 @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<areʼ>"
+	"areʼ" prn pers p3 sg @nsubj #5->3
+"<chinuwach>"
+	"chi" pr @case #6->7
+		"wach" n rel px1sg @obl #7->3
+"<in>"
+	"in" prn pers p1 sg @nmod #8->7
+"<.>"
+	"." sent @punct #9->3
+
+# sent_id = utexas:169
+# text = Are na nim ta le atzʼiʼ chuwach le nutzʼiʼ.
+# text[spa] = Tu perro no es más grande que mi perro.
+# labels = tijonik-29 complete check-pronoun
+"<Are>"
+	"are" foc @discourse #1->3
+"<na>"
+	"na" neg @advmod:neg #2->3
+"<nim>"
+	"nim" adj @root #3->0
+"<ta>"
+	"taj" neg @aux #4->3
+"<le>"
+	"le" det @det #5->6
+"<atzʼiʼ>"
+	"tzʼiʼ" n px2sg @nsubj #6->3
+"<chuwach>"
+	"chi" pr @case #7->8
+		"wach" n rel px3sg @obl #8->3
+"<le>"
+	"le" det @det #9->10
+"<nutzʼiʼ>"
+	"tzʼiʼ" n px1sg @nmod #10->8
+"<.>"
+	"." sent @punct #11->3
+
+# sent_id = utexas:170
+# text = Are na aninaq ta kachʼaw chinuwach in.
+# text[spa] = El no habla más rápido que yo.
+# labels = tijonik-29 complete
+"<Are>"
+	"are" foc @discourse #1->5
+"<na>"
+	"na" neg @advmod:neg #2->3
+"<aninaq>"
+	"aninäq" adv @advmod #3->5
+"<ta>"
+	"taj" neg @aux #4->3
+"<kachʼaw>"
+	"chʼaw" v iv impf s_sg3 @root #5->0
+"<chinuwach>"
+	"chi" pr @case #6->7
+		"wach" n rel px1sg @obl #7->5
+"<in>"
+	"in" prn pers p1 sg @nmod #8->7
+"<.>"
+	"." sent @punct #9->5
+
+# sent_id = utexas:171
+# text = Xukunaj le yawabʼ le aj qʼij.
+# text[spa] = El sacerdote maya curó al enfermo.
+# labels = tijonik-30 complete check-compound
+"<Xukunaj>"
+	"kunaj" v tv perf o_sg3 s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<yawabʼ>"
+	"yawabʼ" n @obj #3->1
+"<le>"
+	"le" det @det #4->5
+"<aj>"
+	"aj" n @obj #5->1
+"<qʼij>"
+	"qʼij" n @compound #6->5
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:172
+# text = Xkunax le yawabʼ rumal le aj qʼij.
+# text[orig] = Xkunax le yawabʼ (rumal le aj qʼij)
+# text[spa] = El enfermo fue curado (por el sacerdote)
+# labels = tijonik-30 complete check-reposition
+"<Xkunax>"
+	"kunaj" v tv pass perf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<yawabʼ>"
+	"yawabʼ" n @nsubj #3->1
+"<rumal>"
+	"umal" n rel px3sg @obl #4->1
+"<le>"
+	"le" det @det #5->6
+"<aj>"
+	"aj" n @nmod #6->4
+"<qʼij>"
+	"qʼij" n @compound #7->6
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:173
+# text = Xkikunaj le ali ri ixoqibʼ.
+# text[spa] = Las mujeres curaron a la niña
+# labels = tijonik-31 complete
+"<Xkikunaj>"
+	"kunaj" v tv perf o_sg3 s_pl3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<ali>"
+	"ali" n @obj #3->1
+"<ri>"
+	"ri" det @det #4->5
+"<ixoqibʼ>"
+	"ixoq" n pl @nsubj #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:174
+# text = Xkunataj le ali (kumal ri ixoqibʼ).
+# text[spa] = La niña fue curada (por las mujeres).
+# labels = tijonik-31 complete
+"<Xkunataj>"
+	"kunaj" v tv pass stat perf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<ali>"
+	"ali" n @nsubj #3->1
+"<(>"
+	"(" lpar @punct #4->5
+"<kumal>"
+	"umal" n rel px3pl @obl #5->1
+"<ri>"
+	"ri" det @det #6->7
+"<ixoqibʼ>"
+	"ixoq" n pl @nmod #7->5
+"<)>"
+	")" rpar @punct #8->5
+"<.>"
+	"." sent @punct #9->5
+
+# sent_id = utexas:175
+# text = Le ali xkunatajik.
+# text[spa] = La niña se curó.
+# labels = tijonik-31 complete
+"<Le>"
+	"le" det @det #1->2
+"<ali>"
+	"ali" n @nsubj #2->3
+"<xkunatajik>"
+	"kunaj" v tv pass stat perf s_sg3 @root #3->0
+		"ik" aux @aux:ss #4->3
+"<.>"
+	"." sent @punct #5->3
+
+# sent_id = utexas:176
+# text = La xkunataj le ali awumal?
+# text[spa] = Fue curada por ti la niña?
+# labels = tijonik-31 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<xkunataj>"
+	"kunaj" v tv pass stat perf s_sg3 @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<ali>"
+	"ali" n @nsubj #4->2
+"<awumal>" 
+	"umal" n rel px2sg @obl #5->2
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:178
+# text = Na kabʼantaj ta wumal.
+# text[spa] = No puedo hacerlo.
+# labels = tijonik-31 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kabʼantaj>"
+	"bʼan" v tv pass stat impf s_sg3 @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<wumal>"
+	"umal" n rel px1sg @obl #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:179
+# text = Na kabʼantaj ta wumal.
+# text[spa] = No puedo hacerlo.
+# labels = tijonik-32 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kabʼantaj>"
+	"bʼan" v tv pass stat impf s_sg3 @root #2->0
+"<ta>"
+	"taj" neg @aux #3->2
+"<wumal>"
+	"umal" n rel px1sg @obl #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:179.1
+# text = Kakitik ixim ri achijabʼ.
+# text[spa] = Los hombres siembran maíz.
+# labels = tijonik-32 complete
+"<Kakitik>"
+	"tik" v tv impf o_sg3 s_pl3 @root #1->0
+"<ixim>"
+	"ixim" n @obj #2->1
+"<ri>"
+	"ri" det @det #3->4
+"<achijabʼ>"
+	"achij" n pl @nsubj #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:179.2
+# text = Ketikon ri achijabʼ.
+# text[spa] = Los hombres siembran.
+# labels = tijonik-32 complete
+"<Ketikon>"
+	"tikoj" v tv anti impf s_pl3 @root #1->0
+"<ri>"
+	"ri" det @det #2->3
+"<achijabʼ>"
+	"achij" n pl @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:179.3
+# text = Ketikonik.
+# text[spa] = Ellos siembran.
+# labels = tijonik-32 complete
+"<Ketikonik>"
+	"tikoj" v tv anti impf s_pl3 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:179.4
+# text = Kinuloqʼoj le nutat.
+# text[spa] = Mi papá me quiere.
+# labels = tijonik-32 complete
+"<Kinuloqʼoj>"
+	"loqʼoj" v tv impf o_sg1 s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<nutat>"
+	"tat" n px1sg @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:179.5
+# text = Kaloqʼon le nutat chwe.
+# text[spa] = Mi papa me quiere.
+# labels = tijonik-32 complete
+"<Kaloqʼon>"
+	"loqʼoj" v tv anti impf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<nutat>"
+	"tat" n px1sg @nsubj #3->1
+"<chwe>"
+	"chi" pr @case #4->5
+		"ech" n rel px1sg @obl #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:179.6
+# text = Kinbʼisoj uwach le wal.
+# text[spa] = Extraño a mi hijo./ Estoy triste por mi hijo.
+# labels = tijonik-32 complete
+"<Kinbʼisoj>"
+	"bʼisoj" v tv impf o_sg3 s_sg1 @root #1->0
+"<uwach>"
+	"wach" n rel px3sg @obj #2->1
+"<le>"
+	"le" det @det #3->4
+"<wal>"
+	"al" n px1sg @nmod #4->2
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:179.7
+# text = Kinbʼison che le wal.
+# text[spa] = Extraño a mi hijo./ Estoy triste por mi hijo.
+# labels = tijonik-32 complete
+"<Kinbʼison>"
+	"bʼisoj" v tv anti impf s_sg1 @root #1->0
+"<che>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @obl #3->1
+"<le>"
+	"le" det @det #4->5
+"<wal>"
+	"al" n px1sg @nmod #5->3
+"<.>" 
+	"." sent @punct #6->1
+
+# sent_id = utexas:179.8
+# text = Kinqʼojomaj le qʼojom.
+# text[spa] = Toco la marimba (activo).
+# labels = tijonik-32 complete
+"<Kinqʼojomaj>"
+	"qʼojomaj" v tv impf o_sg3 s_sg1 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<qʼojom>"
+	"qʼojom" n @obj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:179.9
+# text = Kinqʼojomanik.
+# text[spa] = Toco (música) (antipassive).
+# labels = tijonik-32 complete
+"<Kinqʼojomanik>"
+	"qʼojomaj" v tv anti impf s_sg1 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:179.10
+# text = Kutʼis ri pantalon.
+# text[spa] = El(la) cose el pantalón.
+# labels = tijonik-32 complete
+"<Kutʼis>"
+	"tʼis" v tv impf o_sg3 s_sg3 @root #1->0
+"<ri>"
+	"ri" det @det #2->3
+"<pantalon>"
+	"pantalon" n @obj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:179.11
+# text = Katʼisoʼmanik.
+# text[spa] = El(la) cose.
+# labels = tijonik-32 complete
+"<Katʼisoʼmanik>"
+	"tʼis" v tv anti impf s_sg3 @root #1->0
+		"ik" aux @aux:ss #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:179.12
+# text = Kintzukuj la.
+# text[spa] = Lo busco (a usted) (formal)
+# labels = tijonik-32 complete
+"<Kintzukuj>"
+	"tzukuj" v tv impf o_sg3 s_sg1 @root #1->0
+"<la>"
+	"la" part frm @aux #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:179.13
+# text = Kintzukun che la.
+# text[spa] = Lo busco (a usted) (antipasivo).
+# labels = tijonik-32 complete
+"<Kintzukun>"
+	"tzukuj" v tv anti impf s_sg1 @root #1->0
+"<che>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @obl #3->1
+"<la>"
+	"la" part frm @dep #4->3
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:179.14
+# text = Katzukun la chwe.
+# text[spa] = Usted me busca (antipasivo).
+# labels = tijonik-32 complete
+"<Katzukun>"
+	"tzukuj" v tv anti impf s_sg3 @root #1->0
+"<la>"
+	"la" part frm @aux #2->1
+"<chwe>"
+	"chi" pr @case #3->4
+		"ech" n rel px1sg @obl #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:179.15
+# text = Kintobʼan chech la.
+# text[spa] = Lo ayudo (a usted) (antipasivo).
+# labels = tijonik-32 complete
+"<Kintobʼan>"
+	"toʼ" v tv anti impf s_sg1 @root #1->0
+"<chech>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @obl #3->1
+"<la>"
+	"la" part frm @aux #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:179.16
+# text = Xinkunaj alaq.
+# text[spa] = Los curé (a ustedes) o Ustedes me curaron (activo).
+# labels = tijonik-32 complete
+"<Xinkunaj>"
+	"kunaj" v tv perf o_sg3 s_sg1 @root #1->0
+"<alaq>"
+	"alaq" part frm @aux #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:179.17
+# text = Xinkunan chech alaq.
+# text[spa] = Yo los curé (a ustedes) (antipasivo).
+# labels = tijonik-32 complete
+"<Xinkunan>"
+	"kunaj" v tv anti perf s_sg1 @root #1->0
+"<chech>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @obl #3->1
+"<alaq>"
+	"alaq" part frm @aux #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:179.19
+# text = Xkunan alaq chwe.
+# text[spa] = Ustedes me curaron (antipasivo).
+# labels = tijonik-32 complete
+"<Xkunan>"
+	"kunaj" v tv anti perf s_sg3 @root #1->0
+"<alaq>"
+	"alaq" part frm @aux #2->1
+"<chwe>"
+	"chi" pr @case #3->4
+		"ech" n rel px1sg @obl #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:180
+# text = In xatinchʼayo.
+# text[spa] = Fui yo el que te pegó.
+# labels = tijonik-33 complete
+"<In>"
+	"in" prn pers p1 sg @nsubj #1->2
+"<xatinchʼayo>"
+	"chʼay" v tv perf o_sg2 s_sg1 @root #2->0
+		"u" aux @aux:ss #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:181
+# text = In xinchʼayow le achi.
+# text[spa] = Fui yo el que le pegó al hombre.
+# labels = tijonik-33 complete check-syntax
+"<In>"
+	"in" prn pers p1 sg @nsubj #1->2
+"<xinchʼayow>"
+	"chʼay" v tv anti agfoc perf s_sg1 @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<achi>"
+	"achi" n @obj #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:182
+# text = Are ri achi xinchʼayowik.
+# text[spa] = Fue el hombre que me pegó.
+# labels = tijonik-33 complete
+"<Are>"
+	"are" foc @discourse #1->4
+"<ri>"
+	"ri" det @det #2->3
+"<achi>"
+	"achi" n @nsubj #3->4
+"<xinchʼayowik>"
+	"chʼay" v tv anti agfoc perf s_sg1 @root #4->0
+		"ik" aux @aux:ss #5->4
+"<.>"
+	"." sent @punct #6->4
+
+# sent_id = utexas:183
+# text = Kinuloqʼoj le nutat.
+# text[spa] = Mi papá me quiere (activo).
+# labels = tijonik-33 complete
+"<Kinuloqʼoj>"
+	"loqʼoj" v tv impf o_sg1 s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<nutat>"
+	"tat" n px1sg @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:184
+# text = Le nutat kaloqʼon chwe.
+# text[spa] = Mi papá me quiere (absolutive antipassive/API).
+# labels = tijonik-33 complete
+"<Le>"
+	"le" det @det #1->2
+"<nutat>"
+	"tat" n px1sg @nsubj #2->3
+"<kaloqʼon>"
+	"loqʼoj" v tv anti impf s_sg3 @root #3->0
+"<chwe>"
+	"chi" pr @case #4->5
+		"ech" n rel px1sg @obl #5->3
+"<.>"
+	"." sent @punct #6->3
+
+# sent_id = utexas:185
+# text = Are le nutat kinloqʼonik.
+# text[spa] = Es mi papá el que me quiere (antipasivo de enfoque).
+# labels = tijonik-33 complete
+"<Are>"
+	"are" foc @discourse #1->4
+"<le>"
+	"le" det @det #2->3
+"<nutat>"
+	"tat" n px1sg @nsubj #3->4
+"<kinloqʼonik>"
+	"loqʼoj" v tv anti agfoc impf s_sg1 @root #4->0
+		"ik" aux @aux:ss #5->4
+"<.>"
+	"." sent @punct #6->4
+
+# sent_id = utexas:186
+# text = Xinaxibʼij pa bʼe.
+# text[spa] = Me asustaste en el camino (activo).
+# labels = tijonik-33 complete
+"<Xinaxibʼij>"
+	"xibʼij" v tv perf o_sg1 s_sg2 @root #1->0
+"<pa>"
+	"pa" pr @case #2->3
+"<bʼe>"
+	"bʼe" n @obl #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:187
+# text = At xinxibʼin pa bʼe.
+# text[spa] = Fuiste vos el que me asustó en el camino.
+# labels = tijonik-33 complete
+"<At>"
+	"at" prn pers p2 sg @nsubj #1->2
+"<xinxibʼin>"
+	"xibʼij" v tv anti agfoc perf s_sg1 @root #2->0
+"<pa>"
+	"pa" pr @case #3->4
+"<bʼe>"
+	"bʼe" n @obl #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:188
+# text = Xintoʼ la.
+# text[spa] = Yo lo ayudé (a usted) (activo).
+# labels = tijonik-33 complete
+"<Xintoʼ>"
+	"toʼ" v tv perf o_sg3 s_sg1 @root #1->0
+"<la>"
+	"la" part frm @aux #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:189
+# text = Lal xintoʼwik.
+# text[spa] = Usted me ayudó.
+# labels = tijonik-33 complete
+"<Lal>"
+	"lal" prn pers p2 frm sg @nsubj #1->2
+"<xintoʼwik>"
+	"toʼ" v tv anti agfoc perf s_sg1 @root #2->0
+		"ik" aux @aux:ss #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:190
+# text = In xintoʼw la.
+# text[spa] = It was me who helped you (formal)
+# labels = tijonik-33 complete
+"<In>"
+	"in" prn pers p1 sg @nsubj #1->2
+"<xintoʼw>"
+	"toʼ" v tv anti agfoc perf s_sg1 @root #2->0
+"<la>"
+	"la" part frm @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:191.1
+# text = Aʼre xetoʼw alaq.
+# text[spa] = Ellos fueron los que les ayudaron (a ustedes).
+# labels = tijonik-33 complete
+"<Aʼre>"
+	"aʼre" prn pers p3 pl @nsubj #1->2
+"<xetoʼw>"
+	"toʼ" v tv anti agfoc perf s_pl3 @root #2->0
+"<alaq>"
+	"alaq" part frm @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:191.2
+# text = Aʼre xetoʼw alaq.
+# text[spa] = Ellos fueron los que les ayudaron (a ustedes).
+# labels = tijonik-33 complete
+"<Aʼre>"
+	"aʼre" prn pers p3 pl @nsubj #1->2
+"<xetoʼw>"
+	"toʼ" v tv anti agfoc perf s_pl3 @root #2->0
+"<alaq>"
+	"alaq" part frm @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:192
+# text = Utz we nutzʼiʼ.
+# text[spa] = Este mi perro es bueno (junto a mí).
+# labels = tijonik-34 complete
+"<Utz>"
+	"utz" adj @root #1->0
+"<we>"
+	"we" det @det #2->3
+"<nutzʼiʼ>"
+	"tzʼiʼ" n px1sg @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:193
+# text = We achi xusipaj jun pʼot chwe.
+# text[spa] = Este hombre me regaló un huipil.
+# labels = tijonik-34 complete
+"<We>"
+	"we" det @det #1->2
+"<achi>"
+	"achi" n @nsubj #2->3
+"<xusipaj>"
+	"sipaj" v tv perf o_sg3 s_sg3 @root #3->0
+"<jun>"
+	"jun" det @det #4->5
+"<pʼot>"
+	"pʼot" n @obj #5->3
+"<chwe>"
+	"chi" pr @case #6->7
+		"ech" n rel px1sg @obl #7->3
+"<.>"
+	"." sent @punct #8->3
+
+# sent_id = utexas:194
+# text = Utz we nutzʼiʼ we xisipaj chwe.
+# text[spa] = Este mi perro, que ustedes me regalaron, es bueno.
+# labels = tijonik-34 complete
+"<Utz>"
+	"utz" adj @root #1->0
+"<we>"
+	"we" det @det #2->3
+"<nutzʼiʼ>"
+	"tzʼiʼ" n px1sg @nsubj #3->1
+"<we>"
+	"we²" cnjsub @mark #4->5
+"<xisipaj>"
+	"sipaj" v tv perf o_sg3 s_pl2 @acl #5->3
+"<chwe>"
+	"chi" pr @case #6->7
+		"ech" n rel px1sg @obl #7->5
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:195
+# text = Utz we achi we xinkunanik.
+# text[spa] = Este hombre que me curó es bueno.
+# labels = tijonik-34 complete
+"<Utz>"
+	"utz" adj @root #1->0
+"<we>"
+	"we" det @det #2->3
+"<achi>"
+	"achi" n @nsubj #3->1
+"<we>"
+	"we²" cnjsub @mark #4->5
+"<xinkunanik>"
+	"kunaj" v tv anti agfoc perf s_sg1 @acl #5->3
+		"ik" aux @aux:ss #6->5
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:196
+# text = Xpe le achi le xinkunaj iwir.
+# text[spa] = Vino el hombre que curé ayer.
+# labels = tijonik-34 complete
+"<Xpe>"
+	"pe" v iv perf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<achi>"
+	"achi" n @nsubj #3->1
+"<le>"
+	"le" prn rel @obj #4->5
+"<xinkunaj>"
+	"kunaj" v tv perf o_sg3 s_sg1 @acl #5->3
+"<iwir>"
+	"iwir" adv @advmod #6->5
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:197
+# text = La xpe le achi le xinkunan iwir?
+# text[spa] = Vino el hombre que me curó ayer?
+# labels = tijonik-34 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<xpe>"
+	"pe" v iv perf s_sg3 @root #2->0
+"<le>"
+	"le" det @det #3->4
+"<achi>"
+	"achi" n @nsubj #4->2
+"<le>"
+	"le" prn rel @nsubj #5->6
+"<xinkunan>"
+	"kunaj" v tv anti agfoc perf s_sg1 @acl #6->4
+"<iwir>"
+	"iwir" adv @advmod #7->6
+"<?>"
+	"?" sent @punct #8->2
+
+# sent_id = utexas:198
+# text = Utz ri nutzʼiʼ ri xisipaj chwe.
+# text[spa] = Aquel perro que ustedes me regalaron es bueno.
+# labels = tijonik-34 complete
+"<Utz>"
+	"utz" adj @root #1->0
+"<ri>"
+	"ri" det @det #2->3
+"<nutzʼiʼ>"
+	"tzʼiʼ" n px1sg @nsubj #3->1
+"<ri>"
+	"ri" prn rel @obj #4->5
+"<xisipaj>"
+	"sipaj" v tv perf o_sg3 s_pl2 @acl #5->3
+"<chwe>"
+	"chi" pr @case #6->7
+		"ech" n rel px1sg @obl #7->5
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:199
+# text = We achi we xusipaj jun poʼt chwe xkamik.
+# text[spa] = Este hombre que me regaló un huipil se murió.
+# labels = tijonik-34 complete
+"<We>"
+	"we" det @det #1->2
+"<achi>"
+	"achi" n @nsubj #2->9
+"<we>"
+	"we²" cnjsub @mark #3->4
+"<xusipaj>"
+	"sipaj" v tv perf o_sg3 s_sg3 @acl #4->2
+"<jun>"
+	"jun" det @det #5->6
+"<poʼt>"
+	"poʼt" n @obj #6->4
+"<chwe>"
+	"chi" pr @case #7->8
+		"ech" n rel px1sg @obl #8->4
+"<xkamik>"
+	"käm" v iv perf s_sg3 @root #9->0
+		"ik" aux @aux:ss #10->9
+"<.>"
+	"." sent @punct #11->9
+
+# sent_id = utexas:200
+# text = Le wuj ri xasipaj chwe sibʼalaj utz kinwilo.
+# text[spa] = Me gusta mucho el libro que me regalaste.
+# labels = tijonik-34 complete
+"<Le>"
+	"le" det @det #1->2
+"<wuj>"
+	"wuj" n @nsubj #2->9
+"<ri>"
+	"ri" prn rel @obj #3->4
+"<xasipaj>"
+	"sipaj" v tv perf o_sg3 s_sg2 @acl #4->2
+"<chwe>"
+	"chi" pr @case #5->6
+		"ech" n rel px1sg @obl #6->4
+"<sibʼalaj>"
+	"sibʼalaj" adv @advmod #7->8
+"<utz>"
+	"utz" adj @xcomp #8->9
+"<kinwilo>"
+	"il" v tv impf o_sg3 s_sg1 @root #9->0
+		"u" aux @aux:ss #10->9
+"<.>"
+	"." sent @punct #11->9
+
+# sent_id = utexas:201
+# text = Le nimatijobʼal ri kakʼut wi ri qachʼabʼal, sibʼalaj naj kʼo wi.
+# text[spa] = La escuela donde se enseña nuestro idioma (kʼicheʼ) está lejos.
+# labels = tijonik-34 complete check-dislocated check-relative
+"<Le>"
+	"le" det @det #1->2
+"<nimatijobʼal>"
+	"nimatijobʼal" n @nsubj #2->11
+"<ri>"
+	"ri" prn rel @dep #3->4
+"<kakʼut>"
+	"kʼut" v tv pass impf s_sg3 @acl #4->2
+"<wi>"
+	"wi" foc @advmod #5->4
+"<ri>"
+	"ri" det @det #6->7
+"<qachʼabʼal>"
+	"chʼabʼal" n px1pl @nsubj #7->4
+"<,>"
+	"," cm @punct #8->11
+"<sibʼalaj>"
+	"sibʼalaj" adv @advmod #9->10
+"<naj>"
+	"naj" adv @advmod #10->11
+"<kʼo>"
+	"kʼo" part @root #11->0
+"<wi>"
+	"wi" foc @advmod #12->11
+"<.>"
+	"." sent @punct #13->11
+
+# sent_id = utexas:202.1
+# text = Chitatabʼej jas we kimbʼij.
+# text[spa] = Escuchen esto que digo (ahora mismo).
+# labels = tijonik-34 complete check-relative
+"<Chitatabʼej>"
+	"tatabʼej" v tv imp o_sg3 s_pl2 @root #1->0
+"<jas>"
+	"jas" prn itg @obj #2->1
+"<we>"
+	"we²" cnjsub @mark #3->4
+"<kimbʼij>"
+	"bʼij" v tv impf o_sg3 s_sg1 @acl #4->2
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:202.2
+# text = Chitatabʼej jas le kimbʼij.
+# text[spa] = Escuchen esto que digo (en este momento).
+# labels = tijonik-34 complete check-relative
+"<Chitatabʼej>"
+	"tatabʼej" v tv imp o_sg3 s_pl2 @root #1->0
+"<jas>"
+	"jas" prn itg @obj #2->1
+"<le>"
+	"le" prn rel @obj #3->4
+"<kimbʼij>"
+	"bʼij" v tv impf o_sg3 s_sg1 @acl #4->2
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:202.3
+# text = Chitatabʼej jas ri kimbʼij.
+# text[spa] = Escuchen esto que les digo.
+# labels = tijonik-34 complete check-syntax
+"<Chitatabʼej>"
+	"tatabʼej" v tv imp o_sg3 s_pl2 @root #1->0
+"<jas>"
+	"jas" prn itg @obj #2->1
+"<ri>"
+	"ri" prn rel @obj #3->4
+"<kimbʼij>"
+	"bʼij" v tv impf o_sg3 s_sg1 @acl #4->2
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:202.4
+# text = Chitatabʼej jas we kimbʼij chiwe.
+# text[spa] = Escuchen esto que les digo a ustedes.
+# labels = tijonik-34 complete
+"<Chitatabʼej>"
+	"tatabʼej" v tv imp o_sg3 s_pl2 @root #1->0
+"<jas>"
+	"jas" prn itg @obj #2->1
+"<we>"
+	"we²" cnjsub @mark #3->4
+"<kimbʼij>"
+	"bʼij" v tv impf o_sg3 s_sg1 @acl #4->2
+"<chiwe>"
+	"chi" pr @case #5->6
+		"ech" n rel px2pl @obl #6->4
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:203
+# text = Chikop waʼ.
+# text[spa] = Esto (muy cerca) es un animal.
+# labels = tijonik-35 complete
+"<Chikop>"
+	"chikop" n @root #1->0
+"<waʼ>"
+	"waʼ" prn dem @nsubj #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:204
+# text = Are waʼ.
+# text[spa] = Esto (muy cerca) es.
+# labels = tijonik-35 complete check-syntax
+"<Are>"
+	"areʼ" prn pers p3 sg @root #1->0
+"<waʼ>"
+	"waʼ" prn dem @nsubj #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:205
+# text = Meʼs laʼ.
+# text[spa] = Eso/Ese (allá) es un gato.
+# labels = tijonik-35 complete
+"<Meʼs>"
+	"meʼs" n @root #1->0
+"<laʼ>"
+	"laʼ" prn dem @nsubj #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:206
+# text = Kej riʼ.
+# text[spa] = Aquello es un caballo.
+# labels = tijonik-35 complete
+"<Kej>"
+	"kej" n @root #1->0
+"<riʼ>"
+	"riʼ" prn dem @nsubj #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:207
+# text = Ajchak we ala.
+# text[spa] = Este muchacho es un trabajador.
+# labels = tijonik-35 complete
+"<Ajchak>"
+	"ajchak" n @root #1->0
+"<we>"
+	"we" det @det #2->3
+"<ala>"
+	"ala" n @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:208
+# text = Nim we abʼaj.
+# text[spa] = Esta piedra es grande.
+# labels = tijonik-35 complete
+"<Nim>"
+	"nim" adj @root #1->0
+"<we>"
+	"we" det @det #2->3
+"<abʼaj>"
+	"abʼäj" n @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:209
+# text = Utz we kinchakuj.
+# text[spa] = Es bueno lo que trabajo.
+# labels = tijonik-35 complete
+"<Utz>"
+	"utz" adj @root #1->0
+"<we>"
+	"we²" cnjsub @mark #2->1
+"<kinchakuj>"
+	"chakuj" v tv impf o_sg3 s_sg1 @acl #3->2
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:210
+# text = Xkos le achi.
+# text[spa] = El hombre se cansó.
+# labels = tijonik-35 complete
+"<Xkos>"
+	"kos" v iv perf s_sg3 @root #1->0
+"<le>"
+	"le" det @det #2->3
+"<achi>"
+	"achi" n @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:211
+# text = Utz le xubʼij le achi.
+# text[spa] = Lo que dijo el hombre es bueno.
+# labels = tijonik-35 complete check-relative
+"<Utz>"
+	"utz" adj @root #1->0
+"<le>"
+	"le" prn rel @nsubj #2->1
+"<xubʼij>"
+	"bʼij" v tv perf o_sg3 s_sg3 @acl #3->2
+"<le>"
+	"le" det @det #4->5
+"<achi>"
+	"achi" n @nsubj #5->3
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:212
+# text = Jachin ri achi?
+# text[spa] = Quién es aquel hombre?
+# labels = tijonik-35 complete
+"<Jachin>"
+	"jachin" prn itg @root #1->0
+"<ri>"
+	"ri" det @det #2->3
+"<achi>"
+	"achi" n @nsubj #3->1
+"<?>"
+	"?" sent @punct #4->1
+
+# sent_id = utexas:213
+# text = Xpax ri bʼoʼj.
+# text[spa] = Se quebró la olla.
+# labels = tijonik-35 complete
+"<Xpax>"
+	"pax" v tv pass perf s_sg3 @root #1->0
+"<ri>"
+	"ri" det @det #2->3
+"<bʼoʼj>"
+	"bʼoʼj" n @nsubj #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:214
+# text = Kʼax ri kachʼawik.
+# text[spa] = Es duro lo que dice/como habla.
+# labels = tijonik-35 complete check-relative
+"<Kʼax>"
+	"kʼax" adj @root #1->0
+"<ri>"
+	"ri" prn rel @nsubj #2->1
+"<kachʼawik>"
+	"chʼaw" v iv impf s_sg3 @acl #3->2
+		"ik" aux @aux:ss #4->3
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:215
+# text = In waʼ we kinyʼow le tzijonem.
+# text[spa] = Yo soy el que va a dar la plática (aquí).
+# labels = tijonik-35 incomplete
+"<In>"
+	"in" prn pers p1 sg
+"<waʼ>"
+	"waʼ" prn dem
+"<we>"
+	"we²" cnjsub
+"<kinyʼow>"
+	"yaʼ" v tv anti agfoc impf s_sg1
+"<le>"
+	"le" det @det
+"<tzijonem>"
+	"tzijonem" n
+"<.>"
+	"." sent
+
+# sent_id = utexas:216
+# text = Kʼax riʼ ri kachʼawik.
+# text[spa] = Es duro (eso) que dice.
+# labels = tijonik-35 incomplete
+"<Kʼax>"
+	"kʼax" adj @root
+"<riʼ>"
+	"riʼ" prn dem @nsubj
+"<ri>"
+	"ri" prn rel
+"<kachʼawik>"
+	"chʼaw" v iv impf s_sg3
+		"ik" mark
+"<.>"
+	"." sent
+
+# sent_id = utexas:217
+# text = Utz laʼ le xubʼij le achi.
+# text[spa] = Es bueno (eso) que el hombre dijo.
+# labels = tijonik-35 complete
+"<Utz>"
+	"utz" adj @root #1->0
+"<laʼ>"
+	"laʼ" prn dem @nsubj #2->1
+"<le>"
+	"le" prn rel @obj #3->4
+"<xubʼij>"
+	"bʼij" v tv perf o_sg3 s_sg3 @acl #4->2
+"<le>"
+	"le" det @det #5->6
+"<achi>"
+	"achi" n @nsubj #6->4
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:218
+# text = Are laʼ kinchakuj.
+# text[spa] = Eso es mi trabajo/lo que trabajo.
+# labels = tijonik-35 incomplete
+"<Are>"
+	"are" prn pers p3 sg
+"<laʼ>"
+	"laʼ" prn dem
+"<kinchakuj>"
+	"chakuj" v tv impf o_sg3 s_sg1
+"<.>"
+	"." sent
+
+# sent_id = utexas:219
+# text = Je waʼ katpetik.
+# text[spa] = Vienes para acá.
+# labels = tijonik-35 complete check-tokenisation
+"<Je>"
+	"je" adv @advmod #1->3
+"<waʼ>"
+	"waʼ" prn dem @fixed #2->1
+"<katpetik>"
+	"pet" v iv impf s_sg2 @root #3->0
+		"ik" aux @aux:ss #4->3
+"<.>"
+	"." sent @punct #5->3
+
+# sent_id = utexas:220
+# text = Je riʼ kachakun ri achi.
+# text[spa] = Así es el trabajo del hombre.
+# labels = tijonik-35 complete check-tokenisation
+"<Je>"
+	"je" adv @advmod #1->3
+"<riʼ>"
+	"riʼ" prn dem @fixed #2->1
+"<kachakun>"
+	"chakuj" v tv anti impf s_sg3 @root #3->0
+"<ri>"
+	"ri" det @det #4->5
+"<achi>"
+	"achi" n @nsubj #5->3
+"<.>"
+	"." sent @punct #6->3
+
+# sent_id = utexas:221
+# text = Xekanaj kan le ajchakibʼ.
+# text[spa] = Se quedaron [allá, fuera de escena] los trabajadores.
+# labels = tijonik-36 complete
+"<Xekanaj>"
+	"kanaj" v iv perf s_pl3 @root #1->0
+"<kan>"
+	"kan" adv dir @advmod #2->1
+"<le>"
+	"le" det @det #3->4
+"<ajchakibʼ>"
+	"ajchak" n pl @nsubj #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:222
+# text = Le achi xkaʼy loq.
+# text[spa] = El hombre miró hacia acá (hacia el hablante).
+# labels = tijonik-36 complete
+"<Le>"
+	"le" det @det #1->2
+"<achi>"
+	"achi" n @nsubj #2->3
+"<xkaʼy>"
+	"kaʼy" v iv perf s_sg3 @root #3->0
+"<loq>"
+	"uloq" adv dir @advmod #4->3
+"<.>"
+	"." sent @punct #5->3
+
+# sent_id = utexas:224
+# text = Iwir xintzalij uloq.
+# text[spa] = Regresé (aquí) ayer.
+# labels = tijonik-36 complete
+"<Iwir>"
+	"iwir" adv @advmod #1->2
+"<xintzalij>"
+	"tzalij" v iv perf s_sg1 @root #2->0
+"<uloq>"
+	"uloq" adv dir @advmod #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:225
+# text = We kʼo arajil chakʼama loq.
+# text[spa] = Si tenés dinero, traélo (aquí).
+# labels = tijonik-36 complete
+"<We>"
+	"we¹" cnjsub @mark #1->2
+"<kʼo>"
+	"kʼo" part @advcl #2->4
+"<arajil>"
+	"rajil" n px2sg @nsubj #3->2
+"<chakʼama>"
+	"kʼam" v tv imp o_sg3 s_sg2 @root #4->0
+		"uʼ" mark fin @aux:ss #5->4
+"<loq>"
+	"uloq" adv dir @advmod #6->4
+"<.>"
+	"." sent @punct #7->4
+
+# sent_id = utexas:226
+# text = We kʼo arajil, chakʼama la chweʼq.
+# text[spa] = Si tenés dinero, traélo (aquí).
+# labels = tijonik-36 complete
+"<We>"
+	"we¹" cnjsub @mark #1->2
+"<kʼo>"
+	"kʼo" part @advcl #2->5
+"<arajil>"
+	"rajil" n px2sg @nsubj #3->2
+"<,>"
+	"," cm @punct #4->2
+"<chakʼama>"
+	"kʼam" v tv imp o_sg3 s_sg2 @root #5->0
+		"uʼ" mark fin @aux:ss #6->5
+"<la>"
+	"la" part frm @aux #7->5
+"<chweʼq>"
+	"chweʼq" adv @advmod #8->5
+"<.>"
+	"." sent @punct #9->5
+
+# sent_id = utexas:227
+# text = Iwir xujtzalij la pa kʼaybʼal.
+# text[spa] = Ayer regresamos (aquí) del mercado.
+# labels = tijonik-36 complete
+"<Iwir>"
+	"iwir" adv @advmod #1->2
+"<xujtzalij>"
+	"tzalij" v iv perf s_pl1 @root #2->0
+"<la>"
+	"la" adv dir @advmod #3->2
+"<pa>"
+	"pa" pr @case #4->5
+"<kʼaybʼal>"
+	"kʼaybʼal" n @obl #5->2
+"<.>"
+	"." sent @punct #6->2
+
+# sent_id = utexas:228
+# text = Chweʼq kinkʼam nuʼloq.
+# text[spa] = Lo traeré (aquí) mañana.
+# labels = tijonik-36 complete
+"<Chweʼq>"
+	"chweʼq" adv @advmod #1->2
+"<kinkʼam>"
+	"kʼam" v tv impf o_sg3 s_sg1 @root #2->0
+"<nuʼloq>"
+	"na" adv fut @advmod #3->2
+		"uloq" adv dir @advmod #4->2
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:229
+# text = La katzalij luʼla aninaq?
+# text[spa] = Regresará (usted, formal) rápido?
+# labels = tijonik-36 complete
+"<La>"
+	"la" qst @discourse #1->2
+"<katzalij>"
+	"tzalij" v iv impf s_sg3 @root #2->0
+"<luʼla>"
+	"la" part frm @aux #3->2
+		"la" adv dir @advmod #4->2
+"<aninaq>"
+	"aninäq" adv @advmod #5->2
+"<?>"
+	"?" sent @punct #6->2
+
+# sent_id = utexas:230
+# text = Jawi xakʼam wuʼla laʼ le atzʼyaq?
+# text[spa] = De dónde trajiste (aquí) la ropa?
+# labels = tijonik-36 complete
+"<Jawi>"
+	"jawi" adv itg @advmod #1->2
+"<xakʼam>"
+	"kʼam" v tv perf o_sg3 s_sg2 @root #2->0
+"<wuʼla>"
+	"wi" foc @advmod #3->2
+		"la" adv dir @advmod #4->2
+"<laʼ>"
+	"laʼ" prn dem @det #5->7
+"<le>"
+	"le" det @det #6->7
+"<atzʼyaq>"
+	"atzʼyaq" n @obj #7->2
+"<?>"
+	"?" sent @punct #8->2
+
+# sent_id = utexas:231
+# text = Le achi xkaʼy chuʼloq.
+# text[spa] = El hombre miró (hacia acá) otra vez.
+# labels = tijonik-36 complete
+"<Le>"
+	"le" det @det #1->2
+"<achi>"
+	"achi" n @nsubj #2->3
+"<xkaʼy>"
+	"kaʼy" v iv perf s_sg3 @root #3->0
+"<chuʼloq>"
+	"chi" adv @advmod #4->3
+		"uloq" adv dir @advmod #5->3
+"<.>"
+	"." sent @punct #6->3
+
+# sent_id = utexas:232
+# text = Na nukʼamom tuʼla riʼ.
+# text[spa] = No lo he traído (aquí).
+# labels = tijonik-36 incomplete check-analyses
+"<Na>"
+	"na" neg @advmod:neg
+"<nukʼamom>"
+	"kʼam" v tv pp s_sg1 @root
+"<tuʼla>"
+	"taj" neg @aux
+		"la" adv dir @advmod
+"<riʼ>"
+	"riʼ" prn dem @obj
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:233
+# text = Le ali xel bʼik.
+# text[spa] = La muchacha salió (alejándose de aquí).
+# labels = tijonik-36 complete
+"<Le>"
+	"le" det @det #1->2
+"<ali>"
+	"ali" n @nsubj #2->3
+"<xel>"
+	"el" v iv perf s_sg3 @root #3->0
+"<bʼik>"
+	"bʼi" adv dir @advmod #4->3
+		"ik" aux @aux:ss #5->3
+"<.>"
+	"." sent @punct #6->3
+
+# sent_id = utexas:234
+# text = Le achijabʼ xeʼqʼabʼaroq.
+# text[spa] = Los hombres fueron a emborracharse.
+# labels = tijonik-36 complete check-verb
+"<Le>"
+	"le" det @det #1->2
+"<achijabʼ>"
+	"achij" n pl @nsubj #2->3
+"<xeʼqʼabʼaroq>"
+	"qʼabʼar" v iv perf s_pl3 abl @root #3->0
+		"oq" aux @aux:ss #4->3
+"<.>"
+	"." sent @punct #5->3
+
+# sent_id = utexas:235
+# text = Xujchʼay bʼik.
+# text[spa] = Nos pegaron (echándonos de la casa, alejándonos de la casa).
+# labels = tijonik-36 complete
+"<Xujchʼay>"
+	"chʼay" v tv pass perf s_pl1 @root #1->0
+"<bʼik>"
+	"bʼi" adv dir @advmod #2->1
+		"ik" aux @aux:ss #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:236
+# text = Kinkʼam nuʼbʼi chweʼq.
+# text[spa] = Me lo llevo (alejándome de aquí) mañana.
+# labels = tijonik-36 complete
+"<Kinkʼam>"
+	"kʼam" v tv impf o_sg3 s_sg1 @root #1->0
+"<nuʼbʼi>"
+	"na" adv fut @advmod #2->1
+		"bʼi" adv dir @advmod #3->1
+"<chweʼq>"
+	"chweʼq" adv @advmod #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:237
+# text = La kamik kakʼam luʼbʼik?
+# text[spa] = Se lo va a llevar (usted, formal) hoy?
+# labels = tijonik-36 complete
+"<La>"
+	"la" qst @discourse #1->3
+"<kamik>"
+	"kamik" adv @advmod #2->3
+"<kakʼam>"
+	"kʼam" v tv pass impf s_sg3 @root #3->0
+"<luʼbʼik>"
+	"la" part frm @aux #4->3
+		"bʼi" adv dir @advmod #5->3
+			"ik" aux @aux:ss #6->3
+"<?>"
+	"?" sent @punct #7->3
+
+# sent_id = utexas:238
+# text = Le rajil, la pa ja xelaqʼax wuʼbʼik?
+# text[spa] = El dinero, se lo robaron de la casa? (alejándose con el dinero)
+# labels = tijonik-36 complete
+"<Le>"
+	"le" det @det #1->2
+"<rajil>"
+	"rajil" n @dislocated #2->7
+"<,>"
+	"," cm @punct #3->7
+"<la>"
+	"la" qst @discourse #4->7
+"<pa>"
+	"pa" pr @case #5->6
+"<ja>"
+	"ja" n @obl #6->7
+"<xelaqʼax>"
+	"elaqʼaj" v tv pass perf s_sg3 @root #7->0
+"<wuʼbʼik>"
+	"wi" foc @advmod #8->7
+		"bʼi" adv dir @advmod #9->7
+			"ik" aux @aux:ss #10->7
+"<?>"
+	"?" sent @punct #11->7
+
+# sent_id = utexas:239
+# text = Xekʼam chuʼbʼi le akʼalabʼ.
+# text[spa] = Se llevaron a los niños otra vez.
+# labels = tijonik-36 complete
+"<Xekʼam>"
+	"kʼam" v tv pass perf s_pl3 @root #1->0
+"<chuʼbʼi>"
+	"chi" adv @advmod #2->1
+		"bʼi" adv dir @advmod #3->1
+"<le>"
+	"le" det @det #4->5
+"<akʼalabʼ>"
+	"akʼal" n pl @nsubj #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:240
+# text = Na kaqakʼam tuʼbʼi kamik.
+# text[spa] = No nos lo vamos a llevar hoy.
+# labels = tijonik-36 complete
+"<Na>"
+	"na" neg @advmod:neg #1->2
+"<kaqakʼam>"
+	"kʼam" v tv impf o_sg3 s_pl1 @root #2->0
+"<tuʼbʼi>"
+	"taj" neg @aux #3->2
+		"bʼi" adv dir @advmod #4->2
+"<kamik>"
+	"kamik" adv @advmod #5->2
+"<.>"
+	"." sent @punct #6->2
+
+# sent_id = utexas:241
+# text = Xekanaj kan le ajchakibʼ.
+# text[spa] = Los trabajadores se quedaron.
+# labels = tijonik-36 complete
+"<Xekanaj>"
+	"kanaj" v iv perf s_pl3 @root #1->0
+"<kan>"
+	"kan" adv dir @advmod #2->1
+"<le>"
+	"le" det @det #3->4
+"<ajchakibʼ>"
+	"ajchak" n pl @nsubj #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:242
+# text = Xinya kan le nuchim pa kʼaybʼal.
+# text[spa] = Dejé mi mochila en el mercado.
+# labels = tijonik-36 complete
+"<Xinya>"
+	"yaʼ" v tv perf o_sg3 s_sg1 @root #1->0
+"<kan>"
+	"kan" adv dir @advmod #2->1
+"<le>"
+	"le" det @det #3->4
+"<nuchim>"
+	"chim" n px1sg @obj #4->1
+"<pa>"
+	"pa" pr @case #5->6
+"<kʼaybʼal>"
+	"kʼaybʼal" n @obl #6->1
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:243
+# text = Xinchʼaw apan rukʼ le wanabʼ.
+# text[spa] = Hablé con mi hermana (de aquí para allá).
+# labels = tijonik-36 complete
+"<Xinchʼaw>"
+	"chʼaw" v iv perf s_sg1 @root #1->0
+"<apan>"
+	"apan" adv dir @advmod #2->1
+"<rukʼ>"
+	"ukʼ" n rel px3sg @obl #3->1
+"<le>"
+	"le" det @det #4->5
+"<wanabʼ>"
+	"anäbʼ" n px1sg @nmod #5->3
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:244
+# text = Kimbʼe aqʼan rukʼ le al Talin.
+# text[spa] = Voy allá arriba con Catarina.
+# labels = tijonik-36 complete
+"<Kimbʼe>"
+	"bʼe" v iv impf s_sg1 @root #1->0
+"<aqʼan>"
+	"qʼan" adv dir @advmod #2->1
+"<rukʼ>"
+	"ukʼ" n rel px3sg @obl #3->1
+"<le>"
+	"le" det @det #4->6
+"<al>"
+	"ali" clf f @clf #5->6
+"<Talin>"
+	"Talin" np ant f @nmod #6->3
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:245
+# text = Xinxuliʼ qajoq.
+# text[spa] = Bajé.
+# labels = tijonik-36 complete
+"<Xinxuliʼ>"
+	"xuliʼ" v tv pass perf s_sg1 @root #1->0
+"<qajoq>"
+	"qaj" adv dir @advmod #2->1
+		"oq" aux @aux:ss #3->1
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:246
+# text = Kimbʼe na ka pa le woʼch.
+# text[spa] = Voy a (entrar a) la casa.
+# labels = tijonik-36 complete
+"<Kimbʼe>"
+	"bʼe" v iv impf s_sg1 @root #1->0
+"<na>"
+	"na" adv fut @advmod #2->1
+"<ka>"
+	"ka" adv dir @advmod #3->1
+"<pa>"
+	"pa" pr @case #4->6
+"<le>"
+	"le" det @det #5->6
+"<woʼch>"
+	"oʼch" n px1sg @obl #6->1
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:247
+# text = Xeʼnwila le etzʼanem oxjir.
+# text[spa] = Fui a ver el juego hace tres días.
+# labels = tijonik-37 complete
+"<Xeʼnwila>"
+	"il" v tv perf o_sg3 abl s_sg1 @root #1->0
+		"uʼ" mark fin @aux:ss #2->1
+"<le>"
+	"le" det @det #3->4
+"<etzʼanem>"
+	"etzʼanem" n @obj #4->1
+"<oxjir>"
+	"oxjir" adv @advmod #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:248
+# text = Kateʼbʼin.
+# text[spa] = Vas a (ir a) caminar.
+# labels = tijonik-37 complete
+"<Kateʼbʼin>"
+	"bʼin" v iv impf s_sg2 abl @root #1->0
+"<.>"
+	"." sent @punct #2->1
+
+# sent_id = utexas:249
+# text = Kojulkitzukuj.
+# text[spa] = Ellos vienen a buscarnos.
+# labels = tijonik-37 complete
+"<Kojulkitzukuj>"
+	"tzukuj" v tv impf o_pl1 lat s_pl3 @root #1->0
+"<.>"
+	"." sent @punct #2->1
+
+# sent_id = utexas:250
+# text = Kʼax le uwiʼ taq le nuqʼabʼ.
+# text[spa] = Me duelen los dedos.
+# labels = tijonik-39 incomplete
+"<Kʼax>"
+	"kʼax" adj @root
+"<le>"
+	"le" det @det
+"<uwiʼ>"
+	"wiʼ" n rel px3sg
+"<taq>"
+	"taq" pl @det
+"<le>"
+	"le" det @det
+"<nuqʼabʼ>"
+	"qʼabʼ" n px1sg @
+"<.>"
+	"." sent
+
+# sent_id = utexas:23
+# text = Rajawaxik kakʼaman chawe le utijik le lej.
+# text[spa] = Es necesario que te acostumbres a comer tortillas.
+# labels = tijonik-41 complete check-nonfinite
+"<Rajawaxik>"
+	"rajawaxik" n @root #1->0
+"<kakʼaman>"
+	"kʼaman" v iv impf s_sg3 @csubj #2->1
+"<chawe>"
+	"chi" pr @case #3->4
+		"ech" n rel px2sg @obl #4->2
+"<le>"
+	"le" prn rel @mark #5->6
+"<utijik>"
+	"tij" v tv inf s_sg3 @csubj #6->2
+"<le>"
+	"le" det @det #7->8
+"<lej>"
+	"lej" n @obj #8->6
+"<.>"
+	"." sent @punct #9->1
+
+# sent_id = utexas:251
+# text = In ajchʼajal chichʼ.
+# text[spa] = Soy «lavador» de carros.
+# labels = tijonik-41 complete
+"<In>"
+	"in" prn pers p1 sg @nsubj #1->2
+"<ajchʼajal>"
+	"ajchʼajal" n @root #2->0
+"<chichʼ>"
+	"chʼichʼ" n @compound #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:252
+# text = In bʼanal wa.
+# text[spa] = Soy cocinero (el que hace la comida).
+# labels = tijonik-41 complete check-analyses
+"<In>"
+	"in" prn pers p1 sg @nsubj #1->2
+"<bʼanal>"
+	"bʼanal" n @root #2->0
+"<wa>"
+	"wa" n @compound #3->2
+"<.>"
+	"." sent @punct #4->2
+
+# sent_id = utexas:253
+# text = In loqʼomanel re ixim.
+# text[spa] = Soy el que compra el maiz.
+# labels = tijonik-41 complete check-pronoun
+"<In>"
+	"in" prn pro p1 sg @aux #1->2
+"<loqʼomanel>"
+	"loqʼomanel" n @root #2->0
+"<re>"
+	"ech" n rel px3sg @nmod #3->2
+"<ixim>"
+	"ixim" n @nmod #4->3
+"<.>"
+	"." sent @punct #5->2
+
+# sent_id = utexas:255
+# text = In chajinel kech le akʼalabʼ.
+# text[spa] = Yo soy el que cuida a los niños
+# labels = tijonik-41 complete check-pronoun
+"<In>"
+	"in" prn pro p1 sg @aux #1->2
+"<chajinel>"
+	"chajinel" n @root #2->0
+"<kech>"
+	"ech" n rel px3pl @nmod #3->2
+"<le>"
+	"le" det @det #4->5
+"<akʼalabʼ>"
+	"akʼal" n pl @nmod #5->3
+"<.>"
+	"." sent @punct #6->2
+
+# sent_id = utexas:256
+# text = Elaqʼanel rech chʼichʼ.
+# text[spa] = El que roba los carros
+# labels = tijonik-41 complete
+"<Elaqʼanel>"
+	"elaqʼanel" n @root #1->0
+"<rech>"
+	"ech" n rel px3sg @nmod #2->1
+"<chʼichʼ>"
+	"chʼichʼ" n @nmod #3->2
+"<.>"
+	"." sent @punct #4->1
+
+# sent_id = utexas:257
+# text = Eleqʼal chʼichʼ.
+# text[spa] = Roba carros
+# labels = tijonik-41 complete
+"<Eleqʼal>"
+	"eleqʼal" n @root #1->0
+"<chʼichʼ>"
+	"chʼichʼ" n @compound #2->1
+"<.>"
+	"." sent @punct #3->1
+
+# sent_id = utexas:258
+# text = Xbʼe che utzukuxik le ali.
+# text[spa] = Él fue a buscar a la muchacha.
+# labels = tijonik-41 complete
+"<Xbʼe>"
+	"bʼe" v iv perf s_sg3 @root #1->0
+"<che>"
+	"chi" pr @case #2->3
+		"ech" n rel px3sg @obl #3->1
+"<utzukuxik>"
+	"tzukuj" v tv pass inf s_sg3 @acl #4->3
+"<le>"
+	"le" det @det #5->6
+"<ali>"
+	"ali" n @nsubj #6->4
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:259
+# text = xumajij oqʼej le nan.
+# text[spa] = La madre empezó a llorar.
+# labels = tijonik-41 complete check-analyses
+"<xumajij>"
+	"majij" v tv perf o_sg3 s_sg3 @root #1->0
+"<oqʼej>"
+	"oqʼej" n @obj #2->1
+"<le>"
+	"le" det @det #3->4
+"<nan>"
+	"nan²" n @nsubj #4->1
+"<.>"
+	"." sent @punct #5->1
+
+# sent_id = utexas:260
+# text = Xumajij oqʼej le nan.
+# text[spa] = La muchachá empezó a llorar por su madre
+# labels = tijonik-41 incomplete
+"<Xumajij>"
+	"majij" v tv perf o_sg3 s_sg3 @root #1->0
+"<roqʼexik>"
+	"oqʼej" v tv pass inf s_sg3
+"<uwach>"
+	"wach" n rel px3sg
+"<le>"
+	"le" det @det #4->5
+"<unan>"
+	"nan¹" n px3sg
+"<le>"
+	"le" det @det #6->7
+"<ali>"
+	"ali" n @nsubj #7->1
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:261
+# text = We chatchakunik, kʼo awa.
+# text[spa] = Si vas a trabajar, tienes comida.
+# labels = tijonik-42 complete
+"<We>"
+	"we¹" cnjsub @mark #1->2
+"<chatchakunik>"
+	"chakun" v iv imp s_sg2 @advcl #2->5
+		"ik" aux @aux:ss #3->2
+"<,>"
+	"," cm @punct #4->2
+"<kʼo>"
+	"kʼo" part @root #5->0
+"<awa>"
+	"wa" n px2sg @nsubj #6->5
+"<.>"
+	"." sent @punct #7->5
+
+# sent_id = utexas:262
+# text = We chatchakunik, kʼo awa.
+# text[spa] = Si vas a trabajar, tienes comida.
+# labels = tijonik-42 complete
+"<We>"
+	"we¹" cnjsub @mark #1->2
+"<chatchakunik>"
+	"chakun" v iv imp s_sg2 @advcl #2->5
+		"ik" aux @aux:ss #3->2
+"<,>"
+	"," cm @punct #4->2
+"<kʼo>"
+	"kʼo" part @root #5->0
+"<awa>"
+	"wa" n px2sg @nsubj #6->5
+"<.>"
+	"." sent @punct #7->5
+
+# sent_id = utexas:263
+# text = We chabʼij, na katinchʼabʼej ta chik.
+# text[spa] = Si vas a decir, ya no te voy a hablar.
+# labels = tijonik-42 complete
+"<We>"
+	"we¹" cnjsub @mark #1->2
+"<chabʼij>"
+	"bʼij" v tv imp o_sg3 s_sg2 @advcl #2->5
+"<,>"
+	"," cm @punct #3->2
+"<na>"
+	"na" neg @advmod:neg #4->5
+"<katinchʼabʼej>"
+	"chʼabʼej" v tv impf o_sg2 s_sg1 @root #5->0
+"<ta>"
+	"taj" neg @aux #6->5
+"<chik>"
+	"chik" adv @advmod #7->5
+"<.>"
+	"." sent @punct #8->5
+
+# sent_id = utexas:264
+# text = We chojbʼe pa le nimaqʼij, keqil le ajxojolobʼ.
+# text[spa] = Si vamos a la feria, veremos a los bailadores.
+# labels = tijonik-42 complete
+"<We>"
+	"we¹" cnjsub @mark #1->2
+"<chojbʼe>"
+	"bʼe" v iv imp s_pl1 @advcl #2->7
+"<pa>"
+	"pa" pr @case #3->5
+"<le>"
+	"le" det @det #4->5
+"<nimaqʼij>"
+	"nimaqʼij" n @obl #5->2
+"<,>"
+	"," cm @punct #6->2
+"<keqil>"
+	"il" v tv impf o_pl3 s_pl1 @root #7->0
+"<le>"
+	"le" det @det #8->9
+"<ajxojolobʼ>"
+	"ajxojolabʼ" n @obj #9->7
+"<.>"
+	"." sent @punct #10->7
+
+# sent_id = utexas:265.1
+# text = Wemna chpe le jabʼ kakam le abʼix.
+# text[spa] = Si no viene la lluvia se muere la milpa.
+# labels = tijonik-42 complete
+"<Wemna>"
+	"we¹" cnjsub @mark #1->3
+		"man" neg @advmod:neg #2->3
+"<chpe>"
+	"pe" v iv imp s_sg3 @advcl #3->6
+"<le>"
+	"le" det @det #4->5
+"<jabʼ>"
+	"jäbʼ" n @nsubj #5->3
+"<kakam>"
+	"käm" v iv impf s_sg3 @root #6->0
+"<le>"
+	"le" det @det #7->8
+"<abʼix>"
+	"abʼix" n @nsubj #8->6
+"<.>"
+	"." sent @punct #9->6
+
+# sent_id = utexas:265.2
+# text = Wemna chaloqʼ axiyal, na kimbʼe ta awukʼ.
+# text[spa] = Si no te compras un abrigo, no iré contigo.
+# labels = tijonik-42 complete
+"<Wemna>"
+	"we¹" cnjsub @mark #1->3
+		"man" neg @advmod:neg #2->3
+"<chaloqʼ>"
+	"loqʼ" v tv imp o_sg3 s_sg2 @advcl #3->7
+"<axiyal>"
+	"axiyal" n @obj #4->3
+"<,>"
+	"," cm @punct #5->3
+"<na>"
+	"na" neg @advmod:neg #6->7
+"<kimbʼe>"
+	"bʼe" v iv impf s_sg1 @root #7->0
+"<ta>"
+	"taj" neg @aux #8->7
+"<awukʼ>"
+	"ukʼ" n rel px2sg @obl #9->7
+"<.>"
+	"." sent @punct #10->7
+
+# sent_id = utexas:266
+# text = Pine ta ne maj nurajil, kimbʼe wi.
+# text[spa] = Aunque no tenga dinero, iré (de todas formas)
+# labels = tijonik-42 complete
+"<Pine>"
+	"pine" cnjsub @mark #1->4
+"<ta>"
+	"taj" neg @aux #2->4
+"<ne>"
+	"ne" adv @advmod #3->4
+"<maj>"
+	"maj" part neg @advcl #4->7
+"<nurajil>"
+	"rajil" n px1sg @nsubj #5->4
+"<,>"
+	"," cm @punct #6->4
+"<kimbʼe>"
+	"bʼe" v iv impf s_sg1 @root #7->0
+"<wi>"
+	"wi" foc @advmod #8->7
+"<.>"
+	"." sent @punct #9->7
+
+# sent_id = utexas:267
+# text = Pine ta ne kinitzapij pa cheʼ kintor wibʼ.
+# text[spa] = Aunque me encierren en la carcel, saldré (lit: me abriré).
+# labels = tijonik-42 complete
+"<Pine>"
+	"pine" cnjsub @mark #1->4
+"<ta>"
+	"taj" neg @aux #2->4
+"<ne>"
+	"ne" adv @advmod #3->4
+"<kinitzapij>"
+	"tzʼapij" v tv impf o_sg1 s_pl2 @advcl #4->7
+"<pa>"
+	"pa" pr @case #5->6
+"<cheʼ>"
+	"cheʼ" n @obl #6->4
+"<kintor>"
+	"tor" v tv impf o_sg3 s_sg1 @root #7->0
+"<wibʼ>"
+	"ibʼ" n rel px1sg @obj #8->7
+"<.>"
+	"." sent @punct #9->7
+
+# sent_id = utexas:268
+# text = Are ta xraj le tzʼiʼ xok pa le jul, par na xkowin taj rumal sibʼalaj nim.
+# text[spa] = Quiso entrar el perro en el hoyo, pero no pudo porque es muy grande.
+# labels = tijonik-42 complete
+"<Are>"
+	"areʼ" prn pers p3 sg @nsubj #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<xraj>"
+	"aj" v tv perf o_sg3 s_sg3 @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<tzʼiʼ>"
+	"tzʼiʼ" n @obj #5->6
+"<xok>"
+	"ok" v iv perf s_sg3 @xcomp #6->3
+"<pa>"
+	"pa" pr @case #7->9
+"<le>"
+	"le" det @det #8->9
+"<jul>"
+	"jul" n @obl #9->6
+"<,>"
+	"," cm @punct #10->13
+"<par>"
+	"par" cnjcoo @cc #11->13
+"<na>"
+	"na" neg @advmod:neg #12->13
+"<xkowin>"
+	"kowin" v iv perf s_sg3 @conj #13->3
+"<taj>"
+	"taj" neg fin @aux #14->13
+"<rumal>"
+	"rumal" cnjsub @mark #15->17
+"<sibʼalaj>"
+	"sibʼalaj" adv @advmod #16->17
+"<nim>"
+	"nim" adj @advcl #17->13
+"<.>"
+	"." sent @punct #18->3
+
+# sent_id = utexas:269
+# text = Are ta xiwaj xixbʼixanik par na utz ta le iqul.
+# text[spa] = Ustedes quisieron cantar pero sus voces no son buenas.
+# labels = tijonik-42 complete
+"<Are>"
+	"are" foc @discourse #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<xiwaj>"
+	"aj" v tv perf o_sg3 s_pl2 @root #3->0
+"<xixbʼixanik>"
+	"bʼixaj" v tv anti perf s_pl2 @xcomp #4->3
+		"ik" aux @aux:ss #5->4
+"<par>"
+	"par" cnjcoo @cc #6->8
+"<na>"
+	"na" neg @advmod:neg #7->8
+"<utz>"
+	"utz" adj @conj #8->3
+"<ta>"
+	"taj" neg @aux #9->8
+"<le>"
+	"le" det @det #10->11
+"<iqul>"
+	"qul" n px2pl @nsubj #11->8
+"<.>"
+	"." sent @punct #12->3
+
+# sent_id = utexas:270
+# text = Pinemna kabʼe le watz, kimbʼe wi in pa kaʼyibʼal.
+# text[spa] = Aunque no vaya mi hermano, yo iré (de todas maneras) al mercado.
+# labels = tijonik-42 complete
+"<Pinemna>"
+	"pine" cnjsub @mark #1->3
+		"man" neg @advmod:neg #2->3
+"<kabʼe>"
+	"bʼe" v iv impf s_sg3 @advcl #3->7
+"<le>"
+	"le" det @det #4->5
+"<watz>"
+	"atz" n px1sg @nsubj #5->3
+"<,>"
+	"," cm @punct #6->3
+"<kimbʼe>"
+	"bʼe" v iv impf s_sg1 @root #7->0
+"<wi>"
+	"wi" foc @advmod #8->7
+"<in>"
+	"in" prn pers p1 sg @nsubj #9->7
+"<pa>"
+	"pa" pr @case #10->11
+"<kaʼyibʼal>"
+	"kaʼyibʼal" n @obl #11->7
+"<.>"
+	"." sent @punct #12->7
+
+# sent_id = utexas:271
+# text = Kinya waʼ we chʼichʼ pinemna utz.
+# text[spa] = Voy a dar este machete, aunque no sea bueno.
+# labels = tijonik-42 complete
+"<Kinya>"
+	"yaʼ" v tv impf o_sg3 s_sg1 @root #1->0
+"<waʼ>"
+	"waʼ" det @det #2->4
+"<we>"
+	"we" det @det #3->4
+"<chʼichʼ>"
+	"chʼichʼ" n @obj #4->1
+"<pinemna>"
+	"pine" cnjsub @mark #5->7
+		"man" neg @advmod:neg #6->7
+"<utz>"
+	"utz" adj @advcl #7->1
+"<.>"
+	"." sent @punct #8->1
+
+# sent_id = utexas:273
+# text = We ta xatbʼe wukʼ pa le tinamit, xaloqʼ ta laʼ le ujastaq le akʼajol.
+# text[spa] = Si hubieras ido conmigo al pueblo, hubieras comprado la ropa de tu hijo.
+# labels = tijonik-42 complete check-analyses
+"<We>"
+	"we¹" cnjsub @mark #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<xatbʼe>"
+	"bʼe" v iv perf s_sg2 @advcl #3->9
+"<wukʼ>"
+	"ukʼ" n rel px1sg @obl #4->3
+"<pa>"
+	"pa" pr @case #5->7
+"<le>"
+	"le" det @det #6->7
+"<tinamit>"
+	"tinamit" n @obl #7->3
+"<,>"
+	"," cm @punct #8->3
+"<xaloqʼ>"
+	"loqʼ" v tv perf o_sg3 s_sg2 @root #9->0
+"<ta>"
+	"taj" neg @dep #10->9
+"<laʼ>"
+	"laʼ" prn dem @det #11->13
+"<le>"
+	"le" det @det #12->13
+"<ujastaq>"
+	"jastaq" n px3sg @obj #13->9
+"<le>"
+	"le" det @det #14->15
+"<akʼajol>"
+	"kʼojolaxel" n px2sg @nmod #15->13
+"<.>"
+	"." sent @punct #16->9
+
+# sent_id = utexas:274
+# text = We ta xatbʼe wukʼ pa le tinamit, xaloqʼ ta waʼ we jastaq.
+# text[spa] = Si hubieras ido conmigo al pueblo, hubieras comprado esta ropa.
+# labels = tijonik-42 complete check-irrealis
+"<We>"
+	"we¹" cnjsub @mark #1->3
+"<ta>"
+	"taj" neg @discourse #2->3
+"<xatbʼe>"
+	"bʼe" v iv perf s_sg2 @advcl #3->9
+"<wukʼ>"
+	"ukʼ" n rel px1sg @obl #4->3
+"<pa>"
+	"pa" pr @case #5->7
+"<le>"
+	"le" det @det #6->7
+"<tinamit>"
+	"tinamit" n @obl #7->3
+"<,>"
+	"," cm @punct #8->3
+"<xaloqʼ>"
+	"loqʼ" v tv perf o_sg3 s_sg2 @root #9->0
+"<ta>"
+	"taj" neg @discourse #10->9
+"<waʼ>"
+	"waʼ" det @det #11->13
+"<we>"
+	"we" det @det #12->13
+"<jastaq>"
+	"jastaq" n @obl #13->9
+"<.>"
+	"." sent @punct #14->9
+
+# sent_id = utexas:275
+# text = We ta ma ta xatbʼe pa le tinamit ma ta xaloqʼ laʼ le ujastaq le akʼajol.
+# text[spa] = Si no hubieras ido al pueblo, no hubieras comprado la ropa de tu hijo.
+# labels = tijonik-42 complete check-negative
+"<We>"
+	"we¹" cnjsub @mark #1->5
+"<ta>"
+	"taj" neg @aux #2->5
+"<ma>"
+	"ma" neg @advmod:neg #3->5
+"<ta>"
+	"taj" neg @aux #4->5
+"<xatbʼe>"
+	"bʼe" v iv perf s_sg2 @advcl #5->11
+"<pa>"
+	"pa" pr @case #6->8
+"<le>"
+	"le" det @det #7->8
+"<tinamit>"
+	"tinamit" n @obl #8->5
+"<ma>"
+	"ma" neg @advmod:neg #9->11
+"<ta>"
+	"taj" neg @aux #10->11
+"<xaloqʼ>"
+	"loqʼ" v tv perf o_sg3 s_sg2 @root #11->0
+"<laʼ>"
+	"laʼ" prn dem @det #12->14
+"<le>"
+	"le" det @det #13->14
+"<ujastaq>"
+	"jastaq" n px3sg @obj #14->11
+"<le>"
+	"le" det @det #15->16
+"<akʼajol>"
+	"kʼojolaxel" n px2sg @nmod #16->14
+"<.>"
+	"." sent @punct #17->11
+
+# sent_id = utexas:276
+# text = We ta ma ta xinawilo ma ta kinya bʼe laʼ chawech.
+# text[spa] = Si no me hubieras visto, no te hubiera dado permiso.
+# labels = tijonik-42 incomplete
+"<We>"
+	"we¹" cnjsub @mark
+"<ta>"
+	"taj" neg @aux
+"<ma>"
+	"ma" neg @advmod:neg
+"<ta>"
+	"taj" neg @aux
+"<xinawilo>"
+	"il" v tv perf o_sg1 s_sg2 @advcl
+		"u" aux @aux:ss
+"<ma>"
+	"ma" neg @advmod:neg
+"<ta>"
+	"taj" neg @aux
+"<kinya>"
+	"yaʼ" v tv impf o_sg3 s_sg1 @root
+"<bʼe>"
+	"bʼe" n
+"<laʼ>"
+	"laʼ" prn dem
+"<chawech>"
+	"chi" pr
+		"ech" n rel px2sg
+"<.>"
+	"." sent
+
+# sent_id = utexas:277
+# text = We ta xakunaj le atat ma ta xkam laʼ.
+# text[spa] = Si hubieras curado a tu papá, no se hubiera muerto.
+# labels = tijonik-42 complete check-negative
+"<We>"
+	"we¹" cnjsub @mark #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<xakunaj>"
+	"kunaj" v tv perf o_sg3 s_sg2 @advcl #3->8
+"<le>"
+	"le" det @det #4->5
+"<atat>"
+	"tat" n px2sg @obj #5->3
+"<ma>"
+	"ma" neg @advmod:neg #6->8
+"<ta>"
+	"taj" neg @aux #7->8
+"<xkam>"
+	"käm" v iv perf s_sg3 @root #8->0
+"<laʼ>"
+	"laʼ" prn dem @nsubj #9->8
+"<.>"
+	"." sent @punct #10->8
+
+# sent_id = utexas:278
+# text = We ta xanimaj jas le xinbʼij chawech, ma ta je laʼ laʼ xabʼano.
+# text[spa] = Si me hubieras hecho caso, no estarías así.
+# labels = tijonik-42 incomplete
+"<We>"
+	"we¹" cnjsub @mark #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<xanimaj>"
+	"nimaj" v tv perf o_sg3 s_sg2 @root #3->
+"<jas>"
+	"jas" prn itg @obj #4->3
+"<le>"
+	"le" prn rel @obj #5->6
+"<xinbʼij>"
+	"bʼij" v tv perf o_sg3 s_sg1 @acl #6->4
+"<chawech>"
+	"chi" pr @case #7->8
+		"ech" n rel px2sg @obl #8->6
+"<,>"
+	"," cm @punct #9->
+"<ma>"
+	"ma" neg @advmod:neg #10->
+"<ta>"
+	"taj" neg @aux #11->
+"<je>"
+	"je" adv @
+"<laʼ>"
+	"laʼ" prn dem
+"<laʼ>"
+	"laʼ" prn dem
+"<xabʼano>"
+	"bʼan" v tv perf o_sg3 s_sg2 @root
+		"u" aux @aux:ss
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:279
+# text = We ta ma ta aqʼabʼ kabʼek, maj ta utem laʼ kuriq pa le nimachʼichʼ.
+# text[spa] = Si no se fuera temprano, no encontraría silla en el bus.
+# labels = tijonik-42 incomplete
+"<We>"
+	"we¹" cnjsub @mark
+"<ta>"
+	"taj" neg @aux
+"<ma>"
+	"ma" neg @advmod:neg
+"<ta>"
+	"taj" neg @aux
+"<aqʼabʼ>"
+	"aqʼabʼ" adv @advmod
+"<kabʼek>"
+	"bʼe" v iv impf s_sg3 @advcl
+		"ik" aux @aux:ss
+"<,>"
+	"," cm @punct
+"<maj>"
+	"maj" part neg
+"<ta>"
+	"taj" neg
+"<utem>"
+	"tem" n px3sg
+"<laʼ>"
+	"laʼ" prn dem
+"<kuriq>"
+	"riq" v tv impf o_sg3 s_sg3
+"<pa>"
+	"pa" pr @case
+"<le>"
+	"le" det @det
+"<nimachʼichʼ>"
+	"nimachʼichʼ" n @obl
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:280
+# text = We ta kape le jabʼ kamik.
+# text[spa] = Si hoy viniera la lluvia.
+# labels = tijonik-42 complete
+"<We>"
+	"we¹" cnjsub @mark #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<kape>"
+	"pe" v iv impf s_sg3 @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<jabʼ>"
+	"jäbʼ" n @nsubj #5->3
+"<kamik>"
+	"kamik" adv @advmod #6->3
+"<.>"
+	"." sent @punct #7->3
+
+# sent_id = utexas:281
+# text = We ta je laʼ kabʼan pa le tinamit...
+# text[spa] = Si así se hiciera en el pueblo...
+# labels = tijonik-42 complete
+"<We>"
+	"we¹" cnjsub @mark #1->5
+"<ta>"
+	"taj" neg @aux #2->5
+"<je>"
+	"je" adv @advmod #3->5
+"<laʼ>"
+	"laʼ" prn dem @nsubj #4->5
+"<kabʼan>"
+	"bʼan" v tv pass impf s_sg3 @root #5->0
+"<pa>"
+	"pa" pr @case #6->8
+"<le>"
+	"le" det @det #7->8
+"<tinamit>"
+	"tinamit" n @obl #8->5
+"<...>"
+	"..." sent @punct #9->5
+
+# sent_id = utexas:282
+# text = We ta ne in xinbʼanowik, are le a Teʼk xbʼanowik.
+# text[spa] = Si yo no fui quien lo hizo, fue el Diego quien lo hizo.
+# labels = tijonik-42 complete check-pronoun
+"<We>"
+	"we¹" cnjsub @mark #1->5
+"<ta>"
+	"taj" neg @aux #2->5
+"<ne>"
+	"ne" adv @advmod #3->5
+"<in>"
+	"in" prn pers p1 sg @nsubj #4->5
+"<xinbʼanowik>"
+	"bʼan" v tv anti agfoc perf s_sg1 @advcl #5->12
+		"ik" aux @aux:ss #6->5
+"<,>"
+	"," cm @punct #7->5
+"<are>"
+	"are" foc @discourse #8->12
+"<le>"
+	"le" det @det #9->11
+"<a>"
+	"ala" clf m @clf #10->11
+"<Teʼk>"
+	"Teʼk" np ant m @nsubj #11->12
+"<xbʼanowik>"
+	"bʼan" v tv anti agfoc perf s_sg3 @root #12->0
+		"ik" aux @aux:ss #13->12
+"<.>"
+	"." sent @punct #14->12
+
+# sent_id = utexas:283
+# text = We ta ne aʼre xetijow le rikil, are le komon xetijowik.
+# text[spa] = Si no fueron ellos quienes comieron la comida, fueron los de la comunidad.
+# labels = tijonik-42 incomplete check-pronoun
+"<We>"
+	"we¹" cnjsub @mark
+"<ta>"
+	"taj" neg @aux
+"<ne>"
+	"ne" adv @advmod
+"<aʼre>"
+	"aʼre" prn pers p3 pl @nsubj
+"<xetijow>"
+	"tijow" v iv perf s_pl3 @advcl
+"<le>"
+	"le" det @det
+"<rikil>"
+	"rikiʼl" n
+"<,>"
+	"," cm
+"<are>"
+	"are" foc
+"<le>"
+	"le" det
+"<komon>"
+	"komon" n
+"<xetijowik>"
+	"tijow" v iv perf s_pl3
+		"ik" mark
+"<.>"
+	"." sent
+
+# sent_id = utexas:284.1
+# text = Ma ta xabʼinsaj le chʼichʼ.
+# text[spa] = No hubieras manejado el carro.
+# labels = tijonik-42 complete
+"<Ma>"
+	"ma" neg @advmod:neg #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<xabʼinsaj>"
+	"bʼinisaj" v tv perf o_sg3 s_sg2 @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<chʼichʼ>"
+	"chʼichʼ" n @obj #5->3
+"<.>"
+	"." sent @punct #6->3
+
+# sent_id = utexas:284.2
+# text = Xaq xew xayojo.
+# text[spa] = Solo lo descompusiste.
+# labels = tijonik-42 complete
+"<Xaq>"
+	"xaq" adv @advmod #1->3
+"<xew>"
+	"xew" adv @advmod #2->3
+"<xayojo>"
+	"yoj" v tv perf o_sg3 s_sg2 @root #3->0
+		"u" aux @aux:ss #4->3
+"<.>"
+	"." sent @punct #5->3
+
+# sent_id = utexas:285.1
+# text = Ma ta xinyaj le ali.
+# text[spa] = No hubiera regañado a la muchacha.
+# labels = tijonik-42 complete
+"<Ma>"
+	"ma" neg @advmod:neg #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<xinyaj>"
+	"yaj" v tv perf o_sg3 s_sg1 @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<ali>"
+	"ali" n @obj #5->3
+"<.>"
+	"." sent @punct #6->3
+
+# sent_id = utexas:285.2
+# text = Numak xyawajik.
+# text[spa] = Por mi culpa se enfermó.
+# labels = tijonik-42 incomplete check-missing-word
+"<Ma>"
+	"ma" neg
+"<Numak>"
+	"mak" n px1sg
+"<xyawajik>"
+	"yawaj" v iv perf s_sg3
+		"ik" mark
+"<.>"
+	"." sent
+
+# sent_id = utexas:286
+# text = Ma ta kʼo jun kakanaj kanoq, qonojel kojbʼek.
+# text[spa] = Que nadie se quede, todos nos vamos.
+# labels = tijonik-42 incomplete
+"<Ma>"
+	"ma" neg
+"<ta>"
+	"taj" neg
+"<kʼo>"
+	"kʼo" part
+"<jun>"
+	"jun" num
+"<kakanaj>"
+	"kanaj" v iv impf s_sg3
+"<kanoq>"
+	"kan" adv dir
+		"oq" mark
+"<,>"
+	"," cm @punct
+"<qonojel>"
+	"onojel" n rel px1pl @nsubj
+"<kojbʼek>"
+	"bʼe" v iv impf s_pl1 @parataxis
+		"ik" aux @aux:ss
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:287
+# text = Ma ta kabʼe le nuxbʼal pa le tinamit.
+# text[spa] = Que no vaya mi hermano (de mujer) al pueblo.
+# labels = tijonik-42 complete check-negation
+"<Ma>"
+	"ma" neg @advmod:neg #1->3
+"<ta>"
+	"taj" neg @aux #2->3
+"<kabʼe>"
+	"bʼe" v iv impf s_sg3 @root #3->0
+"<le>"
+	"le" det @det #4->5
+"<nuxbʼal>"
+	"xibʼal" n px1sg @nsubj #5->3
+"<pa>"
+	"pa" pr @case #6->8
+"<le>"
+	"le" det @det #7->8
+"<tinamit>"
+	"tinamit" n @obl #8->3
+"<.>"
+	"." sent @punct #9->3
+
+# sent_id = utexas:289
+# text = Are ta bʼa ri qaqajaw kixtewechiʼnik.
+# text[spa] = Que nuestro señor los bendiga.
+# labels = tijonik-42 complete check-antipassive
+"<Are>"
+	"are" foc @discourse #1->6
+"<ta>"
+	"taj" neg @aux #2->6
+"<bʼa>"
+	"bʼaʼ" mod @aux #3->6
+"<ri>"
+	"ri" det @det #4->5
+"<qaqajaw>"
+	"qajaw" n px1pl @nsubj #5->6
+"<kixtewechiʼnik>"
+	"tewechiʼj" v tv anti impf s_pl2 @root #6->0
+		"ik" aux @aux:ss #7->6
+"<.>"
+	"." sent @punct #8->6
+
+# sent_id = utexas:290
+# text = Chpe ta bʼa le loqʼalaj jabʼ.
+# text[spa] = Que venga la bendita lluvia.
+# labels = tijonik-42 complete
+"<Chpe>"
+	"pe" v iv imp s_sg3 @root #1->0
+"<ta>"
+	"taj" neg @discourse #2->1
+"<bʼa>"
+	"bʼaʼ" mod @discourse #3->1
+"<le>"
+	"le" det @det #4->6
+"<loqʼalaj>"
+	"loqʼ" adj ints @amod #5->6
+"<jabʼ>"
+	"jäbʼ" n @nsubj #6->1
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:291.1
+# text = Chqil ta bʼa qibʼ chweʼq.
+# text[spa] = Que nos veamos mañana.
+# labels = tijonik-42 complete
+"<Chqil>"
+	"il" v tv imp o_sg3 s_pl1 @root #1->0
+"<ta>"
+	"taj" neg @discourse #2->1
+"<bʼa>"
+	"bʼaʼ" mod @discourse #3->1
+"<qibʼ>"
+	"ibʼ" n rel px1pl @obl #4->1
+"<chweʼq>"
+	"chweʼq" adv @advmod #5->1
+"<.>"
+	"." sent @punct #6->1
+
+# sent_id = utexas:291.2
+# text = Oj ta bʼa chojchʼakanik.
+# text[spa] = Que ganemos.
+# labels = tijonik-42 complete
+"<Oj>"
+	"oj" prn pers p1 pl @nsubj #1->4
+"<ta>"
+	"taj" aux @aux #2->4
+"<bʼa>"
+	"bʼaʼ" mod @discourse #3->4
+"<chojchʼakanik>"
+	"chʼak" v tv anti imp s_pl1 @root #4->0
+		"ik" aux @aux:ss #5->4
+"<.>"
+	"." sent @punct #6->4
+
+# sent_id = utexas:292
+# text = Chinkʼasiʼ ta bʼa na chixoʼl.
+# text[spa] = Que (yo) viva todavía entre ustedes.
+# labels = tijonik-42 incomplete
+"<Chinkʼasiʼ>"
+	"kʼasiʼ" v iv imp s_sg1 @root #1->0
+"<ta>"
+	"taj" neg @discourse #2->1
+"<bʼa>"
+	"bʼaʼ" mod @discourse #3->1
+"<na>"
+	"na" adv @advmod #4->1
+"<chixoʼl>"
+	"chi" pr @case #5->6
+		"xoʼl" n rel px2pl @obl #6->1
+"<.>"
+	"." sent @punct #7->1
+
+# sent_id = utexas:293
+# text = Ma ta bʼa chiriq kʼax pa le bʼe.
+# text[spa] = Que no encuentren dificultades en el camino.
+# labels = tijonik-42 complete
+"<Ma>"
+	"ma" neg @advmod:neg #1->4
+"<ta>"
+	"ta" aux @aux #2->4
+"<bʼa>"
+	"bʼaʼ" mod @discourse #3->4
+"<chiriq>"
+	"riq" v tv imp o_sg3 s_pl2 @root #4->0
+"<kʼax>"
+	"kʼax" n @obj #5->$
+"<pa>"
+	"pa" pr @case #6->8
+"<le>"
+	"le" det @det #7->8
+"<bʼe>"
+	"bʼe" n @obl #8->4
+"<.>"
+	"." sent @punct #9->4
+
+# sent_id = utexas:294
+# text = Are ta bʼa le qaqajaw chattoʼwik.
+# text[spa] = Que nuestro señor te ayude.
+# labels = tijonik-42 complete
+"<Are>"
+	"are" foc @discourse #1->6
+"<ta>"
+	"taj" aux @aux #2->6
+"<bʼa>"
+	"bʼaʼ" mod @discourse #3->6
+"<le>"
+	"le" det @det #4->5
+"<qaqajaw>"
+	"qajaw" n px1pl @nsubj #5->6
+"<chattoʼwik>"
+	"toʼ" v tv anti imp o_sg2 s_sg3 @root #6->0
+		"ik" aux @aux:ss #7->6
+"<.>"
+	"." sent @punct #8->6
+
+# sent_id = utexas:295
+# text = Ri tat nan ojer na xkaj taj cher ri ali xkojiʼ ta ne pa ri tijobʼal.
+# text[spa] = Nuestros padres y madres antiguamente no quisieron que la muchacha estuviera en la escuela.
+# labels = tijonik-42 complete
+"<Ri>"
+	"ri" det @det #1->2
+"<tat>"
+	"tat" n @nsubj #2->6
+"<nan>"
+	"nan²" n @compound #3->2
+"<ojer>"
+	"ojer" adv @advmod #4->6
+"<na>"
+	"na" neg @advmod:neg #5->6
+"<xkaj>"
+	"aj" v tv perf o_sg3 s_pl3 @root #6->0
+"<taj>" 
+	"taj" neg fin @aux #7->6
+"<cher>"
+	"chi" pr @case #8->9
+		"ech" n rel px3sg @obl #9->6
+"<ri>"
+	"ri" det @det #10->11
+"<ali>"
+	"ali" n @nsubj #11->12
+"<xkojiʼ>"
+	"kojiʼ" v tv pass perf s_sg3 @acl #12->9
+"<ta>"
+	"taj" aux @aux #13->12
+"<ne>"
+	"ne" adv @advmod #14->12
+"<pa>"
+	"pa" pr @case #15->17
+"<ri>"
+	"ri" det @det #16->17
+"<tijobʼal>"
+	"tijobʼal" n @obl #17->12
+"<.>"
+	"." sent @punct #18->6
+
+# sent_id = utexas:296
+# text = Xaq ta ne kimbʼe iwukʼ.
+# text[spa] = Que fuera yo con ustedes.
+# labels = tijonik-42 complete check-adv
+"<Xaq>"
+	"xaq" adv @advmod #1->4
+"<ta>"
+	"taj" aux @aux #2->4
+"<ne>"
+	"ne" adv @advmod #3->4
+"<kimbʼe>"
+	"bʼe" v iv impf s_sg1 @root #4->0
+"<iwukʼ>"
+	"ukʼ" n rel px2pl @obl #5->4
+"<.>"
+	"." sent @punct #6->4
+
+# sent_id = utexas:297
+# text = Ma ta ne xwaj le kʼuhjnem rukʼ le a Teʼk.
+# text[spa] = No hubiera aceptado el casamiento con Diego
+# labels = tijonik-42 incomplete check-verb
+"<Ma>"
+	"ma" neg
+"<ta>"
+	"taj" neg
+"<ne>"
+	"ne" adv
+"<xwaj>"
+	"aj" v tv perf o_sg3 s_sg2
+"<le>"
+	"le" det
+"<kʼuhjnem>"
+	"kʼuhjnem" n
+"<rukʼ>"
+	"ukʼ" n rel px3sg
+"<le>"
+	"le" det @det
+"<a>"
+	"ala" clf m @clf
+"<Teʼk>"
+	"Teʼk" np ant m @nmod
+"<.>"
+	"." sent
+
+# sent_id = utexas:298
+# text = Rajawaxik ta ne laʼ katchakun wukʼ.
+# text[spa] = Deberías de trabajar conmigo.
+# labels = tijonik-42 incomplete
+"<Rajawaxik>"
+	"rajawaxik" n @root
+"<ta>"
+	"taj" aux @aux
+"<ne>"
+	"ne" adv @advmod
+"<laʼ>"
+	"laʼ" prn dem
+"<katchakun>"
+	"chakun" v iv impf s_sg2 @csubj
+"<wukʼ>"
+	"ukʼ" n rel px1sg @obl
+"<.>"
+	"." sent @punct
+
+# sent_id = utexas:299
+# text = We ne xatkowin ta laʼ xatbʼe rukʼ le al Talin.
+# text[spa] = Tal vez hubieras podido ir con Catarina.
+# labels = tijonik-42 incomplete
+"<We>"
+	"we¹" cnjsub @mark
+"<ne>"
+	"ne" adv
+"<xatkowin>"
+	"kowin" v iv perf s_sg2
+"<ta>"
+	"taj" neg
+"<laʼ>"
+	"laʼ" prn dem
+"<xatbʼe>"
+	"bʼe" v iv perf s_sg2
+"<rukʼ>"
+	"ukʼ" n rel px3sg @obl
+"<le>"
+	"le" det @det
+"<al>"
+	"ali" clf f @clf
+"<Talin>"
+	"Talin" np ant f @nmod
+"<.>"
+	"." sent @punct
 

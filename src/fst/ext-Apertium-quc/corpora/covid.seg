@@ -1,0 +1,113 @@
+# sent_id = covid:2.0
+# text = Loqʼ katkuntaj che le yabʼil (COVID-19).
+# text[spa] = Es posible recuperarse de la enfermedad por coronavirus (COVID-19).
+# labels = complete
+^Loqʼ/loqʼ$
+^katkuntaj/k>at>kun>taj$
+^che/ch>e$
+^le/le$
+^yabʼil/yabʼil$
+^(/($
+^COVID-19/COVID-19$
+^)/)$
+^./.$
+
+# sent_id = covid:4
+# text = We katij tzam man katuchajij ta che le COVID-19 xuqujeʼ xibʼabʼal chawe.
+# text[spa] = Beber alcohol NO lo protegerá del COVID-19 y podría ser peligroso.
+# labels = complete
+^We/we$
+^katij/ka>tij$
+^tzam/tzam$
+^man/man$
+^katuchajij/k>at>u>chaji>j$
+^ta/ta$
+^che/ch>e$
+^le/le$
+^COVID-19/COVID-19$
+^xuqujeʼ/xuqujeʼ$
+^xibʼabʼal/xibʼabʼal$
+^chawe/ch>aw>e$
+^./.$
+
+# sent_id = covid:5
+# text = Le yabʼil (COVID-19) loqʼ kqʼaxix pa ri qʼaqʼ xuqujeʼ chʼaqal taq tinmit.
+# text[spa] = El virus COVID-19 PUEDE transmitirse en zonas con climas cálidos y húmedos.
+# labels = complete
+^Le/le$
+^yabʼil/yabʼil$
+^(/($
+^COVID-19/COVID-19$
+^)/)$
+^loqʼ/loqʼ$
+^kqʼaxix/k>qʼaxi>x$
+^pa/pa$
+^ri/ri$
+^qʼaqʼ/qʼaqʼ$
+^xuqujeʼ/xuqujeʼ$
+^chʼaqal/chʼaqal$
+^taq/taq$
+^tinmit/tinmit$
+^./.$ 
+
+# sent_id = covid:7
+# text = We katatin rukʼ kʼatan jaʼ man kuqʼatej ta le kʼakʼ yabʼil coronavirus.
+# text[spa] = Bañarse con agua caliente NO PREVIENE la infección por el nuevo coronavirus.
+# labels = complete
+^We/we$
+^katatin/k>at>atin$
+^rukʼ/r>ukʼ$
+^kʼatan/kʼatan$
+^jaʼ/jaʼ$
+^man/man$
+^kuqʼatej/k>u>qʼatej$
+^ta/ta$
+^le/le$
+^kʼakʼ/kʼakʼ$
+^yabʼil/yabʼil$
+^coronavirus/coronavirus$
+^./.$
+
+# sent_id = covid:13
+# text = We katij anxux man katutoʼ ta chi uqʼatixik le kʼakʼ yabʼil coronavirus (2019-nCOV).
+# text[spa] = Comer ajo NO ayuda a prevenir el contagio del nuevo coronavirus (2019-nCoV).
+# labels = complete
+^We/we$
+^katij/ka>tij$
+^anxux/anxux$
+^man/man$
+^katutoʼ/k>at>u>toʼ$
+^ta/ta$
+^chi/chi$
+^uqʼatixik/u>qʼati>x>ik$
+^le/le$
+^kʼakʼ/kʼakʼ$
+^yabʼil/yabʼil$
+^coronavirus/coronavirus$
+^(/($
+^2019/2019$
+^-/-$
+^nCOV/nCOV$
+^)/)$
+^./.$
+
+# sent_id = covid:18.0
+# text = ¿Kʼo kʼu laʼ jun kunabʼal che kuqʼatej xuqujeʼ kukunaj le kʼakʼ yabʼil coronavirus?
+# text[spa] = ¿Hay alguna medicina para prevenir o tratar el nuevo coronavirus?
+# labels = complete
+^¿/¿$
+^Kʼo/kʼo$
+^kʼu/kʼu$
+^laʼ/laʼ$
+^jun/jun$
+^kunabʼal/kunabʼal$
+^che/ch>e$
+^kuqʼatej/k>u>qʼatej$
+^xuqujeʼ/xuqujeʼ$
+^kukunaj/k>u>kunaj$
+^le/le$
+^kʼakʼ/kʼakʼ$
+^yabʼil/yabʼil$
+^coronavirus/coronavirus$
+^?/?$
+
