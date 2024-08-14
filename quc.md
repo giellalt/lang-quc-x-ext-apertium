@@ -1,6 +1,10 @@
-# K'iche' description 
+# K'iche' language model documentation
 
-All documents in one file
+All doc-comment documentation in one large file.
+
+---
+
+# src-cg3-dependency.cg3.md 
 
 
 !!!C O M M O N  S Á M I  D E P E N D E N C Y   G R A M M A R
@@ -153,7 +157,14 @@ Correction rules
 !! __lgRemove__ removes the language tags <sma>, <sme>,  etc, before proceeding to the dep file.
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/dependency.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/cg3/dependency.cg3)</small>
+
+---
+
+# src-cg3-disambiguator.cg3.md 
+
+
 
 # Faroese disambiguator 
 
@@ -192,7 +203,14 @@ Mostly we map both @CNP and @CVP, then we select @CNP, after that we remove them
 * **X** removes readings with no syntax
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/cg3/disambiguator.cg3)</small>
+
+---
+
+# src-cg3-functions.cg3.md 
+
+
 S Y N T A C T I C   F U N C T I O N S   F O R   S Á M I
 
 Sámi language technology project 2003-2018, University of Tromsø #
@@ -661,22 +679,33 @@ These were the set types.
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/cg3/functions.cg3)</small>
+
+---
+
+# src-fst-morphology-affixes-symbols.lexc.md 
+
+
 # Symbol affixes
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/fst/affixes/symbols.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
+
+# src-fst-morphology-ext-Apertium-quc-apertium-quc.quc.lexc.md 
 
 
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/ext-Apertium-quc/apertium-quc.quc.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/fst/ext-Apertium-quc/apertium-quc.quc.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/ext-Apertium-quc/apertium-quc.quc.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/fst/morphology/ext-Apertium-quc/apertium-quc.quc.lexc)</small>
 
 ---
+
+# src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -841,9 +870,11 @@ retracted tongue root			_q
 
 * * *
 
-<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/phonetics/txt2ipa.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/fst/phonetics/txt2ipa.xfscript)</small>
 
 ---
+
+# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -861,9 +892,11 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/fst/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 ---
+
+# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
 
 
 
@@ -875,9 +908,11 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
+
+# tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
@@ -1176,7 +1211,14 @@ expression **WORD - premodifiers**.
 ### Grammarchecker sets
 
 * * *
-<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small># Tokeniser for quc
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+
+# Tokeniser for quc
 
 Usage:
 ```
@@ -1238,6 +1280,8 @@ Finally we mark as a token any sequence making up a:
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
 
 ---
+
+# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
 # Grammar checker tokenisation for quc
 
@@ -1302,3 +1346,66 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
+# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+
+# TTS tokenisation for smj
+
+Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
+Then just:
+```sh
+make
+echo "ja, ja" \
+| hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
+
+More usage examples:
+```sh
+echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa \
+boasttu olmmoš, man mielde lahtuid." \
+| hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" \
+| hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+echo "márffibiillagáffe" \
+| hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
+
+Pmatch documentation:
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
+
+Characters which have analyses in the lexicon, but can appear without spaces
+before/after, that is, with no context conditions, and adjacent to words:
+* Punct contains ASCII punctuation marks
+* The symbol after m-dash is soft-hyphen `U+00AD`
+* The symbol following {•} is byte-order-mark / zero-width no-break space
+`U+FEFF`.
+
+Whitespace contains ASCII white space and
+the List contains some unicode white space characters
+* En Quad U+2000 to Zero-Width Joiner U+200d'
+* Narrow No-Break Space U+202F
+* Medium Mathematical Space U+205F
+* Word joiner U+2060
+
+Apart from what's in our morphology, there are
+1) unknown word-like forms, and
+2) unmatched strings
+We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
+* select extended latin symbols
+* select symbols
+* various symbols from Private area (probably Microsoft),
+so far:
+* U+F0B7 for "x in box"
+
+TODO: Could use something like this, but built-in's don't include šžđčŋ:
+
+Simply give an empty reading when something is unknown:
+hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
+remove empty analyses from other readings. Empty readings are also
+legal in CG, they get a default baseform equal to the wordform, but
+no tag to check, so it's safer to let hfst-tokenise handle them.
+
+Needs hfst-tokenise to output things differently depending on the tag they get
+
+* * *
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-tts-cggt-desc.pmscript](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/tools/tokenisers/tokeniser-tts-cggt-desc.pmscript)</small>

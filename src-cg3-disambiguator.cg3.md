@@ -37,4 +37,5 @@ Mostly we map both @CNP and @CVP, then we select @CNP, after that we remove them
 * **X** removes readings with no syntax
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/src/cg3/disambiguator.cg3)</small>
