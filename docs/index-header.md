@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/github/license/giellalt/lang-quc-x-ext-apertium)](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-quc)](https://github.com/giellalt/lang-quc/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-quc-x-ext-apertium?label=CI)](https://builds.giellalt.org/pipelines/lang-quc-x-ext-apertium/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/kich1262)
 
 This page documents the work on the **K'iche' language model**. 
 
