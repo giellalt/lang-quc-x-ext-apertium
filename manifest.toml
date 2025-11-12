@@ -1,11 +1,8 @@
-spellername = "K'iche'"
-spellerversion = "0.1.1"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
-en = "K'iche' spellchecker (Apertium)"
-quc = "Autonym spellchecker (Apertium)"
+en = "K'iche' spellchecker (Apertium"
+quc = "Autonym spellchecker (Apertium"
 
 # Description of the speller package in various languages.
 # The default is English + autonym:
@@ -19,3 +16,15 @@ system_pkg_id = "no.divvun.MacDivvun.quc-x-ext-apertium"
 [windows]
 system_product_code = "{792C5113-6607-4108-8768-F4AC6E134199}_is1"
 # extra_locales = { quc = "quc-x-ext-apertium" }
+
+[package.speller]
+name = "K'iche'"
+version = "0.1.1"
+
+[package.grammar]
+name = "K'iche'"
+version = "0.1.0"
+
+[package.tts-text-proc]
+name = "K'iche'"
+version = "0.1.0"
