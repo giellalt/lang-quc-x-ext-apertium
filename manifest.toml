@@ -1,8 +1,8 @@
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
-en = "K'iche' spellchecker (Apertium"
-quc = "Autonym spellchecker (Apertium"
+en = "K'iche' spellchecker (Apertium)"
+quc = "Autonym spellchecker (Apertium)"
 
 # Description of the speller package in various languages.
 # The default is English + autonym:
