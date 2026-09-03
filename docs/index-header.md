@@ -9,7 +9,7 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-quc-x-ext-apertium%2Fgenerated%2Fdocs-data%2Ffst-lemmacount.json) <br/>
 [![Speller suggestion quality](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-quc-x-ext-apertium%2Fgenerated%2Fdocs-data%2Fspeller-suggestions.json)](typosreport/) <br/>
 [![License](https://img.shields.io/github/license/giellalt/lang-quc-x-ext-apertium)](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/LICENSE) <br/>
-[![Issues](https://img.shields.io/github/issues/giellalt/lang-quc)](https://github.com/giellalt/lang-quc/issues) <br/>
+[![Issues](https://img.shields.io/github/issues/giellalt/lang-quc-x-ext-apertium)](https://github.com/giellalt/lang-quc-x-ext-apertium/issues) <br/>
 [![Build Status](https://builds.giellalt.org/api/badge/lang-quc-x-ext-apertium?label=CI)](https://builds.giellalt.org/pipelines/lang-quc-x-ext-apertium/builds/latest) <br/>
 [![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/kich1262)
 </div>

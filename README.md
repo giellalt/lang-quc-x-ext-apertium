@@ -3,7 +3,7 @@ The K'iche' morphology and tools
 
 [![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-quc-x-ext-apertium%2Fgenerated%2Fdocs-data%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-quc-x-ext-apertium%2Fgenerated%2Fdocs-data%2Ffst-lemmacount.json)
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-quc)](https://github.com/giellalt/lang-quc/issues)
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-quc-x-ext-apertium)](https://github.com/giellalt/lang-quc-x-ext-apertium/issues)
 [![License](https://img.shields.io/github/license/giellalt/lang-quc-x-ext-apertium)](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/LICENSE)
 [![Doc build](https://img.shields.io/github/actions/workflow/status/giellalt/lang-quc-x-ext-apertium/docs.yml?logo=github&label=DocCI)](https://github.com/giellalt/lang-quc-x-ext-apertium/actions/workflows/docs.yml)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-quc-x-ext-apertium?logo=buildkite&label=CoreCI)](https://builds.giellalt.org/pipelines/lang-quc-x-ext-apertium/builds/latest)
@@ -20,7 +20,7 @@ This repository contains finite state source files for the K'iche' language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under __GPLv3__
 licence, also detailed in the
-[LICENSE](https://github.com/giellalt/lang-quc/blob/main/LICENSE). The
+[LICENSE](https://github.com/giellalt/lang-quc-x-ext-apertium/blob/main/LICENSE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
